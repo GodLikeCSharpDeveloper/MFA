@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA\\MFA.csproj": {}
+    "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA\\MFA.csproj": {
+    "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA\\MFA.csproj",
+        "projectUniqueName": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
         "projectName": "MFA",
-        "projectPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA\\MFA.csproj",
-        "packagesPath": "C:\\Users\\DaunV5.0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA\\obj\\",
+        "projectPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
+        "packagesPath": "C:\\Users\\KAYAYASHA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DaunV5.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAYAYASHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -401,6 +401,10 @@
               "version": "[7.0.5, 7.0.5]"
             },
             {
+              "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
               "version": "[7.0.5, 7.0.5]"
             },
@@ -447,6 +451,9 @@
           "#import": []
         },
         "iossimulator-x64": {
+          "#import": []
+        },
+        "maccatalyst-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

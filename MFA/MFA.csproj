@@ -49,13 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Bogus" Version="34.0.2" />
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	  <AndroidResource Remove="Views\**" />
+	  <Compile Remove="Views\**" />
+	  <EmbeddedResource Remove="Views\**" />
+	  <MauiCss Remove="Views\**" />
+	  <MauiXaml Remove="Views\**" />
+	  <None Remove="Views\**" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\" />
+		<PackageReference Include="Bogus" Version="34.0.2" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 </Project>

@@ -1,12 +1,10 @@
-﻿using MFA.VIewModels;
+﻿using MFA.ViewModels;
 
 namespace MFA;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
-	public MainPage(MainPageViewModel viewModel)
+    public MainPage(MainPageViewModel viewModel)
 	{
 		BindingContext = viewModel;
         InitializeComponent();

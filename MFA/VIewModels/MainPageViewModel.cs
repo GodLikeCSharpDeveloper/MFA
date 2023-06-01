@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Android.Database;
+﻿using System.Collections.ObjectModel;
 using MauiForumApp.Services;
 using MFA.Models;
 
-namespace MFA.VIewModels
+namespace MFA.ViewModels
 {
     public class MainPageViewModel
     {
-        ObservableCollection<Topic> Topics;
+        public ObservableCollection<Topic> Topics { get; }
         private TopicService service;
         public MainPageViewModel(TopicService service)
         {
             this.service = service;
-            Topics = service.GenerateInfo(25);
+            Topics = new( service.GenerateInfo(25));
         }
     }
 }
