@@ -1,5 +1,6 @@
-﻿using MauiForumApp.Services;
+﻿using MFA.Services;
 using MFA.ViewModels;
+using MFA.Views;
 using Microsoft.Extensions.Logging;
 
 namespace MFA;
@@ -23,6 +24,8 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<MainPageViewModel>();
 		builder.Services.AddSingleton<TopicService>();
+        builder.Services.AddTransient<DetailsTopicPage>();
+		builder.Services.AddTransient<TopicDetailViewModel>();
 		return builder.Build();
 	}
 }

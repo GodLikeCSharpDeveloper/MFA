@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Bogus;
 using MFA.Models;
 
-namespace MauiForumApp.Services
+namespace MFA.Services
 {
     public class TopicService
     {

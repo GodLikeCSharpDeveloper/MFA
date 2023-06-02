@@ -49,18 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Views\**" />
-	  <Compile Remove="Views\**" />
-	  <EmbeddedResource Remove="Views\**" />
-	  <MauiCss Remove="Views\**" />
-	  <MauiXaml Remove="Views\**" />
-	  <None Remove="Views\**" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Bogus" Version="34.0.2" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\DetailsTopicPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
