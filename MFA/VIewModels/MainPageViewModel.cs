@@ -13,11 +13,14 @@ namespace MFA.ViewModels
     {
     public ObservableCollection<Topic> Topics { get; }
     private TopicService service;
+    UserRepository userRepository;
 
-    public MainPageViewModel(TopicService service)
+    public MainPageViewModel(TopicService service, UserRepository userRepository)
     {
         this.service = service;
         Topics = new(service.GenerateInfo(25));
+        this.userRepository = userRepository;
+            userRepository.AddUser();
         
     }
 

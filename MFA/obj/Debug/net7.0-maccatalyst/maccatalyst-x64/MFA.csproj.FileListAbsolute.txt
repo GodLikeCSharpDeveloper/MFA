@@ -296,3 +296,4 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\burgerite2m.jpg
