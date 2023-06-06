@@ -20,10 +20,15 @@ namespace MFA.ViewModels
         this.service = service;
         Topics = new(service.GenerateInfo(25));
         this.userRepository = userRepository;
-            userRepository.AddUser();
+            
         
     }
 
+    [RelayCommand]
+    public async Task AddUserAsync()
+    {
+        userRepository.AddUser();
+    }
     [RelayCommand]
     public async Task GoToDetailsAsync(Topic topic)
     {

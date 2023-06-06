@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MFA.Views.MainPage"
+             xmlns:view="clr-namespace:MFA.ViewModels"
+             xmlns:model="clr-namespace:MFA.Models"
+             x:DataType="view:MainPageViewModel">
+
+
+    <VerticalStackLayout>
+        <Button Command="{Binding Source={RelativeSource AncestorType={x:Type view:MainPageViewModel}}, Path=AddUserCommand}"></Button>
+        <ScrollView>
+            <Grid>
+                <CollectionView ItemsSource="{Binding Topics}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Topic">
+                            <Grid>
+                                <Frame Padding="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:MainPageViewModel}}, 
+                                            Path=GoToDetailsCommand}"/>
+                                    </Frame.GestureRecognizers>
+                                    <Grid Padding="0" ColumnDefinitions="125,*">
+                                        <Label Text="{Binding TopicTitle}"></Label>
+                                        <VerticalStackLayout Grid.Column="2">
+                                            <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicReleaseDate, StringFormat='Upload date: {0}'}"></Label>
+                                            <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicUpdateDate, StringFormat='Last updated: {0}'}"></Label>
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </ScrollView>
+        
+    </VerticalStackLayout>
+
+</ContentPage>

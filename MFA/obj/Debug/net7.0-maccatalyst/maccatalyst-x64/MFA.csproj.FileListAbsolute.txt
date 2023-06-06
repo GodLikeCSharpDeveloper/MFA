@@ -297,3 +297,17 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\burgerite2m.jpg
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\AWSSDK.Core.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\AWSSDK.SecurityToken.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\DnsClient.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.AspNetCore.Authorization.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.AspNetCore.Metadata.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Identity.Client.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MongoDB.Bson.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MongoDB.Driver.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MongoDB.Driver.Core.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MongoDB.Libmongocrypt.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SharpCompress.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Snappier.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ZstdSharp.dll

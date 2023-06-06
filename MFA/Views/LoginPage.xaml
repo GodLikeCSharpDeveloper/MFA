@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:MFA.ViewModels"
+             xmlns:model="clr-namespace:MFA.Utility"
+             x:Class="MFA.Views.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout VerticalOptions="Center" Margin="0,0,0,40">
+        <Grid Padding="10">
+            <VerticalStackLayout x:DataType="view:LoginPageViewModel">
+                <Label Text="Enter your login or email" FontFamily="Serif"></Label>
+                <Entry x:Name="currentCost"
+                       Placeholder="Enter an email"
+                       Text="{Binding Email}"/>
+                <Label Text="Enter a password" FontFamily="Serif"></Label>
+                <Entry x:Name="password"
+                       Placeholder="Enter a password"
+                       Text="{Binding Password}"/>
+                <HorizontalStackLayout >
+                    <Button Text="Login in" WidthRequest="90" Command="{Binding Source={RelativeSource AncestorType={x:Type view:LoginPageViewModel}}, Path=LoginHandlerCommand}" Margin="0,5,5,5"></Button>
+                    <Button Text="Google" WidthRequest="90" Margin="5"></Button>
+                    <Button Text="Smth else" WidthRequest="90" Margin="5"></Button>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
