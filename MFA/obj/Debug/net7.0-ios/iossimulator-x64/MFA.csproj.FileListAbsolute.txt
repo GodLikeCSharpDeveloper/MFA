@@ -329,3 +329,10 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\SharpCompress.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Snappier.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\ZstdSharp.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Realm.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Remotion.Linq.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Info.plist
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\CodeResources
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\realm-wrappers
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\MFA.csproj.Fody.CopyLocal.cache
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\MFA.csproj.Fody.RuntimeCopyLocal.cache

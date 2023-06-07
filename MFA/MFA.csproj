@@ -60,6 +60,7 @@
 		<PackageReference Include="Microsoft.Identity.Client" Version="4.54.1" />
 		<PackageReference Include="MongoDB.Bson" Version="2.19.2" />
 		<PackageReference Include="MongoDB.Driver" Version="2.19.2" />
+		<PackageReference Include="Realm" Version="11.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,6 +73,10 @@
 	  <MauiXaml Update="Views\MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Utility\" />
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionMFAHideInfoBar="True" /></VisualStudio></ProjectExtensions>

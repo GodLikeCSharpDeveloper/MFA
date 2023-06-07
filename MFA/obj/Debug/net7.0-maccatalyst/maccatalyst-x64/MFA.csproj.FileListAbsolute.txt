@@ -311,3 +311,8 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SharpCompress.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Snappier.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ZstdSharp.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Realm.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Remotion.Linq.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\realm-wrappers.framework.zip
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MFA.csproj.Fody.CopyLocal.cache
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MFA.csproj.Fody.RuntimeCopyLocal.cache

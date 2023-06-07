@@ -1,4 +1,5 @@
 ﻿using MFA.Services;
+using MFA.Services.LoginServices;
 using MFA.ViewModels;
 using MFA.Views;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +30,7 @@ public static class MauiProgram
         builder.Services.AddTransient<DetailsTopicPage>();
 		builder.Services.AddTransient<TopicDetailViewModel>();
         builder.Services.AddTransient<LoginPage>();
+        builder.Services.AddTransient<LoginValidator>();
         builder.Services.AddTransient<LoginPageViewModel>();
 		builder.Services.AddSingleton<UserRepository>();
         builder.Services.AddSingleton(new MongoClient("mongodb://localhost:27017"));

@@ -7,10 +7,11 @@
     Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" 
-        FlyoutItemIsVisible="True"/>
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" 
+        FlyoutItemIsVisible="True"
+        Shell.NavBarIsVisible="False"/>
     <FlyoutItem Title="One">
         <ShellContent
             Title="One"
