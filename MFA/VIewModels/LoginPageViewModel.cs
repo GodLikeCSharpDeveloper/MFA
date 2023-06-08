@@ -8,6 +8,7 @@ using Bogus.DataSets;
 using MFA.Services.LoginServices;
 using MFA.Views;
 
+
 namespace MFA.ViewModels
 {
     public partial class LoginPageViewModel : BaseViewModel
@@ -22,14 +23,14 @@ namespace MFA.ViewModels
         [ObservableProperty]
         public string password;
 
-
         [RelayCommand]
-        public async Task RegisterHandlerHandler()
+        public async Task RegisterHandler()
         {
-            if (!repository.RegisterAsync(Email, Password).Result)
+            repository.GenerateToken("1234567890", "tdJkuTY57hg2LbPewfewefewrgh543534g345yhgr6j56h5");
+            if (!repository.LoginAsync(Email, Password).Result)
                 return;
             if (Email == "Admin@gmail.com" && Password == "Admin")
                 await Shell.Current.GoToAsync("MainPage", true);
         }
     }
-}//TODO ADD LOGIN ONLY FOR ONLINE DB AND SOME KIND OF TIMER TO LOGOUT MB, THEN WORKING WITH ADDING NEW USERS
+}

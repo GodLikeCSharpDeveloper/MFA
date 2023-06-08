@@ -29,6 +29,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<TopicService>();
         builder.Services.AddTransient<DetailsTopicPage>();
 		builder.Services.AddTransient<TopicDetailViewModel>();
+		builder.Services.AddSingleton<RealmLoginRepository>();
         builder.Services.AddTransient<LoginPage>();
         builder.Services.AddTransient<LoginValidator>();
         builder.Services.AddTransient<LoginPageViewModel>();

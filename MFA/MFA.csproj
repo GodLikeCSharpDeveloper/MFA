@@ -61,6 +61,7 @@
 		<PackageReference Include="MongoDB.Bson" Version="2.19.2" />
 		<PackageReference Include="MongoDB.Driver" Version="2.19.2" />
 		<PackageReference Include="Realm" Version="11.0.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
 	</ItemGroup>
 
 	<ItemGroup>
