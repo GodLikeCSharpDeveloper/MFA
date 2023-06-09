@@ -33,35 +33,22 @@ namespace MFA.Services.LoginServices
         {
             // Create header
             var header = new JwtHeader(new SigningCredentials(
-                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey)),
-                SecurityAlgorithms.HmacSha256)
-            )
-            {
-               
-            };
-
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes("tdJkuTY57hg2LbPewfewefewrgh543534g345yhgr6j56h5")),
+                SecurityAlgorithms.HmacSha256));
             // Create payload
             var payload = new JwtPayload
             {
                 { "aud", "application-0-tzqol" },
                 { "sub", "1234567890" },
-                { "name", "John Doe"},
-                { "iat", "1516239022"}
+                { "name", "John Doe" },
                 // Add additional claims as needed
             };
-
             // Create JWT
             var token = new JwtSecurityToken(header, payload);
+            var asda = new HMACSHA256();
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenString = tokenHandler.WriteToken(token);
-
-            var encodedHeader = Base64UrlEncoder.Encode(header.ToString());
-            var encodedPayload = Base64UrlEncoder.Encode(payload.ToString());
-            var signatureInput = encodedHeader + "." + encodedPayload;
-            var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(signingKey));
-            var signatureBytes = hmac.ComputeHash(Encoding.UTF8.GetBytes(signatureInput));
-            var signature = Base64UrlEncoder.Encode(signatureBytes);
-            return $"{encodedHeader}.{encodedPayload}.{signature}"; ;
+            return tokenString;
         }
         public async Task<bool> LoginAsync(string email, string password)
         {
