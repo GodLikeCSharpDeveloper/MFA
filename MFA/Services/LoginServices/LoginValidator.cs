@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MFA.Services.LoginServices
 {
-    public class LoginValidator
+    public class LoginValidator : ILoginValidator
     {
-        public string Error;
+        public string Error { get; set; }
         public bool Validator(string login, string password)
         {
             var sb = new StringBuilder("Enter ");

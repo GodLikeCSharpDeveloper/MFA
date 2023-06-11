@@ -316,3 +316,8 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\realm-wrappers.framework.zip
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MFA.csproj.Fody.CopyLocal.cache
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MFA.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.IdentityModel.Logging.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.IdentityModel.Tokens.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\atlasConfig.json

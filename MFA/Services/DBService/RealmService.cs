@@ -10,11 +10,11 @@ namespace MFA.Services.DBService
     {
         public static bool ServiceInitialised;
 
-        public static Realms.Sync.App App;
+        public static Realms.Sync.App app;
 
         public static Realm MainThreadRealm;
 
-        public static User CurrentUser => App.CurrentUser;
+        public static User CurrentUser => app.CurrentUser;
 
         public static async Task Init()
         {
@@ -22,11 +22,9 @@ namespace MFA.Services.DBService
             {
                 return;
             }
-
-            using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("atlasConfig.json");
+            await using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("atlasConfig.json");
             using StreamReader reader = new StreamReader(fileStream);
             var fileContent = await reader.ReadToEndAsync();
-
             var config = JsonSerializer.Deserialize<RealmAppConfig>(fileContent,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
@@ -35,9 +33,9 @@ namespace MFA.Services.DBService
                 BaseUri = new Uri(config.BaseUrl)
             };
 
-            App = Realms.Sync.App.Create(appConfiguration);
-
+            app = Realms.Sync.App.Create(appConfiguration);
             ServiceInitialised = true;
+            
         }
 
         public static Realm GetMainThreadRealm()
@@ -47,7 +45,7 @@ namespace MFA.Services.DBService
 
         public static Realm GetRealm()
         {
-            var config = new FlexibleSyncConfiguration(App.CurrentUser)
+            var config = new FlexibleSyncConfiguration(app.CurrentUser)
             {
                 PopulateInitialSubscriptions = (realm) =>
                 {
@@ -59,7 +57,7 @@ namespace MFA.Services.DBService
             return Realm.GetInstance(config);
         }
 
-        public static async Task SetSubscription(Realm realm, SubscriptionType subType)
+        public async static Task SetSubscription(Realm realm, SubscriptionType subType)
         {
             if (GetCurrentSubscriptionType(realm) == subType)
             {
@@ -118,7 +116,7 @@ namespace MFA.Services.DBService
         }
     }
 
-   
 
-    
+
+
 }

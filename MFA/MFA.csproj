@@ -49,7 +49,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="atlasConfig.json" />
 	  <None Remove="Resources\Images\burgerite2m.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiAsset Include="atlasConfig.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiAsset>
 	</ItemGroup>
 
 	<ItemGroup>

@@ -640,3 +640,8 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\realm-wrappers.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MFA.csproj.Fody.CopyLocal.cache
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MFA.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.Logging.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.IdentityModel.Tokens.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\atlasConfig.json

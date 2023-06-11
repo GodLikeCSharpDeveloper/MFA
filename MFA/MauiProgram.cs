@@ -1,5 +1,7 @@
 ﻿using MFA.Services;
+using MFA.Services.DBService;
 using MFA.Services.LoginServices;
+using MFA.Services.LoginServices.RegisterRepos;
 using MFA.ViewModels;
 using MFA.Views;
 using Microsoft.Extensions.Configuration;
@@ -29,11 +31,12 @@ public static class MauiProgram
 		builder.Services.AddSingleton<TopicService>();
         builder.Services.AddTransient<DetailsTopicPage>();
 		builder.Services.AddTransient<TopicDetailViewModel>();
-		builder.Services.AddSingleton<RealmLoginRepository>();
+		builder.Services.AddSingleton<ILoginRepos, RealmLoginRepository>();
         builder.Services.AddTransient<LoginPage>();
-        builder.Services.AddTransient<LoginValidator>();
+        builder.Services.AddTransient<ILoginValidator, LoginValidator>();
         builder.Services.AddTransient<LoginPageViewModel>();
 		builder.Services.AddSingleton<UserRepository>();
+        builder.Services.AddScoped<IRegister, RealmRegisterRepos>();
         builder.Services.AddSingleton(new MongoClient("mongodb://localhost:27017"));
         return builder.Build();
     }
