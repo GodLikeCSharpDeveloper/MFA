@@ -1,7 +1,8 @@
 ﻿using MFA.Services;
 using MFA.Services.DBService;
 using MFA.Services.LoginServices;
-using MFA.Services.LoginServices.RegisterRepos;
+using MFA.Services.RegisterServices;
+using MFA.Services.ValidateService;
 using MFA.ViewModels;
 using MFA.Views;
 using Microsoft.Extensions.Configuration;
@@ -28,12 +29,15 @@ public static class MauiProgram
 #endif
 		builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<MainPageViewModel>();
-		builder.Services.AddSingleton<TopicService>();
+        builder.Services.AddSingleton<RegisterPage>();
+		builder.Services.AddSingleton<RegisterPageViewModel>();
+        builder.Services.AddSingleton<TopicService>();
         builder.Services.AddTransient<DetailsTopicPage>();
 		builder.Services.AddTransient<TopicDetailViewModel>();
+		builder.Services.AddSingleton<IRegister, RealmRegisterRepos>();
 		builder.Services.AddSingleton<ILoginRepos, RealmLoginRepository>();
         builder.Services.AddTransient<LoginPage>();
-        builder.Services.AddTransient<ILoginValidator, LoginValidator>();
+        builder.Services.AddTransient<IUserValidator, UserValidator>();
         builder.Services.AddTransient<LoginPageViewModel>();
 		builder.Services.AddSingleton<UserRepository>();
         builder.Services.AddScoped<IRegister, RealmRegisterRepos>();

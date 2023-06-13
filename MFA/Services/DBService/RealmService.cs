@@ -57,7 +57,7 @@ namespace MFA.Services.DBService
             return Realm.GetInstance(config);
         }
 
-        public async static Task SetSubscription(Realm realm, SubscriptionType subType)
+        public static async Task SetSubscription(Realm realm, SubscriptionType subType)
         {
             if (GetCurrentSubscriptionType(realm) == subType)
             {
