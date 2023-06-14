@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Realms;
+using MongoDB.Bson;
+
 
 namespace MFA.Models
 {
-    public class Topic
+    public partial class Topic : IRealmObject
     {
-        public int Id { get; set; }
+        [PrimaryKey]
+        [MapTo("_id")]
+        public ObjectId _id { get; set; } = ObjectId.GenerateNewId();
+        [MapTo("ids")]
+        public string OwnerId { get; set; }
         public string TopicTitle { get; set; }
         public string TopicContent { get; set; }
         public string TopicReleaseDate { get; set; }
