@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:view="clr-namespace:MFA.ViewModels"
+                 x:Class="MFA.Views.RegisterPage"
+                 Title="RegisterPage"
+                 Shell.NavBarIsVisible="False">
+    <VerticalStackLayout VerticalOptions="Center" Margin="0,0,0,40">
+        <Grid Padding="10">
+            <VerticalStackLayout x:DataType="view:LoginPageViewModel">
+                <Label Text="Enter your login or email" FontFamily="Serif"></Label>
+                <Entry Placeholder="Enter an email"
+                       Text="{Binding Email}"/>
+                <Label Text="Enter a password" FontFamily="Serif"></Label>
+                <Entry Placeholder="Enter a password"
+                           Text="{Binding Password}"/>
+                <Label Text="Enter your name" FontFamily="Serif"></Label>
+                <Entry Placeholder="Enter your name"
+                       Text="{Binding Name}"/>
+                <Label Text="Enter your address" FontFamily="Serif"></Label>
+                <Entry Placeholder="Enter your address"
+                       Text="{Binding Address}"/>
+                <HorizontalStackLayout >
+                    <Button Text="Register" WidthRequest="90" Command="{Binding Source={RelativeSource AncestorType={x:Type view:RegisterPageViewModel}}, 
+                        Path=RegisterHandlerCommand}" Margin="0,5,5,5"></Button>
+                    <Button Text="Google" WidthRequest="90" Margin="5"></Button>
+                    <Button Text="Smth else" WidthRequest="90" Margin="5"></Button>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
+

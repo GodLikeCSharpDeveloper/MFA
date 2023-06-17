@@ -1,23 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Android.Database;
-using MauiForumApp.Services;
+﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
 using MFA.Models;
+using MFA.Services;
+using MFA.Views;
 
-namespace MFA.VIewModels
+
+namespace MFA.ViewModels
 {
-    public class MainPageViewModel
+    public partial class MainPageViewModel : BaseViewModel
+
     {
-        ObservableCollection<Topic> Topics;
-        private TopicService service;
-        public MainPageViewModel(TopicService service)
+    public ObservableCollection<Topic> Topics { get; }
+    private TopicService service;
+    UserRepository userRepository;
+
+    public MainPageViewModel(TopicService service, UserRepository userRepository)
+    {
+        this.service = service;
+        Topics = new(service.GenerateInfo(25));
+        this.userRepository = userRepository;
+            
+        
+    }
+
+    [RelayCommand]
+    public async Task AddUserAsync()
+    {
+        userRepository.AddUser();
+    }
+    [RelayCommand]
+    public async Task GoToDetailsAsync(Topic topic)
+    {
+        await Shell.Current.GoToAsync(nameof(DetailsTopicPage), true, new Dictionary<string, object>
         {
-            this.service = service;
-            Topics = service.GenerateInfo(25);
-        }
+            { "Topic", topic }
+        });
+    }
     }
 }

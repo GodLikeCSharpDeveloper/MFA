@@ -25,6 +25,212 @@ namespace MFA
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.Identity.Client.Resource.Attribute.alpha = global::MFA.Resource.Attribute.alpha;
+			global::Microsoft.Identity.Client.Resource.Attribute.font = global::MFA.Resource.Attribute.font;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderAuthority = global::MFA.Resource.Attribute.fontProviderAuthority;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderCerts = global::MFA.Resource.Attribute.fontProviderCerts;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderFetchStrategy = global::MFA.Resource.Attribute.fontProviderFetchStrategy;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderFetchTimeout = global::MFA.Resource.Attribute.fontProviderFetchTimeout;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderPackage = global::MFA.Resource.Attribute.fontProviderPackage;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderQuery = global::MFA.Resource.Attribute.fontProviderQuery;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontProviderSystemFontFamily = global::MFA.Resource.Attribute.fontProviderSystemFontFamily;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontStyle = global::MFA.Resource.Attribute.fontStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontVariationSettings = global::MFA.Resource.Attribute.fontVariationSettings;
+			global::Microsoft.Identity.Client.Resource.Attribute.fontWeight = global::MFA.Resource.Attribute.fontWeight;
+			global::Microsoft.Identity.Client.Resource.Attribute.lStar = global::MFA.Resource.Attribute.lStar;
+			global::Microsoft.Identity.Client.Resource.Attribute.nestedScrollViewStyle = global::MFA.Resource.Attribute.nestedScrollViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.queryPatterns = global::MFA.Resource.Attribute.queryPatterns;
+			global::Microsoft.Identity.Client.Resource.Attribute.shortcutMatchRequired = global::MFA.Resource.Attribute.shortcutMatchRequired;
+			global::Microsoft.Identity.Client.Resource.Attribute.ttcIndex = global::MFA.Resource.Attribute.ttcIndex;
+			global::Microsoft.Identity.Client.Resource.Color.androidx_core_ripple_material_light = global::MFA.Resource.Color.androidx_core_ripple_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.androidx_core_secondary_text_default_material_light = global::MFA.Resource.Color.androidx_core_secondary_text_default_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.browser_actions_bg_grey = global::MFA.Resource.Color.browser_actions_bg_grey;
+			global::Microsoft.Identity.Client.Resource.Color.browser_actions_divider_color = global::MFA.Resource.Color.browser_actions_divider_color;
+			global::Microsoft.Identity.Client.Resource.Color.browser_actions_text_color = global::MFA.Resource.Color.browser_actions_text_color;
+			global::Microsoft.Identity.Client.Resource.Color.browser_actions_title_color = global::MFA.Resource.Color.browser_actions_title_color;
+			global::Microsoft.Identity.Client.Resource.Color.notification_action_color_filter = global::MFA.Resource.Color.notification_action_color_filter;
+			global::Microsoft.Identity.Client.Resource.Color.notification_icon_bg_color = global::MFA.Resource.Color.notification_icon_bg_color;
+			global::Microsoft.Identity.Client.Resource.Dimension.browser_actions_context_menu_max_width = global::MFA.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.browser_actions_context_menu_min_padding = global::MFA.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_button_inset_horizontal_material = global::MFA.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_button_inset_vertical_material = global::MFA.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_button_padding_horizontal_material = global::MFA.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_button_padding_vertical_material = global::MFA.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_control_corner_material = global::MFA.Resource.Dimension.compat_control_corner_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_notification_large_icon_max_height = global::MFA.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Microsoft.Identity.Client.Resource.Dimension.compat_notification_large_icon_max_width = global::MFA.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_action_icon_size = global::MFA.Resource.Dimension.notification_action_icon_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_action_text_size = global::MFA.Resource.Dimension.notification_action_text_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_big_circle_margin = global::MFA.Resource.Dimension.notification_big_circle_margin;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_content_margin_start = global::MFA.Resource.Dimension.notification_content_margin_start;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_large_icon_height = global::MFA.Resource.Dimension.notification_large_icon_height;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_large_icon_width = global::MFA.Resource.Dimension.notification_large_icon_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_main_column_padding_top = global::MFA.Resource.Dimension.notification_main_column_padding_top;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_media_narrow_margin = global::MFA.Resource.Dimension.notification_media_narrow_margin;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_right_icon_size = global::MFA.Resource.Dimension.notification_right_icon_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_right_side_padding_top = global::MFA.Resource.Dimension.notification_right_side_padding_top;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_small_icon_background_padding = global::MFA.Resource.Dimension.notification_small_icon_background_padding;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_small_icon_size_as_large = global::MFA.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_subtext_size = global::MFA.Resource.Dimension.notification_subtext_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_top_pad = global::MFA.Resource.Dimension.notification_top_pad;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_top_pad_large_text = global::MFA.Resource.Dimension.notification_top_pad_large_text;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_action_background = global::MFA.Resource.Drawable.notification_action_background;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg = global::MFA.Resource.Drawable.notification_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_low = global::MFA.Resource.Drawable.notification_bg_low;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_low_normal = global::MFA.Resource.Drawable.notification_bg_low_normal;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_low_pressed = global::MFA.Resource.Drawable.notification_bg_low_pressed;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_normal = global::MFA.Resource.Drawable.notification_bg_normal;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_normal_pressed = global::MFA.Resource.Drawable.notification_bg_normal_pressed;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_icon_background = global::MFA.Resource.Drawable.notification_icon_background;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_template_icon_bg = global::MFA.Resource.Drawable.notification_template_icon_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_template_icon_low_bg = global::MFA.Resource.Drawable.notification_template_icon_low_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_tile_bg = global::MFA.Resource.Drawable.notification_tile_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notify_panel_notification_icon_bg = global::MFA.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_action_clickable_span = global::MFA.Resource.Id.accessibility_action_clickable_span;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_0 = global::MFA.Resource.Id.accessibility_custom_action_0;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_1 = global::MFA.Resource.Id.accessibility_custom_action_1;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_10 = global::MFA.Resource.Id.accessibility_custom_action_10;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_11 = global::MFA.Resource.Id.accessibility_custom_action_11;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_12 = global::MFA.Resource.Id.accessibility_custom_action_12;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_13 = global::MFA.Resource.Id.accessibility_custom_action_13;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_14 = global::MFA.Resource.Id.accessibility_custom_action_14;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_15 = global::MFA.Resource.Id.accessibility_custom_action_15;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_16 = global::MFA.Resource.Id.accessibility_custom_action_16;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_17 = global::MFA.Resource.Id.accessibility_custom_action_17;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_18 = global::MFA.Resource.Id.accessibility_custom_action_18;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_19 = global::MFA.Resource.Id.accessibility_custom_action_19;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_2 = global::MFA.Resource.Id.accessibility_custom_action_2;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_20 = global::MFA.Resource.Id.accessibility_custom_action_20;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_21 = global::MFA.Resource.Id.accessibility_custom_action_21;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_22 = global::MFA.Resource.Id.accessibility_custom_action_22;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_23 = global::MFA.Resource.Id.accessibility_custom_action_23;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_24 = global::MFA.Resource.Id.accessibility_custom_action_24;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_25 = global::MFA.Resource.Id.accessibility_custom_action_25;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_26 = global::MFA.Resource.Id.accessibility_custom_action_26;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_27 = global::MFA.Resource.Id.accessibility_custom_action_27;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_28 = global::MFA.Resource.Id.accessibility_custom_action_28;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_29 = global::MFA.Resource.Id.accessibility_custom_action_29;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_3 = global::MFA.Resource.Id.accessibility_custom_action_3;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_30 = global::MFA.Resource.Id.accessibility_custom_action_30;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_31 = global::MFA.Resource.Id.accessibility_custom_action_31;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_4 = global::MFA.Resource.Id.accessibility_custom_action_4;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_5 = global::MFA.Resource.Id.accessibility_custom_action_5;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_6 = global::MFA.Resource.Id.accessibility_custom_action_6;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_7 = global::MFA.Resource.Id.accessibility_custom_action_7;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_8 = global::MFA.Resource.Id.accessibility_custom_action_8;
+			global::Microsoft.Identity.Client.Resource.Id.accessibility_custom_action_9 = global::MFA.Resource.Id.accessibility_custom_action_9;
+			global::Microsoft.Identity.Client.Resource.Id.actions = global::MFA.Resource.Id.actions;
+			global::Microsoft.Identity.Client.Resource.Id.action_container = global::MFA.Resource.Id.action_container;
+			global::Microsoft.Identity.Client.Resource.Id.action_divider = global::MFA.Resource.Id.action_divider;
+			global::Microsoft.Identity.Client.Resource.Id.action_image = global::MFA.Resource.Id.action_image;
+			global::Microsoft.Identity.Client.Resource.Id.action_text = global::MFA.Resource.Id.action_text;
+			global::Microsoft.Identity.Client.Resource.Id.async = global::MFA.Resource.Id.async;
+			global::Microsoft.Identity.Client.Resource.Id.blocking = global::MFA.Resource.Id.blocking;
+			global::Microsoft.Identity.Client.Resource.Id.browser_actions_header_text = global::MFA.Resource.Id.browser_actions_header_text;
+			global::Microsoft.Identity.Client.Resource.Id.browser_actions_menu_items = global::MFA.Resource.Id.browser_actions_menu_items;
+			global::Microsoft.Identity.Client.Resource.Id.browser_actions_menu_item_icon = global::MFA.Resource.Id.browser_actions_menu_item_icon;
+			global::Microsoft.Identity.Client.Resource.Id.browser_actions_menu_item_text = global::MFA.Resource.Id.browser_actions_menu_item_text;
+			global::Microsoft.Identity.Client.Resource.Id.browser_actions_menu_view = global::MFA.Resource.Id.browser_actions_menu_view;
+			global::Microsoft.Identity.Client.Resource.Id.chronometer = global::MFA.Resource.Id.chronometer;
+			global::Microsoft.Identity.Client.Resource.Id.dialog_button = global::MFA.Resource.Id.dialog_button;
+			global::Microsoft.Identity.Client.Resource.Id.forever = global::MFA.Resource.Id.forever;
+			global::Microsoft.Identity.Client.Resource.Id.icon = global::MFA.Resource.Id.icon;
+			global::Microsoft.Identity.Client.Resource.Id.icon_group = global::MFA.Resource.Id.icon_group;
+			global::Microsoft.Identity.Client.Resource.Id.info = global::MFA.Resource.Id.info;
+			global::Microsoft.Identity.Client.Resource.Id.italic = global::MFA.Resource.Id.italic;
+			global::Microsoft.Identity.Client.Resource.Id.line1 = global::MFA.Resource.Id.line1;
+			global::Microsoft.Identity.Client.Resource.Id.line3 = global::MFA.Resource.Id.line3;
+			global::Microsoft.Identity.Client.Resource.Id.normal = global::MFA.Resource.Id.normal;
+			global::Microsoft.Identity.Client.Resource.Id.notification_background = global::MFA.Resource.Id.notification_background;
+			global::Microsoft.Identity.Client.Resource.Id.notification_main_column = global::MFA.Resource.Id.notification_main_column;
+			global::Microsoft.Identity.Client.Resource.Id.notification_main_column_container = global::MFA.Resource.Id.notification_main_column_container;
+			global::Microsoft.Identity.Client.Resource.Id.right_icon = global::MFA.Resource.Id.right_icon;
+			global::Microsoft.Identity.Client.Resource.Id.right_side = global::MFA.Resource.Id.right_side;
+			global::Microsoft.Identity.Client.Resource.Id.tag_accessibility_actions = global::MFA.Resource.Id.tag_accessibility_actions;
+			global::Microsoft.Identity.Client.Resource.Id.tag_accessibility_clickable_spans = global::MFA.Resource.Id.tag_accessibility_clickable_spans;
+			global::Microsoft.Identity.Client.Resource.Id.tag_accessibility_heading = global::MFA.Resource.Id.tag_accessibility_heading;
+			global::Microsoft.Identity.Client.Resource.Id.tag_accessibility_pane_title = global::MFA.Resource.Id.tag_accessibility_pane_title;
+			global::Microsoft.Identity.Client.Resource.Id.tag_on_apply_window_listener = global::MFA.Resource.Id.tag_on_apply_window_listener;
+			global::Microsoft.Identity.Client.Resource.Id.tag_on_receive_content_listener = global::MFA.Resource.Id.tag_on_receive_content_listener;
+			global::Microsoft.Identity.Client.Resource.Id.tag_on_receive_content_mime_types = global::MFA.Resource.Id.tag_on_receive_content_mime_types;
+			global::Microsoft.Identity.Client.Resource.Id.tag_screen_reader_focusable = global::MFA.Resource.Id.tag_screen_reader_focusable;
+			global::Microsoft.Identity.Client.Resource.Id.tag_state_description = global::MFA.Resource.Id.tag_state_description;
+			global::Microsoft.Identity.Client.Resource.Id.tag_transition_group = global::MFA.Resource.Id.tag_transition_group;
+			global::Microsoft.Identity.Client.Resource.Id.tag_unhandled_key_event_manager = global::MFA.Resource.Id.tag_unhandled_key_event_manager;
+			global::Microsoft.Identity.Client.Resource.Id.tag_unhandled_key_listeners = global::MFA.Resource.Id.tag_unhandled_key_listeners;
+			global::Microsoft.Identity.Client.Resource.Id.tag_window_insets_animation_callback = global::MFA.Resource.Id.tag_window_insets_animation_callback;
+			global::Microsoft.Identity.Client.Resource.Id.text = global::MFA.Resource.Id.text;
+			global::Microsoft.Identity.Client.Resource.Id.text2 = global::MFA.Resource.Id.text2;
+			global::Microsoft.Identity.Client.Resource.Id.time = global::MFA.Resource.Id.time;
+			global::Microsoft.Identity.Client.Resource.Id.title = global::MFA.Resource.Id.title;
+			global::Microsoft.Identity.Client.Resource.Id.view_tree_lifecycle_owner = global::MFA.Resource.Id.view_tree_lifecycle_owner;
+			global::Microsoft.Identity.Client.Resource.Integer.status_bar_notification_info_maxnum = global::MFA.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Microsoft.Identity.Client.Resource.Layout.browser_actions_context_menu_page = global::MFA.Resource.Layout.browser_actions_context_menu_page;
+			global::Microsoft.Identity.Client.Resource.Layout.browser_actions_context_menu_row = global::MFA.Resource.Layout.browser_actions_context_menu_row;
+			global::Microsoft.Identity.Client.Resource.Layout.custom_dialog = global::MFA.Resource.Layout.custom_dialog;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_action = global::MFA.Resource.Layout.notification_action;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_action_tombstone = global::MFA.Resource.Layout.notification_action_tombstone;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_custom_big = global::MFA.Resource.Layout.notification_template_custom_big;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_icon_group = global::MFA.Resource.Layout.notification_template_icon_group;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_part_chronometer = global::MFA.Resource.Layout.notification_template_part_chronometer;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_part_time = global::MFA.Resource.Layout.notification_template_part_time;
+			global::Microsoft.Identity.Client.Resource.String.copy_toast_msg = global::MFA.Resource.String.copy_toast_msg;
+			global::Microsoft.Identity.Client.Resource.String.fallback_menu_item_copy_link = global::MFA.Resource.String.fallback_menu_item_copy_link;
+			global::Microsoft.Identity.Client.Resource.String.fallback_menu_item_open_in_browser = global::MFA.Resource.String.fallback_menu_item_open_in_browser;
+			global::Microsoft.Identity.Client.Resource.String.fallback_menu_item_share_link = global::MFA.Resource.String.fallback_menu_item_share_link;
+			global::Microsoft.Identity.Client.Resource.String.status_bar_notification_info_overflow = global::MFA.Resource.String.status_bar_notification_info_overflow;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Compat_Notification = global::MFA.Resource.Style.TextAppearance_Compat_Notification;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Compat_Notification_Info = global::MFA.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::MFA.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Compat_Notification_Time = global::MFA.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Compat_Notification_Title = global::MFA.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_Compat_NotificationActionContainer = global::MFA.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_Compat_NotificationActionText = global::MFA.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Microsoft.Identity.Client.Resource.Styleable.Capability = global::MFA.Resource.Styleable.Capability;
+			global::Microsoft.Identity.Client.Resource.Styleable.Capability_queryPatterns = global::MFA.Resource.Styleable.Capability_queryPatterns;
+			global::Microsoft.Identity.Client.Resource.Styleable.Capability_shortcutMatchRequired = global::MFA.Resource.Styleable.Capability_shortcutMatchRequired;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem = global::MFA.Resource.Styleable.ColorStateListItem;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_alpha = global::MFA.Resource.Styleable.ColorStateListItem_alpha;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_android_alpha = global::MFA.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_android_color = global::MFA.Resource.Styleable.ColorStateListItem_android_color;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_android_lStar = global::MFA.Resource.Styleable.ColorStateListItem_android_lStar;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_lStar = global::MFA.Resource.Styleable.ColorStateListItem_lStar;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily = global::MFA.Resource.Styleable.FontFamily;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont = global::MFA.Resource.Styleable.FontFamilyFont;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_android_font = global::MFA.Resource.Styleable.FontFamilyFont_android_font;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_android_fontStyle = global::MFA.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::MFA.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_android_fontWeight = global::MFA.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::MFA.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_font = global::MFA.Resource.Styleable.FontFamilyFont_font;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_fontStyle = global::MFA.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::MFA.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_fontWeight = global::MFA.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamilyFont_ttcIndex = global::MFA.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderAuthority = global::MFA.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderCerts = global::MFA.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::MFA.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::MFA.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderPackage = global::MFA.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderQuery = global::MFA.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Microsoft.Identity.Client.Resource.Styleable.FontFamily_fontProviderSystemFontFamily = global::MFA.Resource.Styleable.FontFamily_fontProviderSystemFontFamily;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor = global::MFA.Resource.Styleable.GradientColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColorItem = global::MFA.Resource.Styleable.GradientColorItem;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColorItem_android_color = global::MFA.Resource.Styleable.GradientColorItem_android_color;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColorItem_android_offset = global::MFA.Resource.Styleable.GradientColorItem_android_offset;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_centerColor = global::MFA.Resource.Styleable.GradientColor_android_centerColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_centerX = global::MFA.Resource.Styleable.GradientColor_android_centerX;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_centerY = global::MFA.Resource.Styleable.GradientColor_android_centerY;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_endColor = global::MFA.Resource.Styleable.GradientColor_android_endColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_endX = global::MFA.Resource.Styleable.GradientColor_android_endX;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_endY = global::MFA.Resource.Styleable.GradientColor_android_endY;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_gradientRadius = global::MFA.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_startColor = global::MFA.Resource.Styleable.GradientColor_android_startColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_startX = global::MFA.Resource.Styleable.GradientColor_android_startX;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_startY = global::MFA.Resource.Styleable.GradientColor_android_startY;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_tileMode = global::MFA.Resource.Styleable.GradientColor_android_tileMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.GradientColor_android_type = global::MFA.Resource.Styleable.GradientColor_android_type;
+			global::Microsoft.Identity.Client.Resource.Xml.image_share_filepaths = global::MFA.Resource.Xml.image_share_filepaths;
 			global::Microsoft.Maui.Controls.Compatibility.Resource.Attribute.actionBarSize = global::MFA.Resource.Attribute.actionBarSize;
 			global::Microsoft.Maui.Controls.Compatibility.Resource.Attribute.collectionViewStyle = global::MFA.Resource.Attribute.collectionViewStyle;
 			global::Microsoft.Maui.Controls.Compatibility.Resource.Attribute.scrollViewStyle = global::MFA.Resource.Attribute.scrollViewStyle;
@@ -8005,271 +8211,280 @@ namespace MFA
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165306;
 			
 			// aapt resource value: 0x7F07007B
-			public const int design_fab_background = 2131165307;
+			public const int burgerite2m = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int design_ic_visibility = 2131165308;
+			public const int design_fab_background = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int design_ic_visibility_off = 2131165309;
+			public const int design_ic_visibility = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int design_password_eye = 2131165310;
+			public const int design_ic_visibility_off = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int design_snackbar_background = 2131165311;
+			public const int design_password_eye = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int dotnet_bot = 2131165312;
+			public const int design_snackbar_background = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int ic_clock_black_24dp = 2131165313;
-			
-			// aapt resource value: 0x7F070082
-			public const int ic_keyboard_black_24dp = 2131165314;
-			
-			// aapt resource value: 0x7F070083
-			public const int ic_m3_chip_check = 2131165315;
-			
-			// aapt resource value: 0x7F070084
-			public const int ic_m3_chip_checked_circle = 2131165316;
-			
-			// aapt resource value: 0x7F070085
-			public const int ic_m3_chip_close = 2131165317;
-			
-			// aapt resource value: 0x7F070086
-			public const int ic_mtrl_checked_circle = 2131165318;
-			
-			// aapt resource value: 0x7F070087
-			public const int ic_mtrl_chip_checked_black = 2131165319;
-			
-			// aapt resource value: 0x7F070088
-			public const int ic_mtrl_chip_checked_circle = 2131165320;
-			
-			// aapt resource value: 0x7F070089
-			public const int ic_mtrl_chip_close_circle = 2131165321;
-			
-			// aapt resource value: 0x7F07008A
-			public const int m3_appbar_background = 2131165322;
+			public const int dotnet_bot = 2131165313;
 			
 			// aapt resource value: 0x7F07008B
-			public const int m3_popupmenu_background_overlay = 2131165323;
+			public const int icons8add24 = 2131165323;
+			
+			// aapt resource value: 0x7F070082
+			public const int ic_clock_black_24dp = 2131165314;
+			
+			// aapt resource value: 0x7F070083
+			public const int ic_keyboard_black_24dp = 2131165315;
+			
+			// aapt resource value: 0x7F070084
+			public const int ic_m3_chip_check = 2131165316;
+			
+			// aapt resource value: 0x7F070085
+			public const int ic_m3_chip_checked_circle = 2131165317;
+			
+			// aapt resource value: 0x7F070086
+			public const int ic_m3_chip_close = 2131165318;
+			
+			// aapt resource value: 0x7F070087
+			public const int ic_mtrl_checked_circle = 2131165319;
+			
+			// aapt resource value: 0x7F070088
+			public const int ic_mtrl_chip_checked_black = 2131165320;
+			
+			// aapt resource value: 0x7F070089
+			public const int ic_mtrl_chip_checked_circle = 2131165321;
+			
+			// aapt resource value: 0x7F07008A
+			public const int ic_mtrl_chip_close_circle = 2131165322;
 			
 			// aapt resource value: 0x7F07008C
-			public const int m3_radiobutton_ripple = 2131165324;
+			public const int logout = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int m3_selection_control_ripple = 2131165325;
+			public const int m3_appbar_background = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int m3_tabs_background = 2131165326;
+			public const int m3_popupmenu_background_overlay = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int m3_tabs_line_indicator = 2131165327;
+			public const int m3_radiobutton_ripple = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int m3_tabs_rounded_line_indicator = 2131165328;
+			public const int m3_selection_control_ripple = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int m3_tabs_transparent_background = 2131165329;
+			public const int m3_tabs_background = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int material_cursor_drawable = 2131165330;
+			public const int m3_tabs_line_indicator = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int material_ic_calendar_black_24dp = 2131165331;
+			public const int m3_tabs_rounded_line_indicator = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int material_ic_clear_black_24dp = 2131165332;
+			public const int m3_tabs_transparent_background = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int material_ic_edit_black_24dp = 2131165333;
+			public const int material_cursor_drawable = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165334;
+			public const int material_ic_calendar_black_24dp = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int material_ic_keyboard_arrow_next_black_24dp = 2131165335;
+			public const int material_ic_clear_black_24dp = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int material_ic_keyboard_arrow_previous_black_24dp = 2131165336;
+			public const int material_ic_edit_black_24dp = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165337;
+			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int material_ic_menu_arrow_down_black_24dp = 2131165338;
+			public const int material_ic_keyboard_arrow_next_black_24dp = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int material_ic_menu_arrow_up_black_24dp = 2131165339;
+			public const int material_ic_keyboard_arrow_previous_black_24dp = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int maui_splash = 2131165340;
+			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int maui_splash_image = 2131165341;
+			public const int material_ic_menu_arrow_down_black_24dp = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int mtrl_bottomsheet_drag_handle = 2131165342;
+			public const int material_ic_menu_arrow_up_black_24dp = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int mtrl_checkbox_button = 2131165343;
+			public const int maui_splash = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int mtrl_checkbox_button_checked_unchecked = 2131165344;
+			public const int maui_splash_image = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int mtrl_checkbox_button_icon = 2131165345;
+			public const int mtrl_bottomsheet_drag_handle = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int mtrl_checkbox_button_icon_checked_indeterminate = 2131165346;
+			public const int mtrl_checkbox_button = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int mtrl_checkbox_button_icon_checked_unchecked = 2131165347;
+			public const int mtrl_checkbox_button_checked_unchecked = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int mtrl_checkbox_button_icon_indeterminate_checked = 2131165348;
+			public const int mtrl_checkbox_button_icon = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int mtrl_checkbox_button_icon_indeterminate_unchecked = 2131165349;
+			public const int mtrl_checkbox_button_icon_checked_indeterminate = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int mtrl_checkbox_button_icon_unchecked_checked = 2131165350;
+			public const int mtrl_checkbox_button_icon_checked_unchecked = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int mtrl_checkbox_button_icon_unchecked_indeterminate = 2131165351;
+			public const int mtrl_checkbox_button_icon_indeterminate_checked = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int mtrl_checkbox_button_unchecked_checked = 2131165352;
+			public const int mtrl_checkbox_button_icon_indeterminate_unchecked = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int mtrl_dialog_background = 2131165353;
+			public const int mtrl_checkbox_button_icon_unchecked_checked = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int mtrl_dropdown_arrow = 2131165354;
+			public const int mtrl_checkbox_button_icon_unchecked_indeterminate = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int mtrl_ic_arrow_drop_down = 2131165355;
+			public const int mtrl_checkbox_button_unchecked_checked = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int mtrl_ic_arrow_drop_up = 2131165356;
+			public const int mtrl_dialog_background = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int mtrl_ic_cancel = 2131165357;
-			
-			// aapt resource value: 0x7F0700AF
-			public const int mtrl_ic_checkbox_checked = 2131165359;
-			
-			// aapt resource value: 0x7F0700B0
-			public const int mtrl_ic_checkbox_unchecked = 2131165360;
+			public const int mtrl_dropdown_arrow = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int mtrl_ic_check_mark = 2131165358;
+			public const int mtrl_ic_arrow_drop_down = 2131165358;
 			
-			// aapt resource value: 0x7F0700B1
-			public const int mtrl_ic_error = 2131165361;
+			// aapt resource value: 0x7F0700AF
+			public const int mtrl_ic_arrow_drop_up = 2131165359;
+			
+			// aapt resource value: 0x7F0700B0
+			public const int mtrl_ic_cancel = 2131165360;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int mtrl_ic_indeterminate = 2131165362;
+			public const int mtrl_ic_checkbox_checked = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int mtrl_navigation_bar_item_background = 2131165363;
+			public const int mtrl_ic_checkbox_unchecked = 2131165363;
+			
+			// aapt resource value: 0x7F0700B1
+			public const int mtrl_ic_check_mark = 2131165361;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int mtrl_popupmenu_background = 2131165364;
+			public const int mtrl_ic_error = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int mtrl_popupmenu_background_overlay = 2131165365;
+			public const int mtrl_ic_indeterminate = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int mtrl_switch_thumb = 2131165366;
+			public const int mtrl_navigation_bar_item_background = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int mtrl_switch_thumb_checked = 2131165367;
+			public const int mtrl_popupmenu_background = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int mtrl_switch_thumb_checked_pressed = 2131165368;
+			public const int mtrl_popupmenu_background_overlay = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int mtrl_switch_thumb_checked_unchecked = 2131165369;
+			public const int mtrl_switch_thumb = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int mtrl_switch_thumb_pressed = 2131165370;
+			public const int mtrl_switch_thumb_checked = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int mtrl_switch_thumb_pressed_checked = 2131165371;
+			public const int mtrl_switch_thumb_checked_pressed = 2131165371;
 			
 			// aapt resource value: 0x7F0700BC
-			public const int mtrl_switch_thumb_pressed_unchecked = 2131165372;
+			public const int mtrl_switch_thumb_checked_unchecked = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int mtrl_switch_thumb_unchecked = 2131165373;
+			public const int mtrl_switch_thumb_pressed = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int mtrl_switch_thumb_unchecked_checked = 2131165374;
+			public const int mtrl_switch_thumb_pressed_checked = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int mtrl_switch_thumb_unchecked_pressed = 2131165375;
+			public const int mtrl_switch_thumb_pressed_unchecked = 2131165375;
 			
 			// aapt resource value: 0x7F0700C0
-			public const int mtrl_switch_track = 2131165376;
+			public const int mtrl_switch_thumb_unchecked = 2131165376;
 			
 			// aapt resource value: 0x7F0700C1
-			public const int mtrl_switch_track_decoration = 2131165377;
+			public const int mtrl_switch_thumb_unchecked_checked = 2131165377;
 			
 			// aapt resource value: 0x7F0700C2
-			public const int mtrl_tabs_default_indicator = 2131165378;
+			public const int mtrl_switch_thumb_unchecked_pressed = 2131165378;
 			
 			// aapt resource value: 0x7F0700C3
-			public const int navigation_empty_icon = 2131165379;
+			public const int mtrl_switch_track = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int notification_action_background = 2131165380;
+			public const int mtrl_switch_track_decoration = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int notification_bg = 2131165381;
+			public const int mtrl_tabs_default_indicator = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int notification_bg_low = 2131165382;
+			public const int navigation_empty_icon = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int notification_bg_low_normal = 2131165383;
+			public const int notification_action_background = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int notification_bg_low_pressed = 2131165384;
+			public const int notification_bg = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int notification_bg_normal = 2131165385;
+			public const int notification_bg_low = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int notification_bg_normal_pressed = 2131165386;
+			public const int notification_bg_low_normal = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int notification_icon_background = 2131165387;
+			public const int notification_bg_low_pressed = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int notification_template_icon_bg = 2131165388;
+			public const int notification_bg_normal = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int notification_template_icon_low_bg = 2131165389;
+			public const int notification_bg_normal_pressed = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int notification_tile_bg = 2131165390;
+			public const int notification_icon_background = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int notify_panel_notification_icon_bg = 2131165391;
+			public const int notification_template_icon_bg = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int splash = 2131165392;
+			public const int notification_template_icon_low_bg = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int test_level_drawable = 2131165393;
+			public const int notification_tile_bg = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int tooltip_frame_dark = 2131165394;
+			public const int notify_panel_notification_icon_bg = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int tooltip_frame_light = 2131165395;
+			public const int splash = 2131165395;
+			
+			// aapt resource value: 0x7F0700D4
+			public const int test_level_drawable = 2131165396;
+			
+			// aapt resource value: 0x7F0700D5
+			public const int tooltip_frame_dark = 2131165397;
+			
+			// aapt resource value: 0x7F0700D6
+			public const int tooltip_frame_light = 2131165398;
 			
 			static Drawable()
 			{
