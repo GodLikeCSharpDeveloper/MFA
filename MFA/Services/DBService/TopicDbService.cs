@@ -30,7 +30,7 @@ namespace MFA.Services.DBService
         {
             try
             {
-                using var realm = RealmService.GetRealm();
+                var realm = RealmService.GetRealm();
                 await realm.WriteAsync(() =>
                 {
                     realm.Add<Topic>(topic);
@@ -39,7 +39,7 @@ namespace MFA.Services.DBService
             }
             catch (Exception ex)
             {
-                Shell.Current.DisplayAlert("Error", ex.Message, "OK");
+                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
                 return false;
             }
         }

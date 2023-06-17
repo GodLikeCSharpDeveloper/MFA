@@ -16,13 +16,13 @@ public static class MauiProgram
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
-		builder
-			.UseMauiApp<App>()
-			.ConfigureFonts(fonts =>
-			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+        builder
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
 
 #if DEBUG
 		builder.Logging.AddDebug();
@@ -40,6 +40,8 @@ public static class MauiProgram
         builder.Services.AddTransient<IUserValidator, UserValidator>();
         builder.Services.AddTransient<LoginPageViewModel>();
 		builder.Services.AddSingleton<UserRepository>();
+        builder.Services.AddSingleton<TopicAddOrRemove>();
+        builder.Services.AddTransient<TopicAddOrRemoveViewModel>();
 		builder.Services.AddScoped<ITopicDBService, TopicDbService>();
         builder.Services.AddScoped<IRegister, RealmRegisterRepos>();
         builder.Services.AddSingleton(new MongoClient("mongodb://localhost:27017"));

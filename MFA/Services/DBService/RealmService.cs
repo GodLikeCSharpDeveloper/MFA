@@ -51,14 +51,16 @@ namespace MFA.Services.DBService
                 {
                     
                     var (query, queryName) = GetQueryForSubscriptionType(realm, SubscriptionType.Mine);
-                   
-                    realm.Subscriptions.Add(realm.All<Topic>(), new SubscriptionOptions { Name = "all" });
-                    realm.Subscriptions.Add(realm.All<MFAUsers>(), new SubscriptionOptions { Name = "all" });
+                    realm.Subscriptions.Add(realm.All<Topic>(), new SubscriptionOptions());
+                    realm.Subscriptions.Add(realm.All<MFAUsers>(),  new SubscriptionOptions( ));
+                    
+                    
                 }
             };
 
             return Realm.GetInstance(config);
         }
+        
 
         public static async Task SetSubscription(Realm realm, SubscriptionType subType)
         {

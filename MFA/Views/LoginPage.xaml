@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:view="clr-namespace:MFA.ViewModels"
              x:Class="MFA.Views.LoginPage"
-             Title="LoginPage">
+             Title="LoginPage"
+             Shell.NavBarIsVisible="False">
+    
     <VerticalStackLayout VerticalOptions="Center" Margin="0,0,0,40">
         <Grid Padding="10">
             <VerticalStackLayout x:DataType="view:LoginPageViewModel">
@@ -22,7 +24,7 @@
                     <Button Text="Register" WidthRequest="90" Command="{Binding Source={RelativeSource AncestorType={x:Type view:LoginPageViewModel}}, 
                         Path=MoveToRegisterCommand}" Margin="5" Grid.Column="0" Grid.Row="1" ></Button>
                     <Button Text="Google" WidthRequest="90" Margin="5" Grid.Column="1" Grid.Row="0"></Button>
-                    <Button Text="Smth else" WidthRequest="90" Margin="5" Grid.Column="2" Grid.Row="0" Clicked="Button_Clicked"></Button>
+                    <Button Text="Smth else" WidthRequest="90" Margin="5" Grid.Column="2" Grid.Row="0"></Button>
                 </Grid>
             </VerticalStackLayout>
         </Grid>

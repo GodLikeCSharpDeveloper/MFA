@@ -41,7 +41,8 @@ namespace MFA.ViewModels
             {
                 if (!validator.Validator(user)) return;
                 await repository.RegisterUser(user);
-                await Shell.Current.GoToAsync("MainPage", true);
+                await Shell.Current.GoToAsync("..", true);
+                await Shell.Current.GoToAsync("..", true);
             }
             catch (Exception ex)
             {

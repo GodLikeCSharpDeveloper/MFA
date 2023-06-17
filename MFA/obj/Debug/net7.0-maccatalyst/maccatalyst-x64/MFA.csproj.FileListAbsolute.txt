@@ -321,3 +321,5 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.IdentityModel.Tokens.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\atlasConfig.json
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8add24.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\logout.png

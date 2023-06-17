@@ -7,9 +7,9 @@
     Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
-        Title="Login"
-        ContentTemplate="{DataTemplate local:LoginPage}"
-        Route="LoginPage" 
+        Title="Main"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" 
         FlyoutItemIsVisible="True"
         Shell.NavBarIsVisible="False"/>
     <FlyoutItem Title="One">
@@ -38,14 +38,6 @@
     </FlyoutItem>
     <MenuItem Text="Help"
               IconImageSource="help.png"/>
-    <Shell.TitleView>
-        <HorizontalStackLayout>
-            <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,8" Padding="0, 0, 0, 0">
-                <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" ></ImageButton>
-                <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="1"></ImageButton>
-                <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="2" Grid.ColumnSpan="4"></ImageButton>
-            </Grid>
-        </HorizontalStackLayout>
-    </Shell.TitleView>
+   
    
 </Shell>

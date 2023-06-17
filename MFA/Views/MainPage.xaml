@@ -4,7 +4,9 @@
              x:Class="MFA.Views.MainPage"
              xmlns:view="clr-namespace:MFA.ViewModels"
              xmlns:model="clr-namespace:MFA.Models"
-             x:DataType="view:MainPageViewModel">
+             x:DataType="view:MainPageViewModel"
+             Shell.NavBarIsVisible="True"
+             >
 
 
     <VerticalStackLayout>
@@ -34,7 +36,15 @@
                 </CollectionView>
             </Grid>
         </ScrollView>
-        
-    </VerticalStackLayout>
 
+    </VerticalStackLayout>
+    <Shell.TitleView>
+
+        <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,*" Padding="0, 0, 0, 0">
+            <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" ></ImageButton>
+            <ImageButton  Source="icons8add24.png" WidthRequest="30" HeightRequest="30" Grid.Column="1" Clicked="GoToTopicAdd"></ImageButton>
+            <ImageButton Margin="0,0,5,0" Source="logout.png" WidthRequest="30" HeightRequest="30" Grid.Column="2" HorizontalOptions="End" Clicked="LogOut"></ImageButton>
+        </Grid>
+
+    </Shell.TitleView>
 </ContentPage>

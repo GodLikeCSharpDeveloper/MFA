@@ -37,7 +37,7 @@ namespace MFA.ViewModels
             try
             {
                 await RealmLoginRepository.LoginAsync(user.Email, user.Password);
-                await Shell.Current.GoToAsync("MainPage", true);
+                await Shell.Current.GoToAsync("..",true);
             }
             catch (Exception ex)
             {
@@ -47,6 +47,11 @@ namespace MFA.ViewModels
         }
         [RelayCommand]
         public async Task MoveToRegister()
+        {
+            await Shell.Current.GoToAsync("RegisterPage", true);
+        }
+        [RelayCommand]
+        public async Task AskAndExit()
         {
             await Shell.Current.GoToAsync("RegisterPage", true);
         }

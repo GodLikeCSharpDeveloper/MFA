@@ -7,4 +7,5 @@ public partial class RegisterPage : ContentPage
 		BindingContext = viewModel;
 		InitializeComponent();
 	}
+    
 }

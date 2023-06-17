@@ -57,3 +57,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MFA.Views.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/Users/KAYAYASHA/Desktop/New folder/MFA/MFA/Views/TopicAddOrRemove.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MFA.Views.TopicAddOrRemove.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TopicAddOrRemove.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TopicAddOrRemove.xaml
