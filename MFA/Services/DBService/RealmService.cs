@@ -49,8 +49,11 @@ namespace MFA.Services.DBService
             {
                 PopulateInitialSubscriptions = (realm) =>
                 {
+                    
                     var (query, queryName) = GetQueryForSubscriptionType(realm, SubscriptionType.Mine);
-                    realm.Subscriptions.Add(query, new SubscriptionOptions { Name = queryName });
+                   
+                    realm.Subscriptions.Add(realm.All<Topic>(), new SubscriptionOptions { Name = "all" });
+                    realm.Subscriptions.Add(realm.All<MFAUsers>(), new SubscriptionOptions { Name = "all" });
                 }
             };
 
@@ -99,7 +102,7 @@ namespace MFA.Services.DBService
 
             if (subType == SubscriptionType.Mine)
             {
-                query = realm.All<MFAUsers>().Where(i => i.OwnerId == CurrentUser.Id);
+                query = realm.All<MFAUsers>();
                 queryName = "mine";
             }
             else if (subType == SubscriptionType.All)

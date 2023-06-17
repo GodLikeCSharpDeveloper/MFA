@@ -23,15 +23,18 @@ namespace MFA.Services.DBService
                 Shell.Current.DisplayAlert("Error", ex.Message, "OK");
                 return new List<Topic>();
             }
-            
+
         }
 
-        public bool AddNewTopic(Topic topic)
+        public async Task<bool> AddNewTopic(Topic topic)
         {
             try
             {
                 using var realm = RealmService.GetRealm();
-                realm.Add<Topic>(topic);
+                await realm.WriteAsync(() =>
+                {
+                    realm.Add<Topic>(topic);
+                });
                 return true;
             }
             catch (Exception ex)

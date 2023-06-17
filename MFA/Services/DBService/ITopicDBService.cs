@@ -9,6 +9,10 @@ namespace MFA.Services.DBService
     public interface ITopicDBService
     {
         public List<Topic> GetAllTopics();
-        public bool AddNewTopic(Topic topic);
+
+        public async Task<bool> AddNewTopic(Topic topic)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
