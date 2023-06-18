@@ -10,6 +10,13 @@ namespace MFA.Services.DBService
 {
     public class TopicDbService : ITopicDBService
     {
+        List<Topic> _topics;
+        public TopicDbService()
+        {
+            
+            
+        }
+
         public List<Topic> GetAllTopics()
         {
             try
@@ -33,8 +40,20 @@ namespace MFA.Services.DBService
                 var realm = RealmService.GetRealm();
                 await realm.WriteAsync(() =>
                 {
-                    realm.Add<Topic>(topic);
-                });
+                    for (var i=0; i<100000; i++)
+                    {
+                        var faker = new Faker<Topic>().RuleFor(p => p.OwnerId, f => f.IndexFaker.ToString())
+                            .RuleFor(p => p.TopicTitle, f => f.Company.CompanyName())
+                            .RuleFor(p => p.TopicContent, f => f.Lorem.Paragraphs(5, 10, "/n"))
+                            .RuleFor(p => p.TopicReleaseDate, f => f.Date.FutureDateOnly().ToShortDateString())
+                            .RuleFor(p => p.TopicUpdateDate, f => f.Date.FutureDateOnly().ToShortDateString());
+                        _topics = faker.Generate(1).ToList();
+                         realm.Add(_topics);
+                         Debug.WriteLine($"current is {i}");
+                    }
+                    
+                
+            });
                 return true;
             }
             catch (Exception ex)

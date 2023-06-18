@@ -30,4 +30,9 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync("TopicAddOrRemove", true);
     }
+
+    private async void GoToUserInfo(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("UserInfoPage", true);
+    }
 }

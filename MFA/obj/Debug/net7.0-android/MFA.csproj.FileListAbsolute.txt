@@ -1093,6 +1093,8 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\a
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\MFA.csproj.Fody.CopyLocal.cache
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\MFA.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8add24.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\logout.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -1106,5 +1108,3 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\a
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8add24.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\logout.png

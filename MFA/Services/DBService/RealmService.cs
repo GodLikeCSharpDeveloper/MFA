@@ -49,12 +49,9 @@ namespace MFA.Services.DBService
             {
                 PopulateInitialSubscriptions = (realm) =>
                 {
-                    
-                    var (query, queryName) = GetQueryForSubscriptionType(realm, SubscriptionType.Mine);
                     realm.Subscriptions.Add(realm.All<Topic>(), new SubscriptionOptions());
-                    realm.Subscriptions.Add(realm.All<MFAUsers>(),  new SubscriptionOptions( ));
-                    
-                    
+                    realm.Subscriptions.Add(realm.All<ImageData>(), new SubscriptionOptions());
+                    realm.Subscriptions.Add(realm.All<MFAUsers>(),  new SubscriptionOptions());
                 }
             };
 

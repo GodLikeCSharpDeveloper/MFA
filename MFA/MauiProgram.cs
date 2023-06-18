@@ -40,6 +40,8 @@ public static class MauiProgram
         builder.Services.AddTransient<IUserValidator, UserValidator>();
         builder.Services.AddTransient<LoginPageViewModel>();
 		builder.Services.AddSingleton<UserRepository>();
+        builder.Services.AddSingleton<UserInfoPage>();
+        builder.Services.AddScoped<UserInfoViewModel>();
         builder.Services.AddSingleton<TopicAddOrRemove>();
         builder.Services.AddTransient<TopicAddOrRemoveViewModel>();
 		builder.Services.AddScoped<ITopicDBService, TopicDbService>();
