@@ -1,4 +1,5 @@
 using MFA.Services.DBService;
+using MFA.Services.LoginServices;
 
 namespace MFA.Views;
 
@@ -16,13 +17,12 @@ public partial class MainPage : ContentPage
         await RealmService.Init();
         if (RealmService.app.CurrentUser==null)
             await Shell.Current.GoToAsync(nameof(LoginPage), true);
-
         IsAuth = !IsAuth;
     }
 
     private async void LogOut(object sender, EventArgs e)
     {
-       await RealmService.app.CurrentUser.LogOutAsync();
+       await UserLogOut.LogoutAsync();
        await Shell.Current.GoToAsync(nameof(LoginPage), true);
     }
 

@@ -19,6 +19,8 @@ namespace MFA.Models
         public string Password { get; set; }
         [MapTo("address")]
         public string Address { get; set; }
-        
+        [MapTo("Avatar")]
+        public ImageData? Image { get; set; }
+
     }
 }
