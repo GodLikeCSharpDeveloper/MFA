@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:view="clr-namespace:MFA.ViewModels"
+             xmlns:models="clr-namespace:MFA.Models"
              x:Class="MFA.Views.LoginPage"
              Title="LoginPage"
              Shell.NavBarIsVisible="False">
@@ -12,11 +13,11 @@
                 <Label Text="Enter your login or email" FontFamily="Serif"></Label>
                 <Entry x:Name="currentCost"
                        Placeholder="Enter an email"
-                       Text="{Binding Email}"/>
+                       Text="{Binding CurrentUserInfo.Email}"/>
                 <Label Text="Enter a password" FontFamily="Serif"></Label>
                 <Entry x:Name="password"
                        Placeholder="Enter a password"
-                       Text="{Binding Password}"/>
+                       Text="{Binding CurrentUserInfo.Password}"/>
                 
                 <Grid ColumnDefinitions="auto,auto,auto, auto" RowDefinitions="auto,auto,auto">
                     <Button Text="Login in" WidthRequest="90" Command="{Binding Source={RelativeSource AncestorType={x:Type view:LoginPageViewModel}}, 

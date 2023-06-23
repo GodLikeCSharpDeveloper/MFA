@@ -7,19 +7,19 @@
                  Shell.NavBarIsVisible="False">
     <VerticalStackLayout VerticalOptions="Center" Margin="0,0,0,40">
         <Grid Padding="10">
-            <VerticalStackLayout x:DataType="view:LoginPageViewModel">
+            <VerticalStackLayout x:DataType="view:RegisterPageViewModel">
                 <Label Text="Enter your login or email" FontFamily="Serif"></Label>
                 <Entry Placeholder="Enter an email"
-                       Text="{Binding Email}"/>
+                       Text="{Binding CurrentUserForRegister.Email}"/>
                 <Label Text="Enter a password" FontFamily="Serif"></Label>
                 <Entry Placeholder="Enter a password"
-                           Text="{Binding Password}"/>
+                           Text="{Binding CurrentUserForRegister.Password}"/>
                 <Label Text="Enter your name" FontFamily="Serif"></Label>
                 <Entry Placeholder="Enter your name"
-                       Text="{Binding Name}"/>
+                       Text="{Binding CurrentUserForRegister.Name}"/>
                 <Label Text="Enter your address" FontFamily="Serif"></Label>
                 <Entry Placeholder="Enter your address"
-                       Text="{Binding Address}"/>
+                       Text="{Binding CurrentUserForRegister.Address}"/>
                 <HorizontalStackLayout >
                     <Button Text="Register" WidthRequest="90" Command="{Binding Source={RelativeSource AncestorType={x:Type view:RegisterPageViewModel}}, 
                         Path=RegisterHandlerCommand}" Margin="0,5,5,5"></Button>

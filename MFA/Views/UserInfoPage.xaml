@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MFA.Views.UserInfoPage"
+             Title="UserInfoPage"
+             xmlns:view="clr-namespace:MFA.ViewModels"
+             x:DataType="view:UserInfoViewModel">
+    <ScrollView>
+        <Grid RowDefinitions="auto,*" ColumnDefinitions="*,*">
+            <Border Margin="5,5,5,5" HeightRequest="150" WidthRequest="150" Grid.Column="0" Grid.Row="0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="250" ></RoundRectangle>
+                </Border.StrokeShape>
+                <ImageButton Source="{Binding AvatarData}" x:Name="AvatarImage" Command="{Binding ChangeAvatarCommand}">
+                </ImageButton>
+            </Border>
+            <Grid Grid.Column="1" Grid.Row="0" RowDefinitions="auto,*" ColumnDefinitions="*,*">
+                <Label Text="UserName" Grid.Row="0" Grid.Column="0"></Label>
+                <Label Text="Email" Grid.Row="1" Grid.Column="0"></Label>
+                <Button ></Button>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

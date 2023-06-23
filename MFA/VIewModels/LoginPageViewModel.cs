@@ -1,59 +1,47 @@
-﻿using MFA.Services.DBService;
+﻿using Bogus.DataSets;
+using MFA.Services.DBService;
 using MFA.Services.LoginServices;
+using MFA.Services.NavigationService;
 using MFA.Services.RegisterServices;
 using MFA.Services.ValidateService;
+using MFA.Views;
 
 namespace MFA.ViewModels
 {
     public partial class LoginPageViewModel : BaseViewModel
     {
         IUserValidator validator;
+        ILoginManager loginManager;
+        INavigationRepository navigationRepository;
 
-        public LoginPageViewModel(IUserValidator validator)
+        public LoginPageViewModel(IUserValidator validator, ILoginManager loginManager, INavigationRepository navigationRepository)
         {
             this.validator = validator;
-            RealmService.Init();
+            this.loginManager = loginManager;
+            this.navigationRepository = navigationRepository;
         }
-        [ObservableProperty]
-        public string email;
-        [ObservableProperty]
-        public string password;
-        [ObservableProperty]
-        public string name;
-        [ObservableProperty]
-        public string address;
+
+        [ObservableProperty] 
+        public User currentUserInfo = new();
+        
 
         [RelayCommand]
         public async Task LoginHandler()
         {
-            var user = new User()
-            {
-                Name = Name,
-                Email = Email,
-                Password = Password,
-                Address = Address
-            };
-            if (!validator.Validator(user.Email, user.Password)) return;
-            try
-            {
-                await RealmLoginRepository.LoginAsync(user.Email, user.Password);
-                await Shell.Current.GoToAsync("..",true);
-            }
-            catch (Exception ex)
-            {
-                await Shell.Current.DisplayAlert("Error", ex.ToString(), "OK");
-                await Shell.Current.GoToAsync("..", true);
-            }
+            await RealmService.Init();
+            await loginManager.LoggingUser(CurrentUserInfo);
+
         }
         [RelayCommand]
         public async Task MoveToRegister()
         {
-            await Shell.Current.GoToAsync("RegisterPage", true);
+            await navigationRepository.NavigateTo(nameof(RegisterPage));
         }
         [RelayCommand]
         public async Task AskAndExit()
         {
-            await Shell.Current.GoToAsync("RegisterPage", true);
+            //TODO FINISH IT
+            await navigationRepository.NavigateTo(nameof(RegisterPage));
         }
     }
 }
