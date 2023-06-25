@@ -20,7 +20,7 @@ namespace MFA.Models
         [MapTo("address")]
         public string Address { get; set; }
         [MapTo("Avatar")]
-        public ImageData? Image { get; set; }
+        public ImageData? UsersImage { get; set; }
 
     }
 }

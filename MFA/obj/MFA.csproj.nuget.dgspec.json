@@ -118,6 +118,10 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.31.0, )"
@@ -268,6 +272,10 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.31.0, )"
@@ -362,6 +370,10 @@
             "Realm": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -475,6 +487,10 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.31.0, )"
@@ -494,6 +510,10 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[7.0.7, 7.0.7]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
               "version": "[7.0.7, 7.0.7]"
             },
             {
@@ -543,6 +563,9 @@
           "#import": []
         },
         "iossimulator-x64": {
+          "#import": []
+        },
+        "maccatalyst-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

@@ -121,15 +121,10 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\mauisplas
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\mauifont.stamp
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\f\OpenSans-Semibold.ttf
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splash.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\splash.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\splash.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\splash.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\splash.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
@@ -891,8 +886,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\s
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc648afdc667cfb0dccb\SwitchRenderer.java
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc648afdc667cfb0dccb\TabbedPageRenderer.java
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc648afdc667cfb0dccb\ViewRenderer_2.java
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc649079e38e7be6715c\MainActivity.java
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc649079e38e7be6715c\MainApplication.java
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc6493855b22b6fa0721\TextToSpeechInternalImplementation.java
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc649ff77a65592e7d55\TabbedPageManager_Listeners.java
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc649ff77a65592e7d55\TabbedPageManager_TempView.java
@@ -1095,6 +1088,12 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\MFA.cspro
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\MFA.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8add24.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\logout.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\Microsoft.Win32.SystemEvents.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Drawing.Common.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-android\Resources\Images\dotnet_bot.svg
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\resizetizer\f\CormorantGaramond-Regular.ttf
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc64fb61c2dc828eb952\MainActivity.java
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\src\crc64fb61c2dc828eb952\MainApplication.java
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll

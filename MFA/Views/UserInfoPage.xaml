@@ -5,6 +5,11 @@
              Title="UserInfoPage"
              xmlns:view="clr-namespace:MFA.ViewModels"
              x:DataType="view:UserInfoViewModel">
+    <Shell.TitleView>
+        <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,*" Padding="0, 0, 0, 0">
+            <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" Command="{Binding GoToUserEditCommand}"></ImageButton>
+        </Grid>
+    </Shell.TitleView>
     <ScrollView>
         <Grid RowDefinitions="auto,*" ColumnDefinitions="*,*">
             <Border Margin="5,5,5,5" HeightRequest="150" WidthRequest="150" Grid.Column="0" Grid.Row="0">
@@ -14,10 +19,11 @@
                 <ImageButton Source="{Binding AvatarData}" x:Name="AvatarImage" Command="{Binding ChangeAvatarCommand}">
                 </ImageButton>
             </Border>
-            <Grid Grid.Column="1" Grid.Row="0" RowDefinitions="auto,*" ColumnDefinitions="*,*">
-                <Label Text="UserName" Grid.Row="0" Grid.Column="0"></Label>
-                <Label Text="Email" Grid.Row="1" Grid.Column="0"></Label>
-                <Button ></Button>
+            <Grid Grid.Column="1" Grid.Row="0" RowDefinitions="auto,auto,auto,auto" ColumnDefinitions="*">
+                <Label FontFamily="CormorantRegular" FontSize="30" Margin="5,5,5,5" Text="{Binding CurrentUser.Name}" Grid.Row="0" Grid.Column="0"></Label>
+                <Label FontFamily="CormorantRegular" FontSize="20" Margin="5,0,5,5" Text="{Binding CurrentUser.Email}" Grid.Row="1" Grid.Column="0"></Label>
+                <Label FontFamily="CormorantRegular" FontSize="20" Margin="5,10,5,5" Text="{Binding CurrentUser.Password}" Grid.Row="2" Grid.Column="0"></Label>
+                <Label FontFamily="CormorantRegular" FontSize="20" Margin="5,0,5,5" Text="{Binding CurrentUser.Address}" Grid.Row="3" Grid.Column="0"></Label>
             </Grid>
         </Grid>
     </ScrollView>

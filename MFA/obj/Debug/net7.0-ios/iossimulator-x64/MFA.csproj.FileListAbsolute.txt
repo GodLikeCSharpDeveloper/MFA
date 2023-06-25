@@ -305,9 +305,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash@2x.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash@3x.png
@@ -343,3 +340,7 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\atlasConfig.json
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8add24.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\logout.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Resources\Images\dotnet_bot.svg
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Win32.SystemEvents.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\System.Drawing.Common.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\f\CormorantGaramond-Regular.ttf

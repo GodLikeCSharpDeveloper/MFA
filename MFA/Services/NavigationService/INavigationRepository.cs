@@ -12,7 +12,14 @@ namespace MFA.Services.NavigationService
         {
             throw new NotImplementedException();
         }
-
+        public async Task NavigateTo(string page, bool animate)
+        {
+            throw new NotImplementedException();
+        }
+        public async Task WaitingNavigateTo(string page, bool animate)
+        {
+            throw new NotImplementedException();
+        }
         public async Task NavigateTo(string page, Dictionary<string, object> data)
         {
             throw new NotImplementedException();

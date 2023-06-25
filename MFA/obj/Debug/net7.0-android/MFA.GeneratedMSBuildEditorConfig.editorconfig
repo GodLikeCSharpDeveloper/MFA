@@ -68,6 +68,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MFA.Views.TopicAddOrRemove
 build_metadata.AdditionalFiles.TargetPath = Views\TopicAddOrRemove.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\TopicAddOrRemove.xaml
 
+[C:/Users/KAYAYASHA/Desktop/New folder/MFA/MFA/Views/UserEditPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MFA.Views.UserEditPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UserEditPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UserEditPage.xaml
+
 [C:/Users/KAYAYASHA/Desktop/New folder/MFA/MFA/Views/UserInfoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MFA.Views.UserInfoPage.xaml

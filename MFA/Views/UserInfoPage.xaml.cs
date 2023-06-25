@@ -1,19 +1,27 @@
+using MFA.Services.NavigationService;
+
 namespace MFA.Views;
 
 public partial class UserInfoPage : ContentPage
 {
-	public UserInfoPage(UserInfoViewModel viewModel)
-	{
-		BindingContext = viewModel;
-		InitializeComponent();
-    }
-    protected override async void OnAppearing()
+    UserInfoViewModel viewModel;
+    INavigationRepository navigationRepository;
+    public UserInfoPage(UserInfoViewModel viewModel, INavigationRepository navigationRepository)
     {
-        AvatarImage.Source = ImageSource.FromStream(() =>
+        BindingContext = viewModel;
+        InitializeComponent();
+        this.viewModel = viewModel;
+        this.navigationRepository = navigationRepository;
+    }
+
+    bool firstRun = true;
+    protected override void OnAppearing()
+    {
+        if (UserInfoViewModel.User?.UsersImage != null && firstRun)
         {
-            if (UserInfoViewModel.user?.Image != null)
-                return new MemoryStream(UserInfoViewModel.user.Image.Data);
-            return null;
-        });
+            firstRun = false;
+            AvatarImage.Source = ImageSource.FromStream(() => new MemoryStream(UserInfoViewModel.User.UsersImage.Data));
+        }
+        viewModel.CurrentUser = UserInfoViewModel.User;
     }
 }

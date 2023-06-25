@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pavsWOqTWDu/dox6+9tbLNTO07kOHWZG5JhVjlLK1o3t+TLYZ8yjhRTGrsig31bKHUGTY54tSADG23KOG8Q9AQ==",
+  "dgSpecHash": "KquzEq9hmBdiCXxhBCYSgIdtkzkwXP4tmElSC6D8mhKNbfyG+Zg1ZRCGxTmKBgS8bz9LYXQgqtM4nc7JJJvhiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\microsoft.web.webview2.1.0.864.35.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\mongodb.bson\\2.19.2\\mongodb.bson.2.19.2.nupkg.sha512",
@@ -82,6 +83,7 @@
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.31.0\\system.identitymodel.tokens.jwt.6.31.0.nupkg.sha512",
@@ -197,6 +199,7 @@
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\7.0.7\\microsoft.netcore.app.crossgen2.win-x64.7.0.7.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.7\\microsoft.aspnetcore.app.runtime.win-x64.7.0.7.nupkg.sha512",
     "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.7.nupkg.sha512",

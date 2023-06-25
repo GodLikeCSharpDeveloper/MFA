@@ -1,27 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using MFA.Services.DBService;
-using MongoDB.Driver.Linq;
-using Realms;
-using static MFA.ViewModels.MainPageViewModel;
+﻿using MFA.Services.DBService;
+using MFA.Services.NavigationService;
+using MFA.Services.UserService;
+using MFA.Utility.ImageManager;
+using MFA.Views;
 
 
 namespace MFA.ViewModels
 {
+
     public partial class UserInfoViewModel : BaseViewModel
     {
-        private static User _user;
-
-        public static MFA.Models.User user
+        IImageManager imageManager;
+        IUserDbService userDbService;
+        INavigationRepository navigationRepository;
+        public UserInfoViewModel(IImageManager imageManager, IUserDbService userDbService, INavigationRepository navigationRepository)
+        {
+            this.imageManager = imageManager;
+            this.userDbService = userDbService;
+            this.navigationRepository = navigationRepository;
+        }
+        public static User _user;
+        public static User User
         {
             get
             {
                 var realm = RealmService.GetRealm();
-                return realm.All<User>().FirstOrDefault(x=>x.Email==RealmService.CurrentUser.Profile.Email);
+                return realm.All<User>().FirstOrDefault(x => x.Email == RealmService.CurrentUser.Profile.Email);
             }
             set
             {
@@ -29,75 +33,33 @@ namespace MFA.ViewModels
             }
         }
 
-
-
-        
-
         [ObservableProperty]
-        public ImageSource avatarData = ImageSource.FromStream(() =>
-        {
-            if(user?.Image!=null)
-            return new MemoryStream(user.Image.Data);
-            return null;
-        });
+        public ImageSource avatarData;
+        [ObservableProperty]
+        public User currentUser;
 
-        [RelayCommand]
-        public async void KillAvatar()
-        {
-            AvatarData = null;
-        }
 
         [RelayCommand]
         public async void ChangeAvatar()
         {
-
-            var upload = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
+            var image = await imageManager.ChangeAvatar();
+            await userDbService.UpdateUser(User, new User
             {
-                { DevicePlatform.iOS, new[] { "public.image" } },
-                { DevicePlatform.Android, new[] { "image/*"} }
+                UsersImage = image
             });
-            var option = new PickOptions
-            {
-                PickerTitle = "Select a new avatar",
-                FileTypes = upload,
-            };
-            try
-            {
-                var result = await FilePicker.PickAsync(option);
-                if ((result.FileName.EndsWith("jpg", StringComparison.OrdinalIgnoreCase) ||
-                     result.FileName.EndsWith("svg", StringComparison.OrdinalIgnoreCase)))
-                {
-                    var stream = await result.OpenReadAsync();
-                    byte[] imageData;
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        await stream.CopyToAsync(memoryStream);
-                        imageData = memoryStream.ToArray();
-                    }
-
-                    var image = new ImageData
-                    {
-                        Name = result.FileName,
-                        ContentType = result.ContentType,
-                        Data = imageData
-                    };
-
-                    ImageSource imageSource = ImageSource.FromStream(() => new MemoryStream(imageData));
-                    AvatarData = imageSource;
-                    using var realm = RealmService.GetRealm();
-                    await realm.WriteAsync(() =>
-                    {
-                        user.Image = image;
-                    });
-                    
-                }
-            }
-
-            catch (Exception ex)
-            {
-
-            }
+            await navigationRepository.NavigateTo("..", false);
+            await navigationRepository.WaitingNavigateTo(nameof(UserInfoPage), false);
         }
-
+        [RelayCommand]
+        public async void GoToUserEdit()
+        {
+            await navigationRepository.WaitingNavigateTo("UserEditPage",false);
+        }
+        [RelayCommand]
+        public async void GoToTest()
+        {
+            await navigationRepository.NavigateTo("TopicAddOrRemove");
+        }
     }
 }
+

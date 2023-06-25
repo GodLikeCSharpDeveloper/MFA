@@ -629,11 +629,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\burgerite2m.scale-100.jpg
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Realm.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Remotion.Linq.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\realm-wrappers.dll
@@ -647,3 +642,5 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.723.27404.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8add24.scale-100.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logout.scale-100.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Resources\Images\dotnet_bot.svg
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\CormorantGaramond-Regular.ttf

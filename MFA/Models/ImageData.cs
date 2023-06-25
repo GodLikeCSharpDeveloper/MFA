@@ -11,6 +11,6 @@ namespace MFA.Models
         public string Name { get; set; }
         public string ContentType { get; set; }
         public User user { get; set; }
-        public byte[]? Data { get; set; }
+        public byte[]? Data { get; set; } 
     }
 }

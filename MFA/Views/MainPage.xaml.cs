@@ -6,13 +6,15 @@ namespace MFA.Views;
 
 public partial class MainPage : ContentPage
 {
-    private INavigationRepository navigationRepository;
+    INavigationRepository navigationRepository;
+    IUserLogOut userLogOut;
     bool IsAuth;
-    public MainPage(MainPageViewModel viewModel, INavigationRepository navigationRepository)
+    public MainPage(MainPageViewModel viewModel, INavigationRepository navigationRepository, IUserLogOut userLogOut)
     {
         InitializeComponent();
         BindingContext = viewModel;
         this.navigationRepository = navigationRepository;
+        this.userLogOut = userLogOut;
         
     }
     protected override async void OnAppearing()
@@ -25,7 +27,7 @@ public partial class MainPage : ContentPage
 
     private async void LogOut(object sender, EventArgs e)
     {
-       await UserLogOut.LogoutAsync();
+       await userLogOut.LogoutAsync();
        await navigationRepository.NavigateTo(nameof(LoginPage));
     }
 

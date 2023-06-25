@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MFA.Views;
+using MFA.Utility.ImageManager;
+using MFA.Services.NotificationService;
 
 namespace MFA.ViewModels
 {
@@ -15,25 +17,33 @@ namespace MFA.ViewModels
     {
         IRegisterManager registerManager;
         INavigationRepository navigationRepository;
-        public RegisterPageViewModel(IRegisterManager registerManager, INavigationRepository navigationRepository)
+        INotificationService notificationService;
+
+        public RegisterPageViewModel(IRegisterManager registerManager, INavigationRepository navigationRepository, INotificationService notificationService)
         {
             this.registerManager = registerManager;
             this.navigationRepository = navigationRepository;
+            this.notificationService = notificationService;
         }
 
-        [ObservableProperty] 
-        public User currentUserForRegister = new();
+        [ObservableProperty]
+        public User currentUserForRegister = new User()
+        {
+
+        };
+
 
         [RelayCommand]
         public async Task RegisterHandler()
         {
             try
             {
-               await registerManager.RegisterUserAsync(CurrentUserForRegister);
+                CurrentUserForRegister.UsersImage = new ImageData { Data = ImageManager.ReadTextFile().Result };
+                await registerManager.RegisterUserAsync(CurrentUserForRegister);
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error", ex.ToString(), "OK");
+                await notificationService.Notify(ex.ToString());
                 await navigationRepository.NavigateTo(nameof(RegisterPage));
             }
         }

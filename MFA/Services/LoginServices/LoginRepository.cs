@@ -1,8 +1,6 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using Amazon.Runtime.Internal.Transform;
 using MFA.Services.DBService;
 using MFA.Services.ValidateService;
 using Microsoft.IdentityModel.Tokens;
