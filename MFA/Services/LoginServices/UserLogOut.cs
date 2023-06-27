@@ -8,22 +8,21 @@ using MFA.Services.DBService;
 namespace MFA.Services.LoginServices
 {
     public class UserLogOut : IUserLogOut
-
     {
-    UserInfoViewModel viewModel;
+        UserInfoViewModel viewModel;
 
-    public UserLogOut(UserInfoViewModel viewModel)
-    {
-        this.viewModel = viewModel;
-    }
+        public UserLogOut(UserInfoViewModel viewModel)
+        {
+            this.viewModel = viewModel;
+        }
 
-    public async Task LogoutAsync()
-    {
-        await RealmService.app.CurrentUser.LogOutAsync();
-        RealmService.MainThreadRealm?.Dispose();
-        UserInfoViewModel.User = null;
-        viewModel.AvatarData = null;
-        RealmService.MainThreadRealm = null;
-    }
+        public async Task LogoutAsync()
+        {
+            await RealmService.app.RemoveUserAsync(RealmService.CurrentUser);
+            RealmService.MainThreadRealm?.Dispose();
+            UserInfoViewModel.User = null;
+            viewModel.AvatarData = null;
+            RealmService.MainThreadRealm = null;
+        }
     }
 }

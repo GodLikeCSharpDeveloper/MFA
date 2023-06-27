@@ -24,7 +24,7 @@ namespace MFA.Services.UserService
         public async Task<User> UpdateUser(User currentUser, User updatedUserInfo)
         {
             using var realm = RealmService.GetRealm();
-            var userForUpdate = realm.All<User>().FirstOrDefault(x => x.OwnerId == currentUser.OwnerId);
+            var userForUpdate = realm.All<User>().FirstOrDefault(x => x._id == currentUser._id);
             await realm.WriteAsync(() =>
             {
                 userForUpdate.UsersImage = updatedUserInfo.UsersImage ?? userForUpdate.UsersImage;
