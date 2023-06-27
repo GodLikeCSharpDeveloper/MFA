@@ -20,18 +20,18 @@ namespace MFA.ViewModels
             this.navigationRepository = navigationRepository;
         }
         public static User _user;
-        public static User User
-        {
-            get
-            {
-                var realm = RealmService.GetRealm();
-                return realm.All<User>().FirstOrDefault(x => x.Email == RealmService.CurrentUser.Profile.Email);
-            }
-            set
-            {
-                _user = value;
-            }
-        }
+        public static User User { get; set; }
+        //{
+        //    get
+        //    {
+        //        var realm = RealmService.GetRealm();
+        //        return realm.All<User>().FirstOrDefault(x => x.Email == RealmService.CurrentUser.Profile.Email);
+        //    }
+        //    set
+        //    {
+        //        _user = value;
+        //    }
+        //}
 
         [ObservableProperty]
         public ImageSource avatarData;
@@ -53,7 +53,7 @@ namespace MFA.ViewModels
         [RelayCommand]
         public async void GoToUserEdit()
         {
-            await navigationRepository.WaitingNavigateTo("UserEditPage",false);
+            await navigationRepository.WaitingNavigateTo("UserEditPage", false);
         }
         [RelayCommand]
         public async void GoToTest()
