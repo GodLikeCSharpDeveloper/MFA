@@ -17,5 +17,15 @@ namespace MFA.Services.UserService
         {
             throw new NotImplementedException();
         }
+
+        public List<User> GetAllUsersAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public User GetUserByEmail(string email)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

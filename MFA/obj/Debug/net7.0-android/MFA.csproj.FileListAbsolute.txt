@@ -2094,6 +2094,14 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\androi
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\typemaps.x86_64.ll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\environment.x86_64.ll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.ll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\typemaps.x86_64.o
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\environment.x86_64.o
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.o
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\jni_remap.x86_64.o
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -2107,11 +2115,3 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\a
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\typemaps.x86_64.ll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\environment.x86_64.ll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.ll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\typemaps.x86_64.o
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\environment.x86_64.o
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.o
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\jni_remap.x86_64.o
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\app_shared_libraries\x86_64\libxamarin-app.so

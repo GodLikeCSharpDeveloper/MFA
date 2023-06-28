@@ -21,10 +21,21 @@ namespace MFA.Services.UserService
             return user;
         }
 
-        public async Task<User> UpdateUser(User currentUser, User updatedUserInfo)
+        public List<User> GetAllUsersAsync()
         {
             using var realm = RealmService.GetRealm();
-            var userForUpdate = realm.All<User>().FirstOrDefault(x => x._id == currentUser._id);
+            return realm.All<User>().ToList();
+        }
+
+        public User GetUserByEmail(string email)
+        {
+            var realm = RealmService.GetRealm();
+            return realm.All<User>().FirstOrDefault(x => x.Email == email);
+        }
+        public async Task<User> UpdateUser(User currentUser, User updatedUserInfo)
+        {
+            var realm = RealmService.GetRealm();
+            var userForUpdate = GetUserByEmail(currentUser.Email);
             await realm.WriteAsync(() =>
             {
                 userForUpdate.UsersImage = updatedUserInfo.UsersImage ?? userForUpdate.UsersImage;
