@@ -9,6 +9,13 @@
     
     <VerticalStackLayout VerticalOptions="Center" Margin="0,0,0,40">
         <Grid Padding="10">
+            <ActivityIndicator x:Name="ActivityIndicator"
+                               IsRunning="{Binding IsBusy}"
+                               Color="OrangeRed"
+                               IsVisible="{Binding IsBusy}"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               ZIndex="1"/>
             <VerticalStackLayout x:DataType="view:LoginPageViewModel">
                 <Label Text="Enter your login or email" FontFamily="Serif"></Label>
                 <Entry x:Name="currentCost"

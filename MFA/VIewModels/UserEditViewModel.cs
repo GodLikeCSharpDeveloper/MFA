@@ -24,7 +24,7 @@ namespace MFA.ViewModels
         [RelayCommand]
         public async Task CurrentUserUpdate()
         {
-            await userDbService.UpdateUser(UserInfoViewModel.User, userForUpdate);
+            await userDbService.UpdateUser(MainPageViewModel.User, userForUpdate);
             await Shell.Current.Navigation.PopAsync();
         }
     }

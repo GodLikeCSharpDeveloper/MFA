@@ -15,5 +15,6 @@ namespace MFA.Models
         public string TopicContent { get; set; }
         public string TopicReleaseDate { get; set; }
         public string TopicUpdateDate { get; set; }
+        public IList<UsersComment> UsersComments { get; }
     }
 }

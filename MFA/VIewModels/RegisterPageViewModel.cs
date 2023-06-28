@@ -33,6 +33,7 @@ namespace MFA.ViewModels
         };
 
 
+
         [RelayCommand]
         public async Task RegisterHandler()
         {

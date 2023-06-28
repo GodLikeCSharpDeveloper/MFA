@@ -2,6 +2,7 @@
 using MFA.Services.DBService;
 using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
+using MFA.Services.NotificationService;
 using MFA.Services.RegisterServices;
 using MFA.Services.ValidateService;
 using MFA.Views;
@@ -10,27 +11,37 @@ namespace MFA.ViewModels
 {
     public partial class LoginPageViewModel : BaseViewModel
     {
-        IUserValidator validator;
         ILoginManager loginManager;
         INavigationRepository navigationRepository;
-
-        public LoginPageViewModel(IUserValidator validator, ILoginManager loginManager, INavigationRepository navigationRepository)
+        INotificationService notificationService;
+        public LoginPageViewModel(IUserValidator validator, ILoginManager loginManager, INavigationRepository navigationRepository, INotificationService notificationService)
         {
-            this.validator = validator;
             this.loginManager = loginManager;
             this.navigationRepository = navigationRepository;
+            this.notificationService = notificationService;
         }
 
-        [ObservableProperty] 
+        [ObservableProperty]
         public User currentUserInfo = new();
-        
+
 
         [RelayCommand]
         public async Task LoginHandler()
         {
+            IsBusy = true;
             await RealmService.Init();
-            await loginManager.LoggingUser(CurrentUserInfo);
-
+            try
+            {
+                await loginManager.LoggingUser(CurrentUserInfo);
+            }
+            catch (Exception ex)
+            {
+                await notificationService.Notify(ex.Message);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
         [RelayCommand]
         public async Task MoveToRegister()

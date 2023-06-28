@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MFA.Services.DBService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +16,27 @@ namespace MFA.ViewModels
         }
         [ObservableProperty]
         Topic topic;
+        [ObservableProperty] 
+        List<UsersComment> usersComments = new();
+
+        [RelayCommand]
+        public void AddNewComment()
+        {
+            var comment = new UsersComment
+            {
+                Content = "Testing comments lulw",
+                CreationDate = "20.20.2020",
+                Topic = topic,
+                User = MainPageViewModel.User
+            };
+            var realm = RealmService.GetRealm();
+            realm.Write(() =>
+            {
+                realm.Add<UsersComment>(comment);
+            });
+            
+           
+            UsersComments.Add(comment);
+        }
     }
 }

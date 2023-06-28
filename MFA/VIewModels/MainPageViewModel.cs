@@ -14,6 +14,8 @@ namespace MFA.ViewModels
         public ObservableCollection<Topic> Topics { get; }
         TopicService service;
         INavigationRepository navigationRepository;
+        public static User User { get; set; }
+
         public MainPageViewModel(TopicService service, INavigationRepository navigationRepository)
         {
             this.service = service;
@@ -28,6 +30,11 @@ namespace MFA.ViewModels
             {
                 { "Topic", topic }
             });
+        }
+        [RelayCommand]
+        public async Task TestBusy()
+        {
+            IsBusy = !IsBusy;
         }
     }
 }

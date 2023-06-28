@@ -8,26 +8,25 @@ public partial class UserInfoPage : ContentPage
 {
     UserInfoViewModel viewModel;
     INavigationRepository navigationRepository;
-    IUserDbService userDbService;
-    public UserInfoPage(UserInfoViewModel viewModel, INavigationRepository navigationRepository, IUserDbService userDbService)
+    
+    public UserInfoPage(UserInfoViewModel viewModel, INavigationRepository navigationRepository)
     {
         BindingContext = viewModel;
         InitializeComponent();
         this.viewModel = viewModel;
         this.navigationRepository = navigationRepository;
-        this.userDbService = userDbService;
     }
 
    
     protected override void OnAppearing()
     {
         var realm = RealmService.GetRealm();
-        UserInfoViewModel.User = userDbService.GetUserByEmail(RealmService.CurrentUser.Profile.Email);
-        viewModel.CurrentUser = UserInfoViewModel.User;
         
-        if (UserInfoViewModel.User?.UsersImage != null)
+        viewModel.CurrentUser = MainPageViewModel.User;
+        
+        if (MainPageViewModel.User?.UsersImage != null)
         {
-            var test = UserInfoViewModel.User.UsersImage.Data;
+            var test = MainPageViewModel.User.UsersImage.Data;
             AvatarImage.Source = ImageSource.FromStream(() => new MemoryStream(test));
         }
     }

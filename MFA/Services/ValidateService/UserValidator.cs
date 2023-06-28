@@ -40,7 +40,6 @@ namespace MFA.Services.ValidateService
                 Shell.Current.DisplayAlert("Error!", $"Following fields are entered incorrect: {Error}", "Ok");
                 return false;
             }
-            Shell.Current.DisplayAlert("Error!", $"Registration success", "Ok");
             return true;
         }
 

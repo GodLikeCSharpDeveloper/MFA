@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MFA.Services.DBService;
+using MFA.Views;
 
 namespace MFA.Services.LoginServices
 {
@@ -20,7 +21,7 @@ namespace MFA.Services.LoginServices
         {
             await RealmService.app.RemoveUserAsync(RealmService.CurrentUser);
             RealmService.MainThreadRealm?.Dispose();
-            UserInfoViewModel.User = null;
+            MainPageViewModel.User = null;
             viewModel.AvatarData = null;
             RealmService.MainThreadRealm = null;
         }

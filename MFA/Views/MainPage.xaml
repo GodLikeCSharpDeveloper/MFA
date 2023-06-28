@@ -10,12 +10,13 @@
     <ContentPage.Content>
         <Grid>
             <ActivityIndicator x:Name="ActivityIndicator"
-                               IsRunning="True"
+                               IsRunning="{Binding IsBusy}"
                                Color="OrangeRed"
-                               IsVisible="True"
+                               IsVisible="{Binding IsBusy}"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
                                ZIndex="1"/>
+           
             <Grid>
                 <ScrollView>
                     <CollectionView ItemsSource="{Binding Topics}">
@@ -49,10 +50,11 @@
 
 
     <Shell.TitleView>
-        <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,*" Padding="0, 0, 0, 0">
+        <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,auto,*" Padding="0, 0, 0, 0">
             <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" Clicked="GoToUserInfo"></ImageButton>
             <ImageButton  Source="icons8add24.png" WidthRequest="30" HeightRequest="30" Grid.Column="1" Clicked="GoToTopicAdd"></ImageButton>
-            <ImageButton Margin="0,0,5,0" Source="logout.png" WidthRequest="30" HeightRequest="30" Grid.Column="2" HorizontalOptions="End" Clicked="LogOut"></ImageButton>
+            <Button Text="aslkdjaskld" Command="{Binding TestBusyCommand}" Grid.Column="2"></Button>
+            <ImageButton Margin="0,0,5,0" Source="logout.png" WidthRequest="30" HeightRequest="30" Grid.Column="3" HorizontalOptions="End" Clicked="LogOut"></ImageButton>
         </Grid>
     </Shell.TitleView>
 

@@ -20,7 +20,7 @@ namespace MFA.ViewModels
             this.navigationRepository = navigationRepository;
         }
         public static User _user;
-        public static User User { get; set; }
+        
         //{
         //    get
         //    {
@@ -43,7 +43,7 @@ namespace MFA.ViewModels
         public async void ChangeAvatar()
         {
             var image = await imageManager.ChangeAvatar();
-            await userDbService.UpdateUser(User, new User
+            await userDbService.UpdateUser(MainPageViewModel.User, new User
             {
                 UsersImage = image
             });
