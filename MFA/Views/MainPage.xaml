@@ -16,34 +16,34 @@
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
                                ZIndex="1"/>
-           
+
             <Grid>
-                <ScrollView>
-                    <CollectionView ItemsSource="{Binding Topics}">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate x:DataType="model:Topic">
-                                <Grid>
-                                    <Frame Padding="10">
-                                        <Frame.GestureRecognizers>
-                                            <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:MainPageViewModel}}, 
-                                            Path=GoToDetailsCommand}"/>
-                                        </Frame.GestureRecognizers>
-                                        <Grid Padding="0" ColumnDefinitions="125,*">
-                                            <Label Text="{Binding TopicTitle}"></Label>
-                                            <VerticalStackLayout Grid.Column="2">
-                                                <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicReleaseDate, StringFormat='Upload date: {0}'}"></Label>
-                                                <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicUpdateDate, StringFormat='Last updated: {0}'}"></Label>
-                                            </VerticalStackLayout>
-                                        </Grid>
-                                    </Frame>
-
-                                </Grid>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-
-                    </CollectionView>
-
-                </ScrollView>
+                <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+                    <ScrollView>
+                        <CollectionView ItemsSource="{Binding Topics}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Topic">
+                                    <Grid>
+                                        <Frame Padding="10">
+                                            <!--<Frame.GestureRecognizers>
+                                                <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:MainPageViewModel}}, 
+                                            Path=GoToDetailsCommand}"/>-->
+                                            <!--</Frame.GestureRecognizers>-->
+                                            <Grid Padding="0" ColumnDefinitions="125,*">
+                                                <Label Text="{Binding TopicTitle}"></Label>
+                                                <VerticalStackLayout Grid.Column="1">
+                                                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicReleaseDate, StringFormat='Upload date: {0}'}"></Label>
+                                                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicUpdateDate, StringFormat='Last updated: {0}'}"></Label>
+                                                </VerticalStackLayout>
+                                            </Grid>
+                                        </Frame>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </ScrollView>
+                </RefreshView>
             </Grid>
         </Grid>
     </ContentPage.Content>

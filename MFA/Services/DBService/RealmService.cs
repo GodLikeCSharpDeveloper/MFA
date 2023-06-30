@@ -24,7 +24,7 @@ namespace MFA.Services.DBService
             }
             await using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("atlasConfig.json");
             using StreamReader reader = new StreamReader(fileStream);
-            var fileContent = await reader.ReadToEndAsync();
+            var fileContent = reader.ReadToEnd();
             var config = JsonSerializer.Deserialize<RealmAppConfig>(fileContent,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 

@@ -29,7 +29,6 @@ namespace MFA.ViewModels
         public async Task LoginHandler()
         {
             IsBusy = true;
-            await RealmService.Init();
             try
             {
                 await loginManager.LoggingUser(CurrentUserInfo);
