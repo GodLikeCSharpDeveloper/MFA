@@ -1,4 +1,5 @@
 ﻿using MFA.Services.DBService;
+using MFA.Services.UsersCommentsService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,36 +8,36 @@ using System.Threading.Tasks;
 
 namespace MFA.ViewModels
 {
-    [QueryProperty(nameof(Topic),"Topic")]
+    [QueryProperty(nameof(Topic), "Topic")]
     public partial class TopicDetailViewModel : BaseViewModel
     {
-        public TopicDetailViewModel()
+        IUsersCommentService usersCommentService;
+        public TopicDetailViewModel(IUsersCommentService usersCommentService)
         {
-            
+            this.usersCommentService = usersCommentService;
+            InitializeComments();
         }
         [ObservableProperty]
         Topic topic;
-        [ObservableProperty] 
-        List<UsersComment> usersComments = new();
+
+        [ObservableProperty]
+        List<UsersComment> usersComments;
 
         [RelayCommand]
         public void AddNewComment()
         {
-            var comment = new UsersComment
+            var newComment = new UsersComment()
             {
-                Content = "Testing comments lulw",
-                CreationDate = "20.20.2020",
+                Content = usersComment.Content,
+                CreationDate = DateTime.Now.ToString(),
                 Topic = topic,
-                User = MainPageViewModel.User
             };
-            var realm = RealmService.GetRealm();
-            realm.Write(() =>
-            {
-                realm.Add<UsersComment>(comment);
-            });
-            
-           
-            UsersComments.Add(comment);
+            UsersComments.Add(newComment);
+        }
+
+        public void InitializeComments()
+        {
+            UsersComments = usersCommentService.GetAllCurrentTopicComments(topic);
         }
     }
 }

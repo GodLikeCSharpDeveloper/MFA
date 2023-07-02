@@ -4,6 +4,7 @@ using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
 using MFA.Services.RegisterServices;
+using MFA.Services.UsersCommentsService;
 using MFA.Services.UserService;
 using MFA.Services.ValidateService;
 using MFA.Utility.ImageManager;
@@ -68,6 +69,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<INotificationService, NotificationService>();
 
         builder.Services.AddScoped<ITopicDBService, TopicDbService>();
+
+        builder.Services.AddSingleton<IUsersCommentService, UsersCommentService>();
 
         builder.Services.AddSingleton<IUserDbService, UserDbService>();
 

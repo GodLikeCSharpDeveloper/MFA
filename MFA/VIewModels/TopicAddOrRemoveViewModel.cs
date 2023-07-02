@@ -19,9 +19,7 @@ namespace MFA.ViewModels
         public string topicTitle;
         [ObservableProperty]
         public string topicContent;
-        [ObservableProperty]
-        public string topicReleaseDate;
-
+        
         [RelayCommand]
         public async Task AddNewTopic()
         {
@@ -29,7 +27,7 @@ namespace MFA.ViewModels
             {
                 TopicTitle = TopicTitle,
                 TopicContent = TopicContent,
-                TopicReleaseDate = TopicReleaseDate,
+                TopicReleaseDate = DateTime.Now.ToString(),
                 OwnerId = RealmService.app.CurrentUser.Id
             };
             await topicDBService.AddNewTopic(topic);

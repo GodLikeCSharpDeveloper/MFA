@@ -6,55 +6,49 @@
              xmlns:model="clr-namespace:MFA.Models"
              x:DataType="view:MainPageViewModel"
              Shell.NavBarIsVisible="True">
-
-    <ContentPage.Content>
-        <Grid>
-            <ActivityIndicator x:Name="ActivityIndicator"
+    <Grid>
+        <ActivityIndicator x:Name="ActivityIndicator"
                                IsRunning="{Binding IsBusy}"
                                Color="OrangeRed"
                                IsVisible="{Binding IsBusy}"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
                                ZIndex="1"/>
-
-            <Grid>
-                <RefreshView IsRefreshing="{Binding IsRefreshing}"
+        <Grid>
+            <RefreshView IsRefreshing="{Binding IsRefreshing}"
              Command="{Binding RefreshCommand}">
-                    <ScrollView>
-                        <CollectionView ItemsSource="{Binding Topics}">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="model:Topic">
-                                    <Grid>
-                                        <Frame Padding="10">
-                                            <!--<Frame.GestureRecognizers>
-                                                <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:MainPageViewModel}}, 
-                                            Path=GoToDetailsCommand}"/>-->
-                                            <!--</Frame.GestureRecognizers>-->
-                                            <Grid Padding="0" ColumnDefinitions="125,*">
-                                                <Label Text="{Binding TopicTitle}"></Label>
-                                                <VerticalStackLayout Grid.Column="1">
-                                                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicReleaseDate, StringFormat='Upload date: {0}'}"></Label>
-                                                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicUpdateDate, StringFormat='Last updated: {0}'}"></Label>
-                                                </VerticalStackLayout>
-                                            </Grid>
-                                        </Frame>
+                <CollectionView ItemsSource="{Binding Topics}"
+                                RemainingItemsThreshold="1"
+                                RemainingItemsThresholdReachedCommand="{Binding OnCollectionEndReachedCommand}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Topic">
+                            <Grid>
+                                <Frame Padding="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:MainPageViewModel}}, 
+                                            Path=GoToDetailsCommand}"/>
+                                    </Frame.GestureRecognizers>
+                                    <Grid Padding="0" ColumnDefinitions="125,*">
+                                        <Label Text="{Binding TopicTitle}"></Label>
+                                        <VerticalStackLayout Grid.Column="1">
+                                            <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicReleaseDate, StringFormat='Upload date: {0}'}"></Label>
+                                            <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding TopicUpdateDate, StringFormat='Last updated: {0}'}"></Label>
+                                        </VerticalStackLayout>
                                     </Grid>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </ScrollView>
-                </RefreshView>
-            </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
         </Grid>
-    </ContentPage.Content>
-
-
+    </Grid>
     <Shell.TitleView>
         <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,auto,*" Padding="0, 0, 0, 0">
-            <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" Clicked="GoToUserInfo"></ImageButton>
-            <ImageButton  Source="icons8add24.png" WidthRequest="30" HeightRequest="30" Grid.Column="1" Clicked="GoToTopicAdd"></ImageButton>
+            <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" Command="{Binding GoToUserInfoCommand}"></ImageButton>
+            <ImageButton  Source="icons8add24.png" WidthRequest="30" HeightRequest="30" Grid.Column="1" Command="{Binding GoToTopicAddCommand}"></ImageButton>
             <Button Text="aslkdjaskld" Command="{Binding TestBusyCommand}" Grid.Column="2"></Button>
-            <ImageButton Margin="0,0,5,0" Source="logout.png" WidthRequest="30" HeightRequest="30" Grid.Column="3" HorizontalOptions="End" Clicked="LogOut"></ImageButton>
+            <ImageButton Margin="0,0,5,0" Source="logout.png" WidthRequest="30" HeightRequest="30" Grid.Column="3" HorizontalOptions="End" Command="{Binding LogOutCommand}"></ImageButton>
         </Grid>
     </Shell.TitleView>
 

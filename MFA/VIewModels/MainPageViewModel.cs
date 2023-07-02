@@ -1,11 +1,14 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Concurrent;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 using MFA.Models;
 using MFA.Services;
 using MFA.Services.DBService;
+using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
+using MFA.Services.UserService;
 using MFA.Views;
 
 
@@ -16,22 +19,28 @@ namespace MFA.ViewModels
         [ObservableProperty]
         bool isRefreshing;
 
-        public ObservableCollection<Topic> Topics =>
-            new(topicDbService.GetAllTopics().Take(10));
-
 
         TopicService service;
         INavigationRepository navigationRepository;
         ITopicDBService topicDbService;
         INotificationService notificationService;
+        IUserLogOut userLogOut;
         public static User User { get; set; }
-
-        public MainPageViewModel(TopicService service, INavigationRepository navigationRepository, ITopicDBService topicDbService, INotificationService notificationService)
+        private List<Topic> topicList = new();
+        public MainPageViewModel(TopicService service, 
+            INavigationRepository navigationRepository, 
+            ITopicDBService topicDbService, 
+            INotificationService notificationService,
+            IUserLogOut userLogOut)
         {
             this.service = service;
+            this.userLogOut = userLogOut;
             this.navigationRepository = navigationRepository;
             this.topicDbService = topicDbService;
             this.notificationService = notificationService;
+            topicList = topicDbService.GetAllTopics();
+            Topics = new(topicList.Take(30));
+           
         }
 
         [RelayCommand]
@@ -53,7 +62,7 @@ namespace MFA.ViewModels
             try
             {
                 IsRefreshing = true;
-                _ = Topics;
+                Topics = new(topicDbService.GetAllTopics().Take(30));
             }
             catch (Exception ex)
             {
@@ -64,6 +73,35 @@ namespace MFA.ViewModels
                 IsRefreshing = false;
             }
         }
-
+        
+        int topicCount = 30;
+        public ObservableCollection<Topic> Topics { get; set; }
+        public ICommand OnCollectionEndReachedCommand => new Command(OnCollectionEndReached);
+        void OnCollectionEndReached()
+        {
+            topicCount += 20;
+            if(topicCount < topicList.Count)
+            {
+            var allTopics = topicList.Skip(topicCount-20).Take(20);
+            foreach (var item in allTopics)
+                Topics.Add(item);
+            }
+        }
+        [RelayCommand]
+        private async Task LogOut()
+        {
+            await userLogOut.LogoutAsync();
+            await navigationRepository.NavigateTo(nameof(LoginPage));
+        }
+        [RelayCommand]
+        private async Task GoToTopicAdd()
+        {
+            await navigationRepository.NavigateTo(nameof(TopicAddOrRemove));
+        }
+        [RelayCommand]
+        private async Task GoToUserInfo()
+        {
+            await navigationRepository.NavigateTo(nameof(UserInfoPage));
+        }
     }
 }

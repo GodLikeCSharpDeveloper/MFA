@@ -6,36 +6,34 @@
              xmlns:view="clr-namespace:MFA.ViewModels"
              xmlns:model="clr-namespace:MFA.Models"
              x:DataType="view:TopicDetailViewModel">
-    
-    <ScrollView>
-        <Grid RowDefinitions="auto,*,*">
-            <Label 
+    <Grid RowDefinitions="auto,*,*">
+        <Label 
                 Text="{Binding Topic.TopicContent}"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Grid.Row="0"/>
+        <Grid>
             <Button Command="{Binding AddNewCommentCommand}" Grid.Row="1"></Button>
-            <CollectionView ItemsSource="{Binding UsersComments}" Grid.Row="2">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:UsersComment">
-                        <Grid>
-                            <Frame Padding="10">
-                                <!--<Frame.GestureRecognizers>
+        </Grid>
+        <CollectionView ItemsSource="{Binding UsersComments}" Grid.Row="2">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:UsersComment">
+                    <Grid>
+                        <Frame Padding="10">
+                            <!--<Frame.GestureRecognizers>
                                     <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:TopicDetailViewModel}}, 
                                             Path=GoToDetailsCommand}"/>
                                 </Frame.GestureRecognizers>-->
-                                <Grid Padding="0" ColumnDefinitions="125,*">
-                                    <Label Text="{Binding Content}"></Label>
-                                    <VerticalStackLayout Grid.Column="2">
-                                        <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding CreationDate, StringFormat='Upload date: {0}'}"></Label>
-                                        <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding UpdateDate, StringFormat='Last updated: {0}'}"></Label>
-                                    </VerticalStackLayout>
-                                </Grid>
-                            </Frame>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
-       
-    </ScrollView>
+                            <Grid Padding="0" ColumnDefinitions="125,*">
+                                <Label Text="{Binding Content}"></Label>
+                                <VerticalStackLayout Grid.Column="2">
+                                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding CreationDate, StringFormat='Upload date: {0}'}"></Label>
+                                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="10" Text="{Binding UpdateDate, StringFormat='Last updated: {0}'}"></Label>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentPage>

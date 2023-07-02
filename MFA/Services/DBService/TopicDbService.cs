@@ -31,6 +31,7 @@ namespace MFA.Services.DBService
                 return new List<Topic>();
             }
         }
+       
 
         public async Task<bool> AddNewTopic(Topic topic)
         {
