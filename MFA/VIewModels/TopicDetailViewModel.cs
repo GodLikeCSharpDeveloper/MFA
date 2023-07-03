@@ -15,29 +15,32 @@ namespace MFA.ViewModels
         public TopicDetailViewModel(IUsersCommentService usersCommentService)
         {
             this.usersCommentService = usersCommentService;
-            InitializeComments();
         }
         [ObservableProperty]
         Topic topic;
 
+        
         [ObservableProperty]
         List<UsersComment> usersComments;
 
+        [ObservableProperty] 
+        UsersComment usersComment = new();
         [RelayCommand]
-        public void AddNewComment()
+        public async Task AddNewComment()
         {
             var newComment = new UsersComment()
             {
                 Content = usersComment.Content,
                 CreationDate = DateTime.Now.ToString(),
-                Topic = topic,
+                Topic = this.Topic,
             };
+            await usersCommentService.AddNewComment(newComment);
             UsersComments.Add(newComment);
         }
 
         public void InitializeComments()
         {
-            UsersComments = usersCommentService.GetAllCurrentTopicComments(topic);
+            UsersComments = usersCommentService.GetAllCurrentTopicComments(this.Topic);
         }
     }
 }

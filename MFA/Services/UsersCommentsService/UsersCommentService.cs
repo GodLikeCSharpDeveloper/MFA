@@ -39,7 +39,8 @@ namespace MFA.Services.UsersCommentsService
         public List<UsersComment> GetAllCurrentTopicComments(Topic topic)
         {
             var realm = RealmService.GetRealm();
-            return realm.All<UsersComment>().Where(x => x.Topic._id == topic._id).ToList();
+            var com = realm.All<UsersComment>().Where(x => x.Topic == topic).ToList();
+            return com;
         }
     }
 }
