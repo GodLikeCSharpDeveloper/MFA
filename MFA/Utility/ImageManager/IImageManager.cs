@@ -13,6 +13,12 @@ namespace MFA.Utility.ImageManager
             throw new NotImplementedException();
         }
 
-        
+        public static async Task<byte[]> ReadTextFile()
+        {
+            throw new NotImplementedException();
+        }
+
+
+
     }
 }

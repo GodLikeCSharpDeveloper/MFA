@@ -21,9 +21,7 @@ public partial class UserInfoPage : ContentPage
     protected override void OnAppearing()
     {
         var realm = RealmService.GetRealm();
-        
         viewModel.CurrentUser = MainPageViewModel.User;
-        
         if (MainPageViewModel.User?.UsersImage != null)
         {
             var test = MainPageViewModel.User.UsersImage.Data;

@@ -42,5 +42,6 @@ namespace MFA.ViewModels
         {
             UsersComments = usersCommentService.GetAllCurrentTopicComments(this.Topic);
         }
+        
     }
 }
