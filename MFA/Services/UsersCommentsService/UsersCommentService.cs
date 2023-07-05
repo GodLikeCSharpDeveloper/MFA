@@ -25,10 +25,9 @@ namespace MFA.Services.UsersCommentsService
                     CreationDate = DateTime.Now.ToString(),
                     Topic = usersComment.Topic,
                     User = MainPageViewModel.User,
-
                 };
                 var realm = RealmService.GetRealm();
-                realm.Write(() => { realm.Add(comment); });
+                await realm.WriteAsync(() => { realm.Add(comment); });
             }
             catch (Exception ex)
             {

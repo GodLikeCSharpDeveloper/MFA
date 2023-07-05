@@ -30,6 +30,7 @@ public partial class MainPage : ContentPage
         {
             await navigationRepository.NavigateTo(nameof(LoginPage));
         }
+
         if (MainPageViewModel.User == null && RealmService.app.CurrentUser != null)
             MainPageViewModel.User = userDbService.GetUserByEmail(RealmService.CurrentUser.Profile.Email);
     }

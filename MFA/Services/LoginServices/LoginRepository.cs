@@ -16,8 +16,7 @@ namespace MFA.Services.LoginServices
         {
             //This will populate the initial set of subscriptions the first time the realm is opened
             await RealmService.app.LogInAsync(Credentials.EmailPassword(user.Email, user.Password));
-            using var realm = RealmService.GetRealm();
-            await realm.Subscriptions.WaitForSynchronizationAsync();
+            
         }
         
         //public string GenerateToken(Models.User user)

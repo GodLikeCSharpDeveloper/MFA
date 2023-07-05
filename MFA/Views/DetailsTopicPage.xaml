@@ -36,6 +36,7 @@
                                 <Border>
                                     <Grid Padding="0" ColumnDefinitions="auto,*,*" RowDefinitions="auto,*,*">
                                         <Image Source="{Binding User.UsersImage.Data, Converter={StaticResource ImageConverter}}" HeightRequest="40" WidthRequest="40" Grid.Row="0" Grid.Column="0"></Image>
+                                        <Label Text="{Binding Content}" Grid.Row="0" Grid.Column="1"></Label>
                                     </Grid>
                                 </Border>
                             </Frame>
