@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MFA.Services.DBService;
 using MFA.Services.NotificationService;
+using MFA.Services.UserService;
 
 namespace MFA.Services.UsersCommentsService
 {
@@ -19,14 +20,16 @@ namespace MFA.Services.UsersCommentsService
         {
             try
             {
+                var realm = RealmService.GetRealm();
+                var user = realm.All<User>().FirstOrDefault(x => x.Email == MainPageViewModel.User.Email);
+                var topic = realm.All<Topic>().FirstOrDefault(x => x._id == usersComment.Topic._id);
                 var comment = new UsersComment
                 {
                     Content = usersComment.Content,
                     CreationDate = DateTime.Now.ToString(),
-                    Topic = usersComment.Topic,
-                    User = MainPageViewModel.User,
+                    Topic = topic,
+                    User = user,
                 };
-                var realm = RealmService.GetRealm();
                 await realm.WriteAsync(() => { realm.Add(comment); });
             }
             catch (Exception ex)

@@ -30,7 +30,11 @@ namespace MFA.Services.UserService
         public User GetUserByEmail(string email)
         {
             var realm = RealmService.GetRealm();
-            var user = realm.All<User>().FirstOrDefault(x => x.Email == email);
+            var users = realm.All<User>().ToList();
+            var topics = realm.All<Topic>().ToList();
+            var com = realm.All<UsersComment>().ToList();
+            var user = users.FirstOrDefault(x=>x.Email==email);
+            realm.Subscriptions.WaitForSynchronizationAsync();
             return user;
         }
         public async Task<User> UpdateUser(User currentUser, User updatedUserInfo)

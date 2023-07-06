@@ -45,6 +45,7 @@ namespace MFA.Services.DBService
 
         public static Realm GetRealm()
         {
+            if (app.CurrentUser == null) return null;
             var config = new FlexibleSyncConfiguration(app.CurrentUser)
             {
                 PopulateInitialSubscriptions = (realm) =>

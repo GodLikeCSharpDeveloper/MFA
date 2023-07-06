@@ -3,6 +3,7 @@ using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.UserService;
 using Microsoft.Maui.Controls;
+using Realms;
 
 namespace MFA.Views;
 
@@ -33,5 +34,6 @@ public partial class MainPage : ContentPage
 
         if (MainPageViewModel.User == null && RealmService.app.CurrentUser != null)
             MainPageViewModel.User = userDbService.GetUserByEmail(RealmService.CurrentUser.Profile.Email);
+        
     }
 }

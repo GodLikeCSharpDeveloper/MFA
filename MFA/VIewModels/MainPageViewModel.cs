@@ -38,9 +38,6 @@ namespace MFA.ViewModels
             this.navigationRepository = navigationRepository;
             this.topicDbService = topicDbService;
             this.notificationService = notificationService;
-            topicList = topicDbService.GetAllTopics();
-            Topics = new(topicList.Take(30));
-           
         }
 
         [RelayCommand]
@@ -75,7 +72,8 @@ namespace MFA.ViewModels
         }
         
         int topicCount = 30;
-        public ObservableCollection<Topic> Topics { get; set; }
+        [ObservableProperty] 
+        public ObservableCollection<Topic> topics;
         public ICommand OnCollectionEndReachedCommand => new Command(OnCollectionEndReached);
         void OnCollectionEndReached()
         {
