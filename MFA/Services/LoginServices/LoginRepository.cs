@@ -15,8 +15,7 @@ namespace MFA.Services.LoginServices
         public async Task LoginAsync(Models.User user)
         {
             //This will populate the initial set of subscriptions the first time the realm is opened
-            await RealmService.app.LogInAsync(Credentials.EmailPassword(user.Email, user.Password));
-            
+            var user2 = await RealmService.app.LogInAsync(Credentials.EmailPassword(user.Email, user.Password));
         }
         
         //public string GenerateToken(Models.User user)

@@ -41,6 +41,7 @@ namespace MFA.ViewModels
             {
                 CurrentUserForRegister.UsersImage = new ImageData { Data = ImageManager.ReadTextFile().Result };
                 await registerManager.RegisterUserAsync(CurrentUserForRegister);
+                CurrentUserForRegister = new();
             }
             catch (Exception ex)
             {

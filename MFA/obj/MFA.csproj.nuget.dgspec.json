@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj": {}
+    "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj": {
+    "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
+        "projectUniqueName": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA.csproj",
         "projectName": "MFA",
-        "projectPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
-        "packagesPath": "C:\\Users\\KAYAYASHA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\obj\\",
+        "projectPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA.csproj",
+        "packagesPath": "C:\\Users\\DaunV5.0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KAYAYASHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DaunV5.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -67,11 +67,7 @@
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authorization": {
-              "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.2.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -108,15 +104,15 @@
             },
             "MongoDB.Bson": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.1.2, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -210,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -221,11 +217,7 @@
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authorization": {
-              "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.2.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -262,15 +254,15 @@
             },
             "MongoDB.Bson": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.1.2, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -309,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -320,11 +312,7 @@
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authorization": {
-              "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.2.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -361,15 +349,15 @@
             },
             "MongoDB.Bson": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.1.2, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -409,7 +397,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -420,11 +408,7 @@
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authorization": {
-              "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.2.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -477,15 +461,15 @@
             },
             "MongoDB.Bson": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.19.2, )"
+              "version": "[2.20.0, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.1.2, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -510,11 +494,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.7, 7.0.7]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.7, 7.0.7]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -522,7 +506,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.7, 7.0.7]"
+              "version": "[7.0.5, 7.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -542,7 +526,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

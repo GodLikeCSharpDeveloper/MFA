@@ -10,6 +10,9 @@ using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
 using MFA.Services.UserService;
 using MFA.Views;
+using Realms;
+using Realms.Sync;
+using User = MFA.Models.User;
 
 
 namespace MFA.ViewModels
@@ -27,9 +30,9 @@ namespace MFA.ViewModels
         IUserLogOut userLogOut;
         public static User User { get; set; }
         private List<Topic> topicList = new();
-        public MainPageViewModel(TopicService service, 
-            INavigationRepository navigationRepository, 
-            ITopicDBService topicDbService, 
+        public MainPageViewModel(TopicService service,
+            INavigationRepository navigationRepository,
+            ITopicDBService topicDbService,
             INotificationService notificationService,
             IUserLogOut userLogOut)
         {
@@ -38,8 +41,20 @@ namespace MFA.ViewModels
             this.navigationRepository = navigationRepository;
             this.topicDbService = topicDbService;
             this.notificationService = notificationService;
+            topicList = topicDbService.GetAllTopics();
+            var a = Task.Factory.StartNew(check);
+            
         }
 
+        public async Task check()
+        {
+            while (topicList.Count == 0)
+            {
+                IsBusy = true;
+                topicList = topicDbService.GetAllTopics();
+            }
+            IsBusy = false;
+        }
         [RelayCommand]
         public async Task GoToDetailsAsync(Topic topic)
         {
@@ -58,6 +73,7 @@ namespace MFA.ViewModels
         {
             try
             {
+
                 IsRefreshing = true;
                 Topics = new(topicDbService.GetAllTopics().Take(30));
             }
@@ -70,19 +86,19 @@ namespace MFA.ViewModels
                 IsRefreshing = false;
             }
         }
-        
+
         int topicCount = 30;
-        [ObservableProperty] 
+        [ObservableProperty]
         public ObservableCollection<Topic> topics;
         public ICommand OnCollectionEndReachedCommand => new Command(OnCollectionEndReached);
         void OnCollectionEndReached()
         {
             topicCount += 20;
-            if(topicCount < topicList.Count)
+            if (topicCount < topicList.Count)
             {
-            var allTopics = topicList.Skip(topicCount-20).Take(20);
-            foreach (var item in allTopics)
-                Topics.Add(item);
+                var allTopics = topicList.Skip(topicCount - 20).Take(20);
+                foreach (var item in allTopics)
+                    Topics.Add(item);
             }
         }
         [RelayCommand]

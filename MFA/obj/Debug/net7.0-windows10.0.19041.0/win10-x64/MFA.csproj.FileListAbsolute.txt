@@ -1278,3 +1278,4 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\burgerite2m.scale-100.jpg
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8add24.scale-100.png
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logout.scale-100.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Realm.PlatformHelpers.dll

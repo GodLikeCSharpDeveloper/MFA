@@ -44,7 +44,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -92,37 +92,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -279,7 +248,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -466,7 +435,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -482,13 +451,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -501,14 +470,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -525,7 +494,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -558,14 +527,13 @@
           }
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -675,14 +643,18 @@
           }
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -2694,7 +2666,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -2742,37 +2714,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -2929,7 +2870,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -3104,7 +3045,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -3120,13 +3061,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -3139,14 +3080,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -3163,7 +3104,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -3185,14 +3126,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -3215,14 +3155,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -5196,7 +5140,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -5244,37 +5188,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -5431,7 +5344,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -5606,7 +5519,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -5622,13 +5535,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -5641,14 +5554,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -5665,7 +5578,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -5687,14 +5600,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -5717,14 +5629,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -7698,7 +7614,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -7746,37 +7662,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -7933,7 +7818,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -8108,7 +7993,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -8124,13 +8009,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -8143,14 +8028,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -8167,7 +8052,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -8189,14 +8074,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -8219,14 +8103,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -10200,7 +10088,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -10248,37 +10136,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -10435,7 +10292,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -10610,7 +10467,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -10626,13 +10483,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -10645,14 +10502,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -10669,7 +10526,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -10691,14 +10548,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -10721,14 +10577,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -12702,7 +12562,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -12750,37 +12610,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -12937,7 +12766,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -13112,7 +12941,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -13128,13 +12957,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -13147,14 +12976,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -13171,7 +13000,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -13190,14 +13019,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -13221,14 +13049,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -15202,7 +15034,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -15250,37 +15082,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -15437,7 +15238,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -15612,7 +15413,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -15628,13 +15429,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -15647,14 +15448,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -15671,7 +15472,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -15690,14 +15491,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -15720,14 +15520,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -17701,7 +17505,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -17749,37 +17553,6 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -17936,7 +17709,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -18111,7 +17884,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -18127,13 +17900,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -18146,14 +17919,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -18170,7 +17943,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -18192,14 +17965,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -18222,14 +17994,18 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -20203,7 +19979,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -20239,37 +20015,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -20414,7 +20159,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -20610,7 +20355,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -20626,13 +20371,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -20645,14 +20390,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -20669,7 +20414,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -20702,14 +20447,13 @@
           }
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -20724,6 +20468,9 @@
           "lib/net6.0/Realm.dll": {
             "related": ".pdb;.xml"
           }
+        },
+        "build": {
+          "build/Realm.props": {}
         },
         "runtimeTargets": {
           "runtimes/android-arm/native/librealm-wrappers.so": {
@@ -20816,14 +20563,21 @@
           }
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -21517,7 +21271,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -21553,37 +21307,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -21728,7 +21451,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -21912,7 +21635,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -21928,13 +21651,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -21947,14 +21670,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -21971,7 +21694,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -21993,14 +21716,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -22018,16 +21740,26 @@
         },
         "native": {
           "runtimes/android-arm/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -22927,7 +22659,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -22963,37 +22695,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -23138,7 +22839,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -23322,7 +23023,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -23338,13 +23039,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -23357,14 +23058,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -23381,7 +23082,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -23403,14 +23104,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -23428,16 +23128,26 @@
         },
         "native": {
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -24337,7 +24047,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -24373,37 +24083,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -24548,7 +24227,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -24732,7 +24411,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -24748,13 +24427,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -24767,14 +24446,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -24791,7 +24470,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -24813,14 +24492,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -24838,16 +24516,26 @@
         },
         "native": {
           "runtimes/android-x64/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -25747,7 +25435,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -25783,37 +25471,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -25958,7 +25615,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -26142,7 +25799,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -26158,13 +25815,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -26177,14 +25834,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -26201,7 +25858,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -26223,14 +25880,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -26248,16 +25904,26 @@
         },
         "native": {
           "runtimes/android-x86/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -27157,7 +26823,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -27193,37 +26859,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -27368,7 +27003,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -27552,7 +27187,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -27568,13 +27203,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -27587,14 +27222,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -27611,7 +27246,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -27630,14 +27265,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -27656,16 +27290,26 @@
         "native": {
           "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
           "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -28565,7 +28209,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -28601,37 +28245,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -28776,7 +28389,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -28960,7 +28573,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -28976,13 +28589,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -28995,14 +28608,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -29019,7 +28632,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -29038,14 +28651,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -29063,16 +28675,26 @@
         },
         "native": {
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -29972,7 +29594,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -30008,37 +29630,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -30183,7 +29774,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -30367,7 +29958,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -30383,13 +29974,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -30402,14 +29993,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -30426,7 +30017,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -30448,14 +30039,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -30473,16 +30063,26 @@
         },
         "native": {
           "runtimes/win-x64/native/realm-wrappers.dll": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -31310,7 +30910,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -31346,37 +30946,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -31521,7 +31090,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -31715,7 +31284,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -31731,13 +31300,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -31750,14 +31319,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -31774,7 +31343,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -31807,14 +31376,13 @@
           }
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -31829,6 +31397,9 @@
           "lib/net6.0/Realm.dll": {
             "related": ".pdb;.xml"
           }
+        },
+        "build": {
+          "build/Realm.props": {}
         },
         "runtimeTargets": {
           "runtimes/android-arm/native/librealm-wrappers.so": {
@@ -31921,14 +31492,21 @@
           }
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -32358,6 +31936,14 @@
           }
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -32541,7 +32127,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -32577,37 +32163,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -32752,7 +32307,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -32934,7 +32489,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -32950,13 +32505,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -32969,14 +32524,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -32993,7 +32548,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -33015,14 +32570,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -33040,16 +32594,26 @@
         },
         "native": {
           "runtimes/android-arm/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -33688,6 +33252,14 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
         }
@@ -33855,7 +33427,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -33891,37 +33463,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -34066,7 +33607,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -34248,7 +33789,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -34264,13 +33805,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -34283,14 +33824,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -34307,7 +33848,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -34329,14 +33870,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -34354,16 +33894,26 @@
         },
         "native": {
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -35002,6 +34552,14 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
         }
@@ -35169,7 +34727,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -35205,37 +34763,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -35380,7 +34907,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -35562,7 +35089,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -35578,13 +35105,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -35597,14 +35124,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -35621,7 +35148,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -35643,14 +35170,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -35668,16 +35194,26 @@
         },
         "native": {
           "runtimes/android-x64/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -36316,6 +35852,14 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
         }
@@ -36483,7 +36027,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -36519,37 +36063,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -36694,7 +36207,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -36876,7 +36389,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -36892,13 +36405,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -36911,14 +36424,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -36935,7 +36448,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -36957,14 +36470,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -36982,16 +36494,26 @@
         },
         "native": {
           "runtimes/android-x86/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -37630,6 +37152,14 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
         }
@@ -37797,7 +37327,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -37833,37 +37363,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -38008,7 +37507,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -38190,7 +37689,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -38206,13 +37705,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -38225,14 +37724,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -38249,7 +37748,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -38268,14 +37767,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -38294,16 +37792,26 @@
         "native": {
           "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
           "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -38942,6 +38450,14 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
         }
@@ -39109,7 +38625,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -39145,37 +38661,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -39320,7 +38805,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -39502,7 +38987,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -39518,13 +39003,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -39537,14 +39022,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -39561,7 +39046,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -39580,14 +39065,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -39605,16 +39089,26 @@
         },
         "native": {
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -40257,6 +39751,14 @@
           }
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -40420,7 +39922,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -40456,37 +39958,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -40631,7 +40102,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -40813,7 +40284,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -40829,13 +40300,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -40848,14 +40319,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -40872,7 +40343,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -40894,14 +40365,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -40919,16 +40389,26 @@
         },
         "native": {
           "runtimes/win-x64/native/realm-wrappers.dll": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -41499,6 +40979,14 @@
           }
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -41662,7 +41150,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -41698,37 +41186,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -41873,7 +41330,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -42275,7 +41732,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -42291,13 +41748,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -42310,14 +41767,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -42334,7 +41791,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -42367,14 +41824,13 @@
           }
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -42389,6 +41845,9 @@
           "lib/net6.0/Realm.dll": {
             "related": ".pdb;.xml"
           }
+        },
+        "build": {
+          "build/Realm.props": {}
         },
         "runtimeTargets": {
           "runtimes/android-arm/native/librealm-wrappers.so": {
@@ -42481,14 +41940,18 @@
           }
         }
       },
-      "Realm.Fody/11.0.0": {
+      "Realm.PlatformHelpers/11.1.2": {
         "type": "package",
-        "build": {
-          "build/Realm.Fody.props": {}
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
         }
-      },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -43101,7 +42564,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -43137,37 +42600,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -43312,7 +42744,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -43646,7 +43078,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -43662,13 +43094,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -43681,14 +43113,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -43705,7 +43137,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -43727,14 +43159,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -43752,16 +43183,23 @@
         },
         "native": {
           "runtimes/android-arm/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -44567,7 +44005,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -44603,37 +44041,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -44778,7 +44185,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -45112,7 +44519,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -45128,13 +44535,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -45147,14 +44554,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -45171,7 +44578,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -45193,14 +44600,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -45218,16 +44624,23 @@
         },
         "native": {
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -46033,7 +45446,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -46069,37 +45482,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -46244,7 +45626,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -46578,7 +45960,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -46594,13 +45976,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -46613,14 +45995,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -46637,7 +46019,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -46659,14 +46041,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -46684,16 +46065,23 @@
         },
         "native": {
           "runtimes/android-x64/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -47499,7 +46887,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -47535,37 +46923,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -47710,7 +47067,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -48044,7 +47401,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -48060,13 +47417,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -48079,14 +47436,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -48103,7 +47460,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -48125,14 +47482,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -48150,16 +47506,23 @@
         },
         "native": {
           "runtimes/android-x86/native/librealm-wrappers.so": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -48965,7 +48328,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -49001,37 +48364,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -49176,7 +48508,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -49510,7 +48842,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -49526,13 +48858,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -49545,14 +48877,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -49569,7 +48901,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -49588,14 +48920,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -49614,16 +48945,23 @@
         "native": {
           "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
           "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -50429,7 +49767,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -50465,37 +49803,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -50640,7 +49947,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -50974,7 +50281,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -50990,13 +50297,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -51009,14 +50316,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -51033,7 +50340,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -51052,14 +50359,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -51077,16 +50383,23 @@
         },
         "native": {
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -51892,7 +51205,7 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.2.0": {
+      "CommunityToolkit.Mvvm/8.2.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/CommunityToolkit.Mvvm.dll": {
@@ -51928,37 +51241,6 @@
         "type": "package",
         "build": {
           "build/Fody.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/7.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/7.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -52103,7 +51385,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -52449,7 +51731,7 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
-      "MongoDB.Bson/2.19.2": {
+      "MongoDB.Bson/2.20.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -52465,13 +51747,13 @@
           }
         }
       },
-      "MongoDB.Driver/2.19.2": {
+      "MongoDB.Driver/2.20.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Driver.Core": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0"
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Driver.Core": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
@@ -52484,14 +51766,14 @@
           }
         }
       },
-      "MongoDB.Driver.Core/2.19.2": {
+      "MongoDB.Driver.Core/2.20.0": {
         "type": "package",
         "dependencies": {
           "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "2.19.2",
-          "MongoDB.Libmongocrypt": "1.7.0",
+          "MongoDB.Bson": "2.20.0",
+          "MongoDB.Libmongocrypt": "1.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -52508,7 +51790,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.7.0": {
+      "MongoDB.Libmongocrypt/1.8.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -52530,14 +51812,13 @@
           "build/_._": {}
         }
       },
-      "Realm/11.0.0": {
+      "Realm/11.1.2": {
         "type": "package",
         "dependencies": {
           "Fody": "6.7.0",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "11.0.0",
-          "Realm.SourceGenerator": "11.0.0",
+          "Realm.PlatformHelpers": "11.1.2",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -52555,16 +51836,23 @@
         },
         "native": {
           "runtimes/win-x64/native/realm-wrappers.dll": {}
-        }
-      },
-      "Realm.Fody/11.0.0": {
-        "type": "package",
+        },
         "build": {
-          "build/Realm.Fody.props": {}
+          "build/Realm.props": {}
         }
       },
-      "Realm.SourceGenerator/11.0.0": {
-        "type": "package"
+      "Realm.PlatformHelpers/11.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Realm.PlatformHelpers.dll": {
+            "related": ".pdb"
+          }
+        }
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -53328,10 +52616,10 @@
         "lib/netstandard2.0/Bogus.xml"
       ]
     },
-    "CommunityToolkit.Mvvm/8.2.0": {
-      "sha512": "F883u+B0AVUkRZS+VQBiZEJiqlGiiQhGA8Ejy1/Y8fl4ecBmSd+HYuDso0iiUhh+UxRDjp2aTQ7jGkuL2S4NrA==",
+    "CommunityToolkit.Mvvm/8.2.1": {
+      "sha512": "I24ofWVEdplxYjUez9/bljv/qb8r8Ccj6cvYXHexNBegLaD3iDy3QrzAAOYVMmfGWIXxlU1ZtECQNfU07+6hXQ==",
       "type": "package",
-      "path": "communitytoolkit.mvvm/8.2.0",
+      "path": "communitytoolkit.mvvm/8.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -53346,7 +52634,7 @@
         "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
         "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
         "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
-        "communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+        "communitytoolkit.mvvm.8.2.1.nupkg.sha512",
         "communitytoolkit.mvvm.nuspec",
         "lib/net6.0/CommunityToolkit.Mvvm.dll",
         "lib/net6.0/CommunityToolkit.Mvvm.pdb",
@@ -53432,44 +52720,6 @@
         "lib/net6.0-android31.0/GoogleGson.aar",
         "lib/net6.0-android31.0/GoogleGson.dll",
         "lib/net6.0-android31.0/GoogleGson.xml"
-      ]
-    },
-    "Microsoft.AspNetCore.Authorization/7.0.5": {
-      "sha512": "17BgaYa1QB8mOERZ/TSNwsWHrh65iU61VrsqivbZc+VUqnACtPCPbP0MFl/7CznXWCOXQZ59QRB6A5t0skyo2g==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.authorization/7.0.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.AspNetCore.Authorization.dll",
-        "lib/net462/Microsoft.AspNetCore.Authorization.xml",
-        "lib/net7.0/Microsoft.AspNetCore.Authorization.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Authorization.xml",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
-        "microsoft.aspnetcore.authorization.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Metadata/7.0.5": {
-      "sha512": "S+EJS5RwVfrgBEyYKvNfMVQPH8CNIRhIH5UkGKalwIcppiYpi6k8pv7GDqjLiKLVa06LY+kNftXfUM5PwW7z/w==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.metadata/7.0.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.AspNetCore.Metadata.dll",
-        "lib/net462/Microsoft.AspNetCore.Metadata.xml",
-        "lib/net7.0/Microsoft.AspNetCore.Metadata.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Metadata.xml",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.7.0.5.nupkg.sha512",
-        "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -53802,10 +53052,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options/7.0.1": {
-      "sha512": "pZRDYdN1FpepOIfHU62QoBQ6zdAoTvnjxFfqAzEd9Jhb2dfhA5i6jeTdgGgcgTWFRC7oT0+3XrbQu4LjvgX1Nw==",
+    "Microsoft.Extensions.Options/7.0.0": {
+      "sha512": "lP1yBnTTU42cKpMozuafbvNtQ7QcBjr/CcK3bYOGEMH55Fjt+iecXjT6chR7vbgCMqy3PG3aNQSZgo/EuY/9qQ==",
       "type": "package",
-      "path": "microsoft.extensions.options/7.0.1",
+      "path": "microsoft.extensions.options/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -53826,7 +53076,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.7.0.1.nupkg.sha512",
+        "microsoft.extensions.options.7.0.0.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -55078,52 +54328,52 @@
         "tools/x86/GenXbf.dll"
       ]
     },
-    "MongoDB.Bson/2.19.2": {
-      "sha512": "YpwSLKillPRj+BYEZU0dFgVHdCuj7uGIkLcyEc5a9zwJQYMbZkAc2CRVzobnDY9HMSCtyefXnkrz9CQ6C91KQA==",
+    "MongoDB.Bson/2.20.0": {
+      "sha512": "IXgb+uGslHBgy+JjfwepO06Vmq5itprTPJJtQotAhLMjmuDvbA7pfAs/2hTfqYbR39l7eli5bIwA3zqZHUkVlQ==",
       "type": "package",
-      "path": "mongodb.bson/2.19.2",
+      "path": "mongodb.bson/2.20.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "License.txt",
+        "LICENSE.md",
         "lib/net472/MongoDB.Bson.dll",
         "lib/net472/MongoDB.Bson.xml",
         "lib/netstandard2.0/MongoDB.Bson.dll",
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.19.2.nupkg.sha512",
+        "mongodb.bson.2.20.0.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver/2.19.2": {
-      "sha512": "xT2VA1KmjzxXQYuA8VbnM3r+DVVjja6ntD7YjesxkODAX3GkQLSgLLH+tS7R0uy/zZzA7YWEF1AKIJyxC7jfmA==",
+    "MongoDB.Driver/2.20.0": {
+      "sha512": "pAxVtrIRTTuQG3xMBF3NfWumXqf/JT0i7eEzp06k4zin8zj1sroX0J/i/qzJ9JjHQMh3BSsQ4E209G5S6zkxrg==",
       "type": "package",
-      "path": "mongodb.driver/2.19.2",
+      "path": "mongodb.driver/2.20.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "License.txt",
+        "LICENSE.md",
         "lib/net472/MongoDB.Driver.dll",
         "lib/net472/MongoDB.Driver.xml",
         "lib/netstandard2.0/MongoDB.Driver.dll",
         "lib/netstandard2.0/MongoDB.Driver.xml",
         "lib/netstandard2.1/MongoDB.Driver.dll",
         "lib/netstandard2.1/MongoDB.Driver.xml",
-        "mongodb.driver.2.19.2.nupkg.sha512",
+        "mongodb.driver.2.20.0.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver.Core/2.19.2": {
-      "sha512": "MjZmAZLNCV+d/eW+X1YPNztEtEBosIX8qMFCoQAhJOoHotuJfTePt+Lp8sjxTDTCyaOtLhClIgefy3P9JaxUHw==",
+    "MongoDB.Driver.Core/2.20.0": {
+      "sha512": "YIRUQnl/aHjZbvwoVHhlUi5ofoZs/6HRllpxZrSseB52IJPmhYclppApAUb/TETIx7mPxcoZgHVVQKnwYQQCVg==",
       "type": "package",
-      "path": "mongodb.driver.core/2.19.2",
+      "path": "mongodb.driver.core/2.20.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "License.txt",
+        "LICENSE.md",
         "THIRD-PARTY-NOTICES",
         "lib/net472/MongoDB.Driver.Core.dll",
         "lib/net472/MongoDB.Driver.Core.xml",
@@ -55131,15 +54381,15 @@
         "lib/netstandard2.0/MongoDB.Driver.Core.xml",
         "lib/netstandard2.1/MongoDB.Driver.Core.dll",
         "lib/netstandard2.1/MongoDB.Driver.Core.xml",
-        "mongodb.driver.core.2.19.2.nupkg.sha512",
+        "mongodb.driver.core.2.20.0.nupkg.sha512",
         "mongodb.driver.core.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Libmongocrypt/1.7.0": {
-      "sha512": "p9+peTZX63nGHskOLhvhfBtrknxNg1RzXepE07rPozuCGz27bMjCcQyvn2YByg0L3YEcNWdTmI4BlnG/5RF+5Q==",
+    "MongoDB.Libmongocrypt/1.8.0": {
+      "sha512": "fgNw8Dxpkq7mpoaAYes8cfnPRzvFIoB8oL9GPXwi3op/rONftl0WAeg4akRLcxfoVuUvuUO2wGoVBr3JzJ7Svw==",
       "type": "package",
-      "path": "mongodb.libmongocrypt/1.7.0",
+      "path": "mongodb.libmongocrypt/1.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -55160,20 +54410,23 @@
         "lib/net472/MongoDB.Libmongocrypt.dll",
         "lib/netstandard2.0/MongoDB.Libmongocrypt.dll",
         "lib/netstandard2.1/MongoDB.Libmongocrypt.dll",
-        "mongodb.libmongocrypt.1.7.0.nupkg.sha512",
+        "mongodb.libmongocrypt.1.8.0.nupkg.sha512",
         "mongodb.libmongocrypt.nuspec",
         "runtimes/linux/native/libmongocrypt.so",
         "runtimes/osx/native/libmongocrypt.dylib",
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
-    "Realm/11.0.0": {
-      "sha512": "sDvDiHa9MGwi7Nry7uYL15qDp55/QcL2uTLALanZhcbC1bhhJq4i/Z088GqabkViCgWdb78dfGhaZ1IbmraRJg==",
+    "Realm/11.1.2": {
+      "sha512": "frsNS8N1HmsDHlbd/84D1br3hPJ0jsIcvESRWC0CdDud75PLzRspCNFWmmcTYygcAjXbvilBNXk2UtXiwpgpSA==",
       "type": "package",
-      "path": "realm/11.0.0",
+      "path": "realm/11.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "NuGet.md",
+        "analyzers/dotnet/cs/Realm.SourceGenerator.dll",
+        "build/Realm.props",
         "build/monoandroid/Realm.props",
         "build/net46/Realm.props",
         "build/xamarinios/Realm.dll.config",
@@ -55188,7 +54441,7 @@
         "lib/netstandard2.0/Realm.dll",
         "lib/netstandard2.0/Realm.pdb",
         "lib/netstandard2.0/Realm.xml",
-        "realm.11.0.0.nupkg.sha512",
+        "realm.11.1.2.nupkg.sha512",
         "realm.nuspec",
         "runtimes/android-arm/native/librealm-wrappers.so",
         "runtimes/android-arm64/native/librealm-wrappers.so",
@@ -55215,36 +54468,43 @@
         "runtimes/win10-arm/nativeassets/uap10.0/realm-wrappers.dll",
         "runtimes/win10-arm64/nativeassets/uap10.0/realm-wrappers.dll",
         "runtimes/win10-x64/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/realm-wrappers.dll"
+        "runtimes/win10-x86/nativeassets/uap10.0/realm-wrappers.dll",
+        "weaver/Realm.Fody.dll",
+        "weaver/Realm.Fody.xcf"
       ]
     },
-    "Realm.Fody/11.0.0": {
-      "sha512": "RNg6+Ur/egmDKYKQL6J5FLgnZldLnhUKjWeHaP6mM/xIYO22bKsj31NboXK8JMDsqXCBnY2W7D8GKi1d/U24DA==",
+    "Realm.PlatformHelpers/11.1.2": {
+      "sha512": "j+aIM8PJ//TTtO9f9gk2pmjm9666Xyf1GxmByFVM9HfZR1+4JA6tXgIgu6EJHtLOB0r6crHRT/xHO6iP79jeJA==",
       "type": "package",
-      "path": "realm.fody/11.0.0",
+      "path": "realm.platformhelpers/11.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/Realm.Fody.props",
         "icon.png",
-        "realm.fody.11.0.0.nupkg.sha512",
-        "realm.fody.nuspec",
-        "weaver/netstandard2.0/Realm.Fody.dll",
-        "weaver/netstandard2.0/Realm.Fody.xcf",
-        "weaver/netstandard2.0/Realm.Fody.xml"
-      ]
-    },
-    "Realm.SourceGenerator/11.0.0": {
-      "sha512": "qM0QBg2MKk7OcKpFoH8/5HYdrLVBw/2PWl3USknP8DApu6Am3vPLBeQ67sltkFFAMaU4CjhfGzuZhvnmc6gXpg==",
-      "type": "package",
-      "path": "realm.sourcegenerator/11.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/Realm.SourceGenerator.dll",
-        "icon.png",
-        "realm.sourcegenerator.11.0.0.nupkg.sha512",
-        "realm.sourcegenerator.nuspec"
+        "lib/monoandroid50/Realm.PlatformHelpers.dll",
+        "lib/monoandroid50/Realm.PlatformHelpers.pdb",
+        "lib/net6.0-android31.0/Realm.PlatformHelpers.dll",
+        "lib/net6.0-android31.0/Realm.PlatformHelpers.pdb",
+        "lib/net6.0-android31.0/Realm.PlatformHelpers.xml",
+        "lib/net6.0-ios16.1/Realm.PlatformHelpers.dll",
+        "lib/net6.0-ios16.1/Realm.PlatformHelpers.pdb",
+        "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.dll",
+        "lib/net6.0-maccatalyst16.1/Realm.PlatformHelpers.pdb",
+        "lib/net6.0-tvos16.1/Realm.PlatformHelpers.dll",
+        "lib/net6.0-tvos16.1/Realm.PlatformHelpers.pdb",
+        "lib/netstandard2.0/Realm.PlatformHelpers.dll",
+        "lib/netstandard2.0/Realm.PlatformHelpers.pdb",
+        "lib/uap10.0.19041/Realm.PlatformHelpers.dll",
+        "lib/uap10.0.19041/Realm.PlatformHelpers.pdb",
+        "lib/uap10.0.19041/Realm.PlatformHelpers.pri",
+        "lib/xamarinios10/Realm.PlatformHelpers.dll",
+        "lib/xamarinios10/Realm.PlatformHelpers.pdb",
+        "lib/xamarinmac20/Realm.PlatformHelpers.dll",
+        "lib/xamarinmac20/Realm.PlatformHelpers.pdb",
+        "lib/xamarintvos10/Realm.PlatformHelpers.dll",
+        "lib/xamarintvos10/Realm.PlatformHelpers.pdb",
+        "realm.platformhelpers.11.1.2.nupkg.sha512",
+        "realm.platformhelpers.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -59929,8 +59189,7 @@
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
       "Bogus >= 34.0.2",
-      "CommunityToolkit.Mvvm >= 8.2.0",
-      "Microsoft.AspNetCore.Authorization >= 7.0.5",
+      "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -59938,9 +59197,9 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Identity.Client >= 4.54.1",
       "Microsoft.Maui.Graphics >= 7.0.86",
-      "MongoDB.Bson >= 2.19.2",
-      "MongoDB.Driver >= 2.19.2",
-      "Realm >= 11.0.0",
+      "MongoDB.Bson >= 2.20.0",
+      "MongoDB.Driver >= 2.20.0",
+      "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.31.0",
       "Xamarin.Android.Glide >= 4.13.2.2",
@@ -59957,8 +59216,7 @@
     ],
     "net7.0-ios16.1": [
       "Bogus >= 34.0.2",
-      "CommunityToolkit.Mvvm >= 8.2.0",
-      "Microsoft.AspNetCore.Authorization >= 7.0.5",
+      "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -59966,16 +59224,15 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Identity.Client >= 4.54.1",
       "Microsoft.Maui.Graphics >= 7.0.86",
-      "MongoDB.Bson >= 2.19.2",
-      "MongoDB.Driver >= 2.19.2",
-      "Realm >= 11.0.0",
+      "MongoDB.Bson >= 2.20.0",
+      "MongoDB.Driver >= 2.20.0",
+      "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.31.0"
     ],
     "net7.0-maccatalyst16.1": [
       "Bogus >= 34.0.2",
-      "CommunityToolkit.Mvvm >= 8.2.0",
-      "Microsoft.AspNetCore.Authorization >= 7.0.5",
+      "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -59983,16 +59240,15 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Identity.Client >= 4.54.1",
       "Microsoft.Maui.Graphics >= 7.0.86",
-      "MongoDB.Bson >= 2.19.2",
-      "MongoDB.Driver >= 2.19.2",
-      "Realm >= 11.0.0",
+      "MongoDB.Bson >= 2.20.0",
+      "MongoDB.Driver >= 2.20.0",
+      "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.31.0"
     ],
     "net7.0-windows10.0.19041": [
       "Bogus >= 34.0.2",
-      "CommunityToolkit.Mvvm >= 8.2.0",
-      "Microsoft.AspNetCore.Authorization >= 7.0.5",
+      "CommunityToolkit.Mvvm >= 8.2.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -60003,32 +59259,32 @@
       "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.86",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.755",
       "Microsoft.WindowsAppSDK >= 1.2.221209.1",
-      "MongoDB.Bson >= 2.19.2",
-      "MongoDB.Driver >= 2.19.2",
-      "Realm >= 11.0.0",
+      "MongoDB.Bson >= 2.20.0",
+      "MongoDB.Driver >= 2.20.0",
+      "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.31.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\": {},
+    "C:\\Users\\DaunV5.0\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
+      "projectUniqueName": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA.csproj",
       "projectName": "MFA",
-      "projectPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
-      "packagesPath": "C:\\Users\\KAYAYASHA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\obj\\",
+      "projectPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\MFA.csproj",
+      "packagesPath": "C:\\Users\\DaunV5.0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA\\MFA\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\KAYAYASHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DaunV5.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -60077,11 +59333,7 @@
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
-            "version": "[8.2.0, )"
-          },
-          "Microsoft.AspNetCore.Authorization": {
-            "target": "Package",
-            "version": "[7.0.5, )"
+            "version": "[8.2.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -60118,15 +59370,15 @@
           },
           "MongoDB.Bson": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "Realm": {
             "target": "Package",
-            "version": "[11.0.0, )"
+            "version": "[11.1.2, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
@@ -60220,7 +59472,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       },
       "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
@@ -60231,11 +59483,7 @@
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
-            "version": "[8.2.0, )"
-          },
-          "Microsoft.AspNetCore.Authorization": {
-            "target": "Package",
-            "version": "[7.0.5, )"
+            "version": "[8.2.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -60272,15 +59520,15 @@
           },
           "MongoDB.Bson": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "Realm": {
             "target": "Package",
-            "version": "[11.0.0, )"
+            "version": "[11.1.2, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
@@ -60319,7 +59567,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       },
       "net7.0-maccatalyst16.1": {
         "targetAlias": "net7.0-maccatalyst",
@@ -60330,11 +59578,7 @@
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
-            "version": "[8.2.0, )"
-          },
-          "Microsoft.AspNetCore.Authorization": {
-            "target": "Package",
-            "version": "[7.0.5, )"
+            "version": "[8.2.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -60371,15 +59615,15 @@
           },
           "MongoDB.Bson": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "Realm": {
             "target": "Package",
-            "version": "[11.0.0, )"
+            "version": "[11.1.2, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
@@ -60419,7 +59663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       },
       "net7.0-windows10.0.19041": {
         "targetAlias": "net7.0-windows10.0.19041.0",
@@ -60430,11 +59674,7 @@
           },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
-            "version": "[8.2.0, )"
-          },
-          "Microsoft.AspNetCore.Authorization": {
-            "target": "Package",
-            "version": "[7.0.5, )"
+            "version": "[8.2.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -60487,15 +59727,15 @@
           },
           "MongoDB.Bson": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[2.20.0, )"
           },
           "Realm": {
             "target": "Package",
-            "version": "[11.0.0, )"
+            "version": "[11.1.2, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
@@ -60520,11 +59760,11 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.5, 7.0.5]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -60532,7 +59772,7 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.5, 7.0.5]"
           }
         ],
         "frameworkReferences": {
@@ -60552,7 +59792,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -24,13 +24,14 @@ namespace MFA.Services.DBService
             }
             await using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("atlasConfig.json");
             using StreamReader reader = new StreamReader(fileStream);
-            var fileContent = reader.ReadToEnd();
+            var fileContent = await reader.ReadToEndAsync();
             var config = JsonSerializer.Deserialize<RealmAppConfig>(fileContent,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             var appConfiguration = new Realms.Sync.AppConfiguration(config.AppId)
             {
-                BaseUri = new Uri(config.BaseUrl)
+                BaseUri = new Uri(config.BaseUrl),
+                SyncTimeoutOptions = new SyncTimeoutOptions()
             };
 
             app = Realms.Sync.App.Create(appConfiguration);
@@ -45,7 +46,7 @@ namespace MFA.Services.DBService
 
         public static Realm GetRealm()
         {
-            if (app.CurrentUser == null) return null;
+            if (app.CurrentUser == null) return Realm.GetInstance();
             var config = new FlexibleSyncConfiguration(app.CurrentUser)
             {
                 PopulateInitialSubscriptions = (realm) =>

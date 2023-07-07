@@ -31,15 +31,13 @@ namespace MFA.Services.UserService
         {
             var realm = RealmService.GetRealm();
             var users = realm.All<User>().ToList();
-            var topics = realm.All<Topic>().ToList();
-            var com = realm.All<UsersComment>().ToList();
             var user = users.FirstOrDefault(x=>x.Email==email);
             realm.Subscriptions.WaitForSynchronizationAsync();
             return user;
         }
         public async Task<User> UpdateUser(User currentUser, User updatedUserInfo)
         {
-            using var realm = RealmService.GetRealm();
+            var realm = RealmService.GetRealm();
             var userForUpdate = GetUserByEmail(currentUser.Email);
             await realm.WriteAsync(() =>
             {

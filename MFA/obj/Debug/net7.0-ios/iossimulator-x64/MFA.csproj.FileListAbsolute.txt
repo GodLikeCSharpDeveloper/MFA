@@ -638,3 +638,4 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-ios\iossimulat
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\MFA.pdb
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\MFA.genruntimeconfig.cache
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\ref\MFA.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-ios\iossimulator-x64\Realm.PlatformHelpers.dll

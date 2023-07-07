@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MFA.Services;
 
 namespace MFA.ViewModels
 {
@@ -30,6 +31,7 @@ namespace MFA.ViewModels
                 TopicReleaseDate = DateTime.Now.ToString(),
                 OwnerId = RealmService.app.CurrentUser.Id
             };
+            
             await topicDBService.AddNewTopic(topic);
         }
     }
