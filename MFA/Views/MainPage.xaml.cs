@@ -13,7 +13,9 @@ public partial class MainPage : ContentPage
 
     ActivityIndicator loadingIndicator;
     IUserDbService userDbService;
-    public MainPage(MainPageViewModel viewModel, INavigationRepository navigationRepository, IUserDbService userDbService)
+    ITopicDBService topicDBService;
+    MainPageViewModel viewModel;
+    public MainPage(MainPageViewModel viewModel, INavigationRepository navigationRepository, IUserDbService userDbService, ITopicDBService topicDBService)
     {
 
 
@@ -21,11 +23,14 @@ public partial class MainPage : ContentPage
         BindingContext = viewModel;
         this.navigationRepository = navigationRepository;
         this.userDbService = userDbService;
+        this.topicDBService = topicDBService;
+        this.viewModel = viewModel;
     }
 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
+
 
         if (RealmService.app.CurrentUser == null)
         {
@@ -34,6 +39,22 @@ public partial class MainPage : ContentPage
 
         if (MainPageViewModel.User == null && RealmService.app.CurrentUser != null)
             MainPageViewModel.User = userDbService.GetUserByEmail(RealmService.CurrentUser.Profile.Email);
-        
+        async Task Check()
+        {
+            if (viewModel.Topics!=null&&topicDBService.GetAllTopics().Count == 0 && viewModel.Topics.Count > 0)
+            { 
+                viewModel.Topics.Clear(); 
+                viewModel.IsBusy = true;
+            }
+            while (topicDBService.GetAllTopics().Count == 0)
+            {
+                Thread.Sleep(100);
+            }
+            viewModel.IsBusy = false;
+            viewModel.Topics = new(topicDBService.GetAllTopics().Take(30));
+        }
+
+        await Task.Factory.StartNew(Check).WaitAsync(new CancellationToken());
+        viewModel.Topics = new(topicDBService.GetAllTopics().Take(30));
     }
 }

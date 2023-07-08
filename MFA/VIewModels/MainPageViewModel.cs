@@ -42,19 +42,10 @@ namespace MFA.ViewModels
             this.topicDbService = topicDbService;
             this.notificationService = notificationService;
             topicList = topicDbService.GetAllTopics();
-            var a = Task.Factory.StartNew(check);
             
         }
 
-        public async Task check()
-        {
-            while (topicList.Count == 0)
-            {
-                IsBusy = true;
-                topicList = topicDbService.GetAllTopics();
-            }
-            IsBusy = false;
-        }
+        
         [RelayCommand]
         public async Task GoToDetailsAsync(Topic topic)
         {
@@ -73,9 +64,9 @@ namespace MFA.ViewModels
         {
             try
             {
-
                 IsRefreshing = true;
                 Topics = new(topicDbService.GetAllTopics().Take(30));
+                topicCount = 30;
             }
             catch (Exception ex)
             {
