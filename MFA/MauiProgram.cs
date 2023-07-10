@@ -8,6 +8,8 @@ using MFA.Services.UsersCommentsService;
 using MFA.Services.UserService;
 using MFA.Services.ValidateService;
 using MFA.Utility.ImageManager;
+using MFA.Utility.UiHelper;
+using MFA.Utility.UiHelper.CollectionUiLogic;
 using MFA.ViewModels;
 using MFA.Views;
 using Microsoft.Extensions.Configuration;
@@ -71,6 +73,12 @@ public static class MauiProgram
         builder.Services.AddScoped<ITopicDBService, TopicDbService>();
 
         builder.Services.AddSingleton<IUsersCommentService, UsersCommentService>();
+
+        builder.Services.AddScoped<ICollectionUiLogic<Topic>, CollectionUiLogic<Topic>>();
+
+        builder.Services.AddScoped<ICollectionUiLogic<UsersComment>, CollectionUiLogic<UsersComment>>();
+
+        builder.Services.AddScoped<IDbChecker, DbChecker>();
 
         builder.Services.AddSingleton<IUserDbService, UserDbService>();
 

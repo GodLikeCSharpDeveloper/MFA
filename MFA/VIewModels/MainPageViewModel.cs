@@ -9,6 +9,7 @@ using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
 using MFA.Services.UserService;
+using MFA.Utility.UiHelper.CollectionUiLogic;
 using MFA.Views;
 using Realms;
 using Realms.Sync;
@@ -28,13 +29,15 @@ namespace MFA.ViewModels
         ITopicDBService topicDbService;
         INotificationService notificationService;
         IUserLogOut userLogOut;
+        ICollectionUiLogic<Topic> collectionUiLogic;
         public static User User { get; set; }
         private List<Topic> topicList = new();
         public MainPageViewModel(TopicService service,
             INavigationRepository navigationRepository,
             ITopicDBService topicDbService,
             INotificationService notificationService,
-            IUserLogOut userLogOut)
+            IUserLogOut userLogOut,
+            ICollectionUiLogic<Topic> collectionUiLogic)
         {
             this.service = service;
             this.userLogOut = userLogOut;
@@ -42,7 +45,7 @@ namespace MFA.ViewModels
             this.topicDbService = topicDbService;
             this.notificationService = notificationService;
             topicList = topicDbService.GetAllTopics();
-            
+            this.collectionUiLogic = collectionUiLogic;
         }
 
         
@@ -84,13 +87,7 @@ namespace MFA.ViewModels
         public ICommand OnCollectionEndReachedCommand => new Command(OnCollectionEndReached);
         void OnCollectionEndReached()
         {
-            topicCount += 20;
-            if (topicCount < topicList.Count)
-            {
-                var allTopics = topicList.Skip(topicCount - 20).Take(20);
-                foreach (var item in allTopics)
-                    Topics.Add(item);
-            }
+            collectionUiLogic.OnCollectionEndReached(topicList, Topics, ref topicCount);
         }
         [RelayCommand]
         private async Task LogOut()
