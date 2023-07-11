@@ -11,7 +11,6 @@ namespace MFA.Views;
 public partial class MainPage : ContentPage
 {
     INavigationRepository navigationRepository;
-
     ActivityIndicator loadingIndicator;
     IUserDbService userDbService;
     ITopicDBService topicDBService;
@@ -30,8 +29,6 @@ public partial class MainPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-
-
         if (RealmService.app.CurrentUser == null)
         {
             await navigationRepository.NavigateTo(nameof(LoginPage));
