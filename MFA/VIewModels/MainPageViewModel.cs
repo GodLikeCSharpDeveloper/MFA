@@ -22,8 +22,6 @@ namespace MFA.ViewModels
     {
         [ObservableProperty]
         bool isRefreshing;
-
-
         TopicService service;
         INavigationRepository navigationRepository;
         ITopicDBService topicDbService;

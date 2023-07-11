@@ -30,11 +30,11 @@ public partial class DetailsTopicPage : ContentPage
 
     protected override bool OnBackButtonPressed()
     {
-        Device.BeginInvokeOnMainThread(async () =>
-        {
-            await navigationRepository.WaitingNavigateTo("..", true);
-            viewModel.UsersComments.Clear();
-        });
+        viewModel.UsersComments.Clear();
+        Task.Factory.StartNew(async () => await navigationRepository.WaitingNavigateTo("..", true));
+
+        
+
         return true;
     }
 }
