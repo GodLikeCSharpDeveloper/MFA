@@ -24,7 +24,7 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
         builder
-            .UseMauiApp<App>()
+            .UseMauiApp<App>() 
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -35,7 +35,7 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-		builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<MainPageViewModel>();
 
         builder.Services.AddSingleton<RegisterPage>();

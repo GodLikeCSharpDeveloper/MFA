@@ -78,6 +78,7 @@
 		<PackageReference Include="Realm" Version="11.1.2" />
 		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
+		<PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
 	</ItemGroup>
 
 	<ItemGroup>

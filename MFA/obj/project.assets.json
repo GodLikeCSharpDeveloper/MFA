@@ -2417,6 +2417,25 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "Xamarin.Google.Android.Material/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -4889,6 +4908,25 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
         }
       },
       "Xamarin.Google.Android.Material/1.7.0": {
@@ -7365,6 +7403,25 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "Xamarin.Google.Android.Material/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -9837,6 +9894,25 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
         }
       },
       "Xamarin.Google.Android.Material/1.7.0": {
@@ -12313,6 +12389,25 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "Xamarin.Google.Android.Material/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -14785,6 +14880,25 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "Xamarin.Google.Android.Material/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -17254,6 +17368,25 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
         }
       },
       "Xamarin.Google.Android.Material/1.7.0": {
@@ -19730,6 +19863,25 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.targets": {}
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/MonoAndroid10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "Xamarin.Google.Android.Material/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -21218,6 +21370,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -22603,6 +22774,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -23994,6 +24184,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -25379,6 +25588,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -26770,6 +26998,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -28153,6 +28400,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -29541,6 +29807,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -30857,6 +31142,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -32071,6 +32375,41 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -33374,6 +33713,41 @@
           }
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -34671,6 +35045,41 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -35974,6 +36383,41 @@
           }
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -37271,6 +37715,41 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -38572,6 +39051,41 @@
           }
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -39869,6 +40383,41 @@
           }
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -41094,6 +41643,41 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -42508,6 +43092,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -43952,6 +44555,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -45390,6 +46012,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -46834,6 +47475,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -48272,6 +48932,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -49714,6 +50393,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -51152,6 +51850,25 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "type": "package",
         "compile": {
@@ -52530,6 +53247,25 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -57171,6 +57907,21 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "WebP.Touch/1.0.8": {
+      "sha512": "dvQaAn+m7cKL6k+evUilgikvrnk2qBm/h2lduAHFYIJFaJNIk9Z8pUI09gImzVKx5leUdvtLEzcLOOZAabspTA==",
+      "type": "package",
+      "path": "webp.touch/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.Mac20/WebP.Mac.dll",
+        "lib/Xamarin.Mac20/WebP.Mac.xml",
+        "lib/Xamarin.iOS10/WebP.Touch.dll",
+        "lib/Xamarin.iOS10/WebP.Touch.xml",
+        "webp.touch.1.0.8.nupkg.sha512",
+        "webp.touch.nuspec"
+      ]
+    },
     "Xamarin.Android.Glide/4.13.2.2": {
       "sha512": "Z//Q0sKJ97g8wxuJ3z1kka76sSUHA7WGV7yUPGS7IwwciHrPxpEwEju5cxBAbwqYd2+Ug1ecvW3X+q5/tUh6cw==",
       "type": "package",
@@ -58948,6 +59699,69 @@
         "xamarin.androidx.window.nuspec"
       ]
     },
+    "Xamarin.FFImageLoading/2.4.11.982": {
+      "sha512": "M0sNIQgUPs+le6C2TS4RmZQAURnzaRVizRtnZIZ6/1//qGcEAtEXAGt/tBJz6I1zlP6XlMxq8io6b4sjFP5N9Q==",
+      "type": "package",
+      "path": "xamarin.ffimageloading/2.4.11.982",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/FFImageLoading.Platform.dll",
+        "lib/MonoAndroid10/FFImageLoading.Platform.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Platform.xml",
+        "lib/MonoAndroid10/FFImageLoading.dll",
+        "lib/MonoAndroid10/FFImageLoading.pdb",
+        "lib/MonoAndroid10/FFImageLoading.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.xml",
+        "lib/netstandard1.0/FFImageLoading.Platform.dll",
+        "lib/netstandard1.0/FFImageLoading.Platform.xml",
+        "lib/netstandard1.0/FFImageLoading.dll",
+        "lib/netstandard1.0/FFImageLoading.pdb",
+        "lib/netstandard1.0/FFImageLoading.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Platform.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.xml",
+        "lib/tizen40/FFImageLoading.Platform.dll",
+        "lib/tizen40/FFImageLoading.Platform.pdb",
+        "lib/tizen40/FFImageLoading.Platform.xml",
+        "lib/tizen40/FFImageLoading.dll",
+        "lib/tizen40/FFImageLoading.pdb",
+        "lib/tizen40/FFImageLoading.xml",
+        "lib/uap/FFImageLoading.Platform.dll",
+        "lib/uap/FFImageLoading.Platform.pdb",
+        "lib/uap/FFImageLoading.Platform.xml",
+        "lib/uap/FFImageLoading.dll",
+        "lib/uap/FFImageLoading.pdb",
+        "lib/uap/FFImageLoading.xml",
+        "lib/win81/FFImageLoading.Platform.dll",
+        "lib/win81/FFImageLoading.Platform.pdb",
+        "lib/win81/FFImageLoading.Platform.xml",
+        "lib/win81/FFImageLoading.dll",
+        "lib/win81/FFImageLoading.pdb",
+        "lib/win81/FFImageLoading.xml",
+        "lib/wpa81/FFImageLoading.Platform.dll",
+        "lib/wpa81/FFImageLoading.Platform.pdb",
+        "lib/wpa81/FFImageLoading.Platform.xml",
+        "lib/wpa81/FFImageLoading.dll",
+        "lib/wpa81/FFImageLoading.pdb",
+        "lib/wpa81/FFImageLoading.xml",
+        "xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+        "xamarin.ffimageloading.nuspec"
+      ]
+    },
     "Xamarin.Google.Android.Material/1.7.0": {
       "sha512": "vs6Ab1HmCXbVGwJs2kSajniepSkFFwdu5wDfb9039swPazAaTWAolNbDOOKDGOS0kivECTL4xKat9kl4OA2EGg==",
       "type": "package",
@@ -59211,6 +60025,7 @@
       "Xamarin.AndroidX.Navigation.Runtime >= 2.5.2.1",
       "Xamarin.AndroidX.Navigation.UI >= 2.5.2.1",
       "Xamarin.AndroidX.Security.SecurityCrypto >= 1.1.0-alpha03",
+      "Xamarin.FFImageLoading >= 2.4.11.982",
       "Xamarin.Google.Android.Material >= 1.7.0",
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0.1"
     ],
@@ -59228,7 +60043,8 @@
       "MongoDB.Driver >= 2.20.0",
       "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
-      "System.IdentityModel.Tokens.Jwt >= 6.31.0"
+      "System.IdentityModel.Tokens.Jwt >= 6.31.0",
+      "Xamarin.FFImageLoading >= 2.4.11.982"
     ],
     "net7.0-maccatalyst16.1": [
       "Bogus >= 34.0.2",
@@ -59244,7 +60060,8 @@
       "MongoDB.Driver >= 2.20.0",
       "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
-      "System.IdentityModel.Tokens.Jwt >= 6.31.0"
+      "System.IdentityModel.Tokens.Jwt >= 6.31.0",
+      "Xamarin.FFImageLoading >= 2.4.11.982"
     ],
     "net7.0-windows10.0.19041": [
       "Bogus >= 34.0.2",
@@ -59263,7 +60080,8 @@
       "MongoDB.Driver >= 2.20.0",
       "Realm >= 11.1.2",
       "System.Drawing.Common >= 7.0.0",
-      "System.IdentityModel.Tokens.Jwt >= 6.31.0"
+      "System.IdentityModel.Tokens.Jwt >= 6.31.0",
+      "Xamarin.FFImageLoading >= 2.4.11.982"
     ]
   },
   "packageFolders": {
@@ -59433,6 +60251,10 @@
             "version": "[1.1.0-alpha03, )",
             "autoReferenced": true
           },
+          "Xamarin.FFImageLoading": {
+            "target": "Package",
+            "version": "[2.4.11.982, )"
+          },
           "Xamarin.Google.Android.Material": {
             "target": "Package",
             "version": "[1.7.0, )",
@@ -59472,7 +60294,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       },
       "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
@@ -59537,6 +60359,10 @@
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[6.31.0, )"
+          },
+          "Xamarin.FFImageLoading": {
+            "target": "Package",
+            "version": "[2.4.11.982, )"
           }
         },
         "imports": [
@@ -59567,7 +60393,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       },
       "net7.0-maccatalyst16.1": {
         "targetAlias": "net7.0-maccatalyst",
@@ -59632,6 +60458,10 @@
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[6.31.0, )"
+          },
+          "Xamarin.FFImageLoading": {
+            "target": "Package",
+            "version": "[2.4.11.982, )"
           }
         },
         "imports": [
@@ -59663,7 +60493,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       },
       "net7.0-windows10.0.19041": {
         "targetAlias": "net7.0-windows10.0.19041.0",
@@ -59744,6 +60574,10 @@
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[6.31.0, )"
+          },
+          "Xamarin.FFImageLoading": {
+            "target": "Package",
+            "version": "[2.4.11.982, )"
           }
         },
         "imports": [
@@ -59760,19 +60594,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.9, 7.0.9]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.9, 7.0.9]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.19041.28, 10.0.19041.28]"
+            "version": "[10.0.19041.29, 10.0.19041.29]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.9, 7.0.9]"
           }
         ],
         "frameworkReferences": {
@@ -59792,7 +60626,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -59818,5 +60652,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebP.Touch 1.0.8' was restored using 'Xamarin.iOS,Version=v1.0, .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-maccatalyst16.1'. This package may not be fully compatible with your project.",
+      "libraryId": "WebP.Touch",
+      "targetGraphs": [
+        "net7.0-maccatalyst16.1"
+      ]
+    }
+  ]
 }
