@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj": {}
+    "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA2\\MFA\\MFA\\MFA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj": {
+    "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA2\\MFA\\MFA\\MFA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
+        "projectUniqueName": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA2\\MFA\\MFA\\MFA.csproj",
         "projectName": "MFA",
-        "projectPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\MFA.csproj",
-        "packagesPath": "C:\\Users\\KAYAYASHA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KAYAYASHA\\Desktop\\New folder\\MFA\\MFA\\obj\\",
+        "projectPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA2\\MFA\\MFA\\MFA.csproj",
+        "packagesPath": "C:\\Users\\DaunV5.0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DaunV5.0\\Desktop\\New folder (2)\\MFA2\\MFA\\MFA\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KAYAYASHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DaunV5.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -167,10 +167,6 @@
               "version": "[1.1.0-alpha03, )",
               "autoReferenced": true
             },
-            "Xamarin.FFImageLoading": {
-              "target": "Package",
-              "version": "[2.4.11.982, )"
-            },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.7.0, )",
@@ -210,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -275,10 +271,6 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.31.0, )"
-            },
-            "Xamarin.FFImageLoading": {
-              "target": "Package",
-              "version": "[2.4.11.982, )"
             }
           },
           "imports": [
@@ -309,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -374,10 +366,6 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.31.0, )"
-            },
-            "Xamarin.FFImageLoading": {
-              "target": "Package",
-              "version": "[2.4.11.982, )"
             }
           },
           "imports": [
@@ -409,7 +397,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -490,10 +478,6 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.31.0, )"
-            },
-            "Xamarin.FFImageLoading": {
-              "target": "Package",
-              "version": "[2.4.11.982, )"
             }
           },
           "imports": [
@@ -510,19 +494,23 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.9, 7.0.9]"
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.9, 7.0.9]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.29, 10.0.19041.29]"
+              "version": "[10.0.19041.28, 10.0.19041.28]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.9, 7.0.9]"
+              "version": "[7.0.5, 7.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -542,7 +530,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -559,6 +547,9 @@
           "#import": []
         },
         "ios-arm64": {
+          "#import": []
+        },
+        "maccatalyst-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

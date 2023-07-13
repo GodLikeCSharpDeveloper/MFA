@@ -11,23 +11,22 @@ using MFA.Utility.UiHelper.CollectionUiLogic;
 
 namespace MFA.ViewModels
 {
+   
     [QueryProperty(nameof(Topic), "Topic")]
     public partial class TopicDetailViewModel : BaseViewModel
     {
-        public List<UsersComment> _usersComments;
+        public static List<UsersComment> _usersComments;
         IUsersCommentService usersCommentService;
         ICollectionUiLogic<UsersComment> collectionUiLogic;
         public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<UsersComment> collectionUiLogic)
         {
             this.usersCommentService = usersCommentService;
             this.collectionUiLogic = collectionUiLogic;
-            _usersComments = usersCommentService.GetAllCurrentTopicComments(this.Topic).ToList();
-            
         }
         [ObservableProperty]
         public Topic topic;
 
-        
+        [ObservableProperty] public ObservableCollection<WrappedComments> wrapper;
         [ObservableProperty]
         ObservableCollection<UsersComment> usersComments;
 
@@ -50,7 +49,6 @@ namespace MFA.ViewModels
                 return faker.Generate(number).ToList();
                 //TODO DATABASE CONTENT POG POG PogChamp
             }
-
             var newComment2 = GenerateInfo(50);
             foreach (var item in newComment2)
             {

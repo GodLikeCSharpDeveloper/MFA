@@ -16,9 +16,10 @@ namespace MFA.Utility.UiHelper.CollectionUiLogic
                 var allTopics = fullList.Skip(count).Take(10);
                 foreach (var item in allTopics)
                     list.Add(item);
+                count += 10;
                 return list;
             }
-            count += 10;
+            
             return list;
         }
     }
