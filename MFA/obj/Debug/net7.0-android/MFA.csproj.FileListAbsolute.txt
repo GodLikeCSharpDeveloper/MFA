@@ -2102,19 +2102,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\stamp\_Co
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.StackTrace.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.TraceSource.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.CoreLib.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.Uri.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\bin\Debug\net7.0-android\Resources\Images\dotnet_bot.svg
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\bin\Debug\net7.0-android\MFA.runtimeconfig.json
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\bin\Debug\net7.0-android\MFA.dll
@@ -3123,3 +3110,16 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\obj\Debug\net7.0-android\s
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA2\MFA\MFA\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.StackTrace.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.TraceSource.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.Uri.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll

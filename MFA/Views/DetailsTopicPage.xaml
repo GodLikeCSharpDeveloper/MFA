@@ -13,7 +13,8 @@
             <converter:DateConverter x:Key="DateConverter"></converter:DateConverter>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <CollectionView ItemsSource="{Binding Wrapper}" 
+    <ScrollView>
+    <CollectionView ItemsSource="{Binding UsersComments}" 
                     RemainingItemsThreshold="1"
                     RemainingItemsThresholdReachedCommand="{Binding OnCollectionEndReachedCommand}"
                     Grid.Row="1">
@@ -34,7 +35,7 @@
             </ScrollView>
         </CollectionView.Header>
         <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="model:WrappedComments">
+            <DataTemplate x:DataType="model:UsersComment">
                 <Frame Padding="0">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:TopicDetailViewModel}}, 
@@ -42,15 +43,16 @@
                     </Frame.GestureRecognizers>
                     <Border MinimumHeightRequest="75">
                         <Grid Padding="0" ColumnDefinitions="auto,auto,*" RowDefinitions="auto,*,auto">
-                            <ImageButton Source="{Binding ImageOf}" HeightRequest="75" WidthRequest="75" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0">
+                            <ImageButton Source="{Binding User.UsersImage.imgSource}" HeightRequest="75" WidthRequest="75" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0">
                             </ImageButton>
-                            <Label Text="{Binding UsersComment.User.Name}" Grid.Row="0" Grid.Column="1"></Label>
-                            <Label Text="{Binding UsersComment.CreationDate, Converter={StaticResource DateConverter}}" Grid.Column="2" VerticalTextAlignment="Start" HorizontalTextAlignment="End" Margin="0,0,5,0"></Label>
-                            <Label Text="{Binding UsersComment.Content}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" VerticalTextAlignment="Start"></Label>
+                            <Label Text="{Binding User.Name}" Grid.Row="0" Grid.Column="1"></Label>
+                            <Label Text="{Binding CreationDate, Converter={StaticResource DateConverter}}" Grid.Column="2" VerticalTextAlignment="Start" HorizontalTextAlignment="End" Margin="0,0,5,0"></Label>
+                            <Label Text="{Binding Content}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" VerticalTextAlignment="Start"></Label>
                         </Grid>
                     </Border>
                 </Frame>
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
+    </ScrollView>
 </ContentPage>
