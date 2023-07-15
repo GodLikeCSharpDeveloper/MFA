@@ -22,6 +22,7 @@ namespace MFA.Models
         [MapTo("Avatar")]
         public ImageData? UsersImage { get; set; }
         public IList<UsersComment> UsersComments { get; }
+        public IList<UserLikes> UserLikes { get; }
 
     }
 }

@@ -638,3 +638,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\MFA.pdb
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\MFA.genruntimeconfig.cache
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\ref\MFA.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8like.gif
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8like24black.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8retweet24.png

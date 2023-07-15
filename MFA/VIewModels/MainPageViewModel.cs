@@ -4,10 +4,10 @@ using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 using MFA.Models;
 using MFA.Services;
-using MFA.Services.DBService;
 using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
+using MFA.Services.TopicService;
 using MFA.Services.UserService;
 using MFA.Utility.UiHelper.CollectionUiLogic;
 using MFA.Views;
@@ -22,7 +22,7 @@ namespace MFA.ViewModels
     {
         [ObservableProperty]
         bool isRefreshing;
-        TopicService service;
+        TopicServices service;
         INavigationRepository navigationRepository;
         ITopicDBService topicDbService;
         INotificationService notificationService;
@@ -30,7 +30,7 @@ namespace MFA.ViewModels
         ICollectionUiLogic<Topic> collectionUiLogic;
         public static User User { get; set; }
         private List<Topic> topicList = new();
-        public MainPageViewModel(TopicService service,
+        public MainPageViewModel(TopicServices service,
             INavigationRepository navigationRepository,
             ITopicDBService topicDbService,
             INotificationService notificationService,

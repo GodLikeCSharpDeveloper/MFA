@@ -15,7 +15,6 @@ namespace MFA.Utility.Converter
         {
             var test = (byte[])value;
             return ImageSource.FromStream(() => new MemoryStream(test));
-            
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

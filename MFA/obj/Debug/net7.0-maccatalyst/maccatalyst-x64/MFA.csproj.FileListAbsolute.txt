@@ -613,3 +613,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MFA.pdb
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MFA.genruntimeconfig.cache
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\MFA.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8like.gif
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8like24black.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8retweet24.png

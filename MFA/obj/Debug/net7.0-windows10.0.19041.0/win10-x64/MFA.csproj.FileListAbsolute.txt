@@ -946,7 +946,6 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.723.27404.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -1278,3 +1277,7 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.923.32018.dll
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8like.scale-100.gif
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8like24black.scale-100.png
+C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8retweet24.scale-100.png

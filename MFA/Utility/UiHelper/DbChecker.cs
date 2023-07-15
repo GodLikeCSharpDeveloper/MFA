@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MFA.Services.DBService;
+using MFA.Services.TopicService;
 
 namespace MFA.Utility.UiHelper
 {
@@ -37,6 +37,6 @@ namespace MFA.Utility.UiHelper
             var all = topicDbService.GetAllTopics().Take(30);
             mainPageViewModel.Topics = new(all);
 
-        }
+        } 
     }
 }

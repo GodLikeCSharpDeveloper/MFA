@@ -1,9 +1,10 @@
 ﻿using MFA.Services;
-using MFA.Services.DBService;
+using MFA.Services.LikeRepository;
 using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
 using MFA.Services.RegisterServices;
+using MFA.Services.TopicService;
 using MFA.Services.UsersCommentsService;
 using MFA.Services.UserService;
 using MFA.Services.ValidateService;
@@ -74,6 +75,8 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<IUsersCommentService, UsersCommentService>();
 
+        builder.Services.AddSingleton<ILikeRepository, LikeRepository>();
+
         builder.Services.AddScoped<ICollectionUiLogic<Topic>, CollectionUiLogic<Topic>>();
 
         builder.Services.AddScoped<ICollectionUiLogic<UsersComment>, CollectionUiLogic<UsersComment>>();
@@ -84,7 +87,7 @@ public static class MauiProgram
 
         builder.Services.AddScoped<IImageManager, ImageManager>();
 
-        builder.Services.AddSingleton<TopicService>();
+        builder.Services.AddSingleton<TopicServices>();
 
        
         return builder.Build();

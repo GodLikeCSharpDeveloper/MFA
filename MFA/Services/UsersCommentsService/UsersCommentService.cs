@@ -42,6 +42,15 @@ namespace MFA.Services.UsersCommentsService
         {
             var realm = RealmService.GetRealm();
             var com = realm.All<UsersComment>().Where(x => x.Topic == topic).ToList();
+            var likes = realm.All<UserLikes>().ToList();
+            foreach (var item in com)
+            {
+                foreach (var like in likes)
+                {
+                    if (like.OwnerUser._id == MainPageViewModel.User._id && like.LikedComments._id == item._id)
+                        item.LikeStatus = "icons8like24black.png";
+                }
+            }
             return com;
         }
     }

@@ -8,29 +8,31 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Bogus;
 using MFA.Utility.UiHelper.CollectionUiLogic;
+using MFA.Services.LikeRepository;
 
 namespace MFA.ViewModels
 {
-   
+
     [QueryProperty(nameof(Topic), "Topic")]
     public partial class TopicDetailViewModel : BaseViewModel
     {
         public static List<UsersComment> _usersComments;
         IUsersCommentService usersCommentService;
         ICollectionUiLogic<UsersComment> collectionUiLogic;
-        public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<UsersComment> collectionUiLogic)
+        ILikeRepository likeRepository;
+        public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<UsersComment> collectionUiLogic, ILikeRepository likeRepository)
         {
             this.usersCommentService = usersCommentService;
             this.collectionUiLogic = collectionUiLogic;
+            this.likeRepository = likeRepository;
         }
         [ObservableProperty]
         public Topic topic;
 
-        [ObservableProperty] public ObservableCollection<WrappedComments> wrapper;
         [ObservableProperty]
         ObservableCollection<UsersComment> usersComments;
 
-        [ObservableProperty] 
+        [ObservableProperty]
         UsersComment usersComment = new();
         [RelayCommand]
         public async Task AddNewComment()
@@ -45,7 +47,7 @@ namespace MFA.ViewModels
             {
                 var faker = new Faker<UsersComment>().RuleFor(p => p.Content, f => f.Lorem.Paragraphs(1, 10, "/n"))
                                                      .RuleFor(p => p.UpdateDate, f => f.Date.FutureDateOnly().ToShortDateString()).
-                                                     RuleFor(x=>x.Topic, f=>this.Topic);
+                                                     RuleFor(x => x.Topic, f => this.Topic);
                 return faker.Generate(number).ToList();
                 //TODO DATABASE CONTENT POG POG PogChamp
             }
@@ -54,18 +56,31 @@ namespace MFA.ViewModels
             {
                 await usersCommentService.AddNewComment(item);
             }
-            
+
             //UsersComments.Add(newComment);
         }
-        int commentsCount = 30;
+        [ObservableProperty]
+        public bool animateImg;
+        
+        public int commentsCount = 30;
         public ICommand OnCollectionEndReachedCommand => new Command(OnCollectionEndReached);
-        [ObservableProperty] public string numberoftimes = "0";
         void OnCollectionEndReached()
         {
             collectionUiLogic.OnCollectionEndReached(_usersComments, UsersComments, ref commentsCount);
-            var a = Convert.ToInt32(numberoftimes);
-            a++;
-            numberoftimes = a.ToString();
+        }
+
+        [RelayCommand]
+        async Task LikeComment(object parameter)
+        {
+            var comment = (UsersComment)parameter;
+            comment.LikeStatus = "icons8like24black.png";
+            OnPropertyChanged(nameof(comment.LikeStatus));
+            await likeRepository.AddNewLike(comment);
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

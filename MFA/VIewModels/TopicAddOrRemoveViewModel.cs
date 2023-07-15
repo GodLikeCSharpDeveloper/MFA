@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MFA.Services;
+using MFA.Services.TopicService;
 
 namespace MFA.ViewModels
 {
