@@ -35,7 +35,7 @@
                 </ScrollView>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:UsersComment">
+                <DataTemplate x:DataType="model:CommentWrapper">
                     <Frame Padding="0" >
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:TopicDetailViewModel}}, 
@@ -43,11 +43,11 @@
                         </Frame.GestureRecognizers>
                         <Border>
                             <Grid Padding="0" ColumnDefinitions="75,*,*" RowDefinitions="auto,*,auto, 40">
-                                <ImageButton Margin="2,2,2,2" VerticalOptions="Start" Source="{Binding User.UsersImage.imgSource}" HeightRequest="75" WidthRequest="75" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0">
+                                <ImageButton Margin="2,2,2,2" VerticalOptions="Start" Source="{Binding UsersComment.User.UsersImage.imgSource}" HeightRequest="75" WidthRequest="75" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0">
                                 </ImageButton>
-                                <Label Text="{Binding User.Name}"  MinimumHeightRequest="20" FontSize="20" Grid.Row="0" Grid.Column="1"></Label>
-                                <Label Text="{Binding CreationDate, Converter={StaticResource DateConverter}}" Grid.Row="0"  Grid.Column="2" VerticalTextAlignment="Start" HorizontalTextAlignment="End" Margin="0,0,5,0"></Label>
-                                <Label Text="{Binding Content}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" LineBreakMode="WordWrap" VerticalTextAlignment="Start"></Label>
+                                <Label Text="{Binding UsersComment.User.Name}"  MinimumHeightRequest="20" FontSize="20" Grid.Row="0" Grid.Column="1"></Label>
+                                <Label Text="{Binding UsersComment.CreationDate}" Grid.Row="0"  Grid.Column="2" VerticalTextAlignment="Start" HorizontalTextAlignment="End" Margin="0,0,5,0"></Label>
+                                <Label Text="{Binding UsersComment.Content}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" LineBreakMode="WordWrap" VerticalTextAlignment="Start"></Label>
                                 <ImageButton CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type view:TopicDetailViewModel}}, Path=LikeCommentCommand}"  HorizontalOptions="End" Source="icons8like.gif"  Grid.Row="3" Grid.Column="1" HeightRequest="20" WidthRequest="20"></ImageButton>
                                 <Image HorizontalOptions="Center" Source="{Binding LikeStatus}" Grid.Row="3" Grid.Column="2" HeightRequest="20" WidthRequest="20">
                                 </Image>

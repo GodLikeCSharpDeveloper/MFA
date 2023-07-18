@@ -34,24 +34,25 @@ namespace MFA.ViewModels
         //}
 
         [ObservableProperty]
-        public ImageSource avatarData;
+        public byte[] avatarData;
         [ObservableProperty]
         public User currentUser;
 
 
         [RelayCommand]
-        public async void ChangeAvatar()
+        public async Task ChangeAvatar()
         {
             var image = await imageManager.ChangeAvatar();
             await userDbService.UpdateUser(MainPageViewModel.User, new User
             {
                 UsersImage = image
             });
-            await navigationRepository.NavigateTo("..", false);
-            await navigationRepository.WaitingNavigateTo(nameof(UserInfoPage), false);
+            AvatarData = image.Data;
+            //await navigationRepository.NavigateTo("..", false);
+            //await navigationRepository.WaitingNavigateTo(nameof(UserInfoPage), false);
         }
         [RelayCommand]
-        public async void GoToUserEdit()
+        public async Task GoToUserEdit()
         {
             await navigationRepository.WaitingNavigateTo("UserEditPage", false);
         }

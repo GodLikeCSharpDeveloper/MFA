@@ -38,20 +38,27 @@ namespace MFA.Services.UsersCommentsService
             }
         }
 
-        public List<UsersComment> GetAllCurrentTopicComments(Topic topic)
+        public List<CommentWrapper> GetAllCurrentTopicComments(Topic topic)
         {
+            var wrap = new List<CommentWrapper>();
             var realm = RealmService.GetRealm();
             var com = realm.All<UsersComment>().Where(x => x.Topic == topic).ToList();
             var likes = realm.All<UserLikes>().ToList();
             foreach (var item in com)
             {
+                var a = new CommentWrapper(item);
+                wrap.Add(a);
+            }
+
+            foreach (var item in wrap)
+            {
                 foreach (var like in likes)
                 {
-                    if (like.OwnerUser._id == MainPageViewModel.User._id && like.LikedComments._id == item._id)
-                        item.LikeStatus = "icons8like24black.png";
+                    if (like.OwnerUser._id == MainPageViewModel.User._id && like.LikedComments._id == item.UsersComment._id)
+                            item.LikeStatus = "icons8like24black.png";
                 }
             }
-            return com;
+            return wrap;
         }
     }
 }

@@ -12,6 +12,7 @@ namespace MFA.Models
         public string UpdateDate { get; set; }
         public Topic Topic { get; set; }
         public User User { get; set; }
-        [Ignored] public string LikeStatus { get; set; } = "icons8like.gif";
+        [Ignored]
+        public string LikeStatus { get; set; } = "icons8like.gif";
     }
 }

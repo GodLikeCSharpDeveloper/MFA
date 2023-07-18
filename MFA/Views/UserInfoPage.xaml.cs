@@ -25,7 +25,7 @@ public partial class UserInfoPage : ContentPage
         if (MainPageViewModel.User?.UsersImage != null)
         {
             var test = MainPageViewModel.User.UsersImage.Data;
-            AvatarImage.Source = ImageSource.FromStream(() => new MemoryStream(test));
+            
         }
     }
 }

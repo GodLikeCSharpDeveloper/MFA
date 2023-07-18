@@ -4,7 +4,14 @@
              x:Class="MFA.Views.UserInfoPage"
              Title="UserInfoPage"
              xmlns:view="clr-namespace:MFA.ViewModels"
-             x:DataType="view:UserInfoViewModel">
+             x:DataType="view:UserInfoViewModel"
+             xmlns:converter="clr-namespace:MFA.Utility.Converter">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ImageConverter x:Key="ImageConverter"></converter:ImageConverter>
+            <converter:DateConverter x:Key="DateConverter"></converter:DateConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <Shell.TitleView>
         <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,*" Padding="0, 0, 0, 0">
             <ImageButton  Source="burgerite2m.jpg" WidthRequest="30" HeightRequest="30" Grid.Column="0" Command="{Binding GoToUserEditCommand}"></ImageButton>
@@ -16,7 +23,7 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="250" ></RoundRectangle>
                 </Border.StrokeShape>
-                <ImageButton Source="{Binding AvatarData}" x:Name="AvatarImage" Command="{Binding ChangeAvatarCommand}">
+                <ImageButton Source="{Binding AvatarData, Converter={StaticResource ImageConverter}}"  Command="{Binding ChangeAvatarCommand}">
                 </ImageButton>
             </Border>
             <Grid Grid.Column="1" Grid.Row="0" RowDefinitions="auto,auto,auto,auto" ColumnDefinitions="*">

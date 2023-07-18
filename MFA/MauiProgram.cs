@@ -79,7 +79,7 @@ public static class MauiProgram
 
         builder.Services.AddScoped<ICollectionUiLogic<Topic>, CollectionUiLogic<Topic>>();
 
-        builder.Services.AddScoped<ICollectionUiLogic<UsersComment>, CollectionUiLogic<UsersComment>>();
+        builder.Services.AddScoped<ICollectionUiLogic<CommentWrapper>, CollectionUiLogic<CommentWrapper>>();
 
         builder.Services.AddScoped<IDbChecker, DbChecker>();
 

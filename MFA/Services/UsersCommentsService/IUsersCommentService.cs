@@ -13,6 +13,6 @@ namespace MFA.Services.UsersCommentsService
             throw new NotImplementedException();
         }
 
-        public List<UsersComment> GetAllCurrentTopicComments(Topic topic);
+        public List<CommentWrapper> GetAllCurrentTopicComments(Topic topic);
     }
 }

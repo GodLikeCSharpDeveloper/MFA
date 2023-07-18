@@ -31,6 +31,7 @@ public partial class DetailsTopicPage : ContentPage
         }
         viewModel.AnimateImg = true;
         Thread.Sleep(100);
+
         TopicDetailViewModel._usersComments = new(usersCommentService.GetAllCurrentTopicComments(viewModel.Topic).ToList());
         Thread.Sleep(100);
         viewModel.UsersComments = new(TopicDetailViewModel._usersComments.Take(20));

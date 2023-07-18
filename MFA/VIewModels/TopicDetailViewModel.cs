@@ -9,6 +9,7 @@ using System.Windows.Input;
 using Bogus;
 using MFA.Utility.UiHelper.CollectionUiLogic;
 using MFA.Services.LikeRepository;
+using System.Collections.Specialized;
 
 namespace MFA.ViewModels
 {
@@ -16,11 +17,11 @@ namespace MFA.ViewModels
     [QueryProperty(nameof(Topic), "Topic")]
     public partial class TopicDetailViewModel : BaseViewModel
     {
-        public static List<UsersComment> _usersComments;
+        public static List<CommentWrapper> _usersComments;
         IUsersCommentService usersCommentService;
-        ICollectionUiLogic<UsersComment> collectionUiLogic;
+        ICollectionUiLogic<CommentWrapper> collectionUiLogic;
         ILikeRepository likeRepository;
-        public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<UsersComment> collectionUiLogic, ILikeRepository likeRepository)
+        public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<CommentWrapper> collectionUiLogic, ILikeRepository likeRepository)
         {
             this.usersCommentService = usersCommentService;
             this.collectionUiLogic = collectionUiLogic;
@@ -30,7 +31,7 @@ namespace MFA.ViewModels
         public Topic topic;
 
         [ObservableProperty]
-        ObservableCollection<UsersComment> usersComments;
+        ObservableCollection<CommentWrapper> usersComments = new();
 
         [ObservableProperty]
         UsersComment usersComment = new();
@@ -55,6 +56,7 @@ namespace MFA.ViewModels
             foreach (var item in newComment2)
             {
                 await usersCommentService.AddNewComment(item);
+                UsersComments.Add(new CommentWrapper(item));
             }
 
             //UsersComments.Add(newComment);
@@ -72,15 +74,11 @@ namespace MFA.ViewModels
         [RelayCommand]
         async Task LikeComment(object parameter)
         {
-            var comment = (UsersComment)parameter;
-            comment.LikeStatus = "icons8like24black.png";
-            OnPropertyChanged(nameof(comment.LikeStatus));
-            await likeRepository.AddNewLike(comment);
+            var comment = (CommentWrapper)parameter;
+            UsersComments.FirstOrDefault(x => x.UsersComment._id == comment.UsersComment._id).LikeStatus = "icons8like24black.png";
+            await likeRepository.AddNewLike(comment.UsersComment);
+
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+       
     }
 }
