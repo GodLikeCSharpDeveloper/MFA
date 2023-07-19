@@ -61,9 +61,7 @@ namespace MFA.ViewModels
 
             //UsersComments.Add(newComment);
         }
-        [ObservableProperty]
-        public bool animateImg;
-        
+
         public int commentsCount = 30;
         public ICommand OnCollectionEndReachedCommand => new Command(OnCollectionEndReached);
         void OnCollectionEndReached()
@@ -75,10 +73,23 @@ namespace MFA.ViewModels
         async Task LikeComment(object parameter)
         {
             var comment = (CommentWrapper)parameter;
-            UsersComments.FirstOrDefault(x => x.UsersComment._id == comment.UsersComment._id).LikeStatus = "icons8like24black.png";
-            await likeRepository.AddNewLike(comment.UsersComment);
+            var com = UsersComments.FirstOrDefault(x => x.UsersComment._id == comment.UsersComment._id).LikeStatus;
+            if (com != "icons8like24black.png")
+            {
+                comment.LikeStatus = "icons8like24black.png";
+                com = "icons8like24black.png";
+                await likeRepository.AddNewLike(comment.UsersComment);
+            }
+            else
+            {
+                comment.LikeStatus = "icons8like.png";
+                com = "icons8like24black.png";
+                var realm = RealmService.GetRealm();
+                var likeToRemove = realm.All<UserLikes>().FirstOrDefault(x => x.LikedComments == comment.UsersComment && x.OwnerUser == MainPageViewModel.User);
+                await likeRepository.RemoveLike(likeToRemove);
+            }
 
         }
-       
+
     }
 }

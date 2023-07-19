@@ -49,5 +49,15 @@ namespace MFA.Services.LikeRepository
             });
             return like;
         }
+
+        public async Task RemoveLike(UserLikes like)
+        {
+            var realm = RealmService.GetRealm();
+            await realm.WriteAsync(() =>
+            {
+                realm.Remove(like);
+            });
+        }
+
     }
 }

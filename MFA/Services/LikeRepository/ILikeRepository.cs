@@ -22,6 +22,11 @@ namespace MFA.Services.LikeRepository
         {
             throw new NotImplementedException();
         }
+
+        public async Task RemoveLike(UserLikes like)
+        {
+            throw new NotImplementedException();
+        }
         
     }
 }
