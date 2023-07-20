@@ -1,3 +1,5 @@
+using MFA.ViewModels;
+
 namespace MFA.Views;
 
 public partial class RegisterPage : ContentPage

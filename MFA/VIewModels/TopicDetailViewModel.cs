@@ -1,15 +1,10 @@
-﻿using MFA.Services.DBService;
-using MFA.Services.UsersCommentsService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Bogus;
-using MFA.Utility.UiHelper.CollectionUiLogic;
 using MFA.Services.LikeRepository;
-using System.Collections.Specialized;
+using MFA.Services.NavigationService;
+using MFA.Services.UsersCommentsService;
+using MFA.Utility.UiHelper.CollectionUiLogic;
+using MFA.Views;
 
 namespace MFA.ViewModels
 {
@@ -21,11 +16,13 @@ namespace MFA.ViewModels
         IUsersCommentService usersCommentService;
         ICollectionUiLogic<CommentWrapper> collectionUiLogic;
         ILikeRepository likeRepository;
-        public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<CommentWrapper> collectionUiLogic, ILikeRepository likeRepository)
+        INavigationRepository navigationRepository;
+        public TopicDetailViewModel(IUsersCommentService usersCommentService, ICollectionUiLogic<CommentWrapper> collectionUiLogic, ILikeRepository likeRepository, INavigationRepository navigationRepository)
         {
             this.usersCommentService = usersCommentService;
             this.collectionUiLogic = collectionUiLogic;
             this.likeRepository = likeRepository;
+            this.navigationRepository = navigationRepository;
         }
         [ObservableProperty]
         public Topic topic;
@@ -58,7 +55,6 @@ namespace MFA.ViewModels
                 await usersCommentService.AddNewComment(item);
                 UsersComments.Add(new CommentWrapper(item));
             }
-
             //UsersComments.Add(newComment);
         }
 
@@ -70,6 +66,15 @@ namespace MFA.ViewModels
         }
 
         [RelayCommand]
+        async Task GoToEditComment(Object obj)
+        {
+            var comment = (CommentWrapper)obj;
+            await navigationRepository.NavigateTo(nameof(CommentEditPage), new Dictionary<string, object>()
+            {
+                {"Comment", comment.usersComment}
+            });
+        }
+        [RelayCommand]
         async Task LikeComment(object parameter)
         {
             var comment = (CommentWrapper)parameter;
@@ -77,19 +82,13 @@ namespace MFA.ViewModels
             if (com != "icons8like24black.png")
             {
                 comment.LikeStatus = "icons8like24black.png";
-                com = "icons8like24black.png";
                 await likeRepository.AddNewLike(comment.UsersComment);
             }
             else
             {
                 comment.LikeStatus = "icons8like.png";
-                com = "icons8like24black.png";
-                var realm = RealmService.GetRealm();
-                var likeToRemove = realm.All<UserLikes>().FirstOrDefault(x => x.LikedComments == comment.UsersComment && x.OwnerUser == MainPageViewModel.User);
-                await likeRepository.RemoveLike(likeToRemove);
+                await likeRepository.RemoveLike(comment.UsersComment);
             }
-
         }
-
     }
 }

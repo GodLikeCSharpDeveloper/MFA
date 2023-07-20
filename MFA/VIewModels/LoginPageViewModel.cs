@@ -1,9 +1,6 @@
-﻿using Bogus.DataSets;
-using MFA.Services.DBService;
-using MFA.Services.LoginServices;
+﻿using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
-using MFA.Services.RegisterServices;
 using MFA.Services.ValidateService;
 using MFA.Views;
 

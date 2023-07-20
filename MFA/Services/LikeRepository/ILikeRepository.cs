@@ -23,7 +23,7 @@ namespace MFA.Services.LikeRepository
             throw new NotImplementedException();
         }
 
-        public async Task RemoveLike(UserLikes like)
+        public async Task RemoveLike(UsersComment comment)
         {
             throw new NotImplementedException();
         }

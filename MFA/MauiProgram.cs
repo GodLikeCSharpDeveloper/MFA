@@ -48,6 +48,9 @@ public static class MauiProgram
         builder.Services.AddSingleton<LoginPage>();
         builder.Services.AddSingleton<LoginPageViewModel>();
 
+        builder.Services.AddScoped<CommentEditPage>();
+        builder.Services.AddScoped<CommentEditViewModel>();
+
         builder.Services.AddSingleton<UserInfoPage>();
         builder.Services.AddSingleton<UserInfoViewModel>();
 

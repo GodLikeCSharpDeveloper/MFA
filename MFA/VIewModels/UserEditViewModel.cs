@@ -1,11 +1,5 @@
 ﻿using MFA.Services.NavigationService;
 using MFA.Services.UserService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MFA.Views;
 
 namespace MFA.ViewModels
 {

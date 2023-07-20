@@ -1,18 +1,11 @@
-﻿using System.Collections.Concurrent;
-using System.Collections.ObjectModel;
-using System.Windows.Input;
-using CommunityToolkit.Mvvm.Input;
-using MFA.Models;
+﻿using System.Windows.Input;
 using MFA.Services;
 using MFA.Services.LoginServices;
 using MFA.Services.NavigationService;
 using MFA.Services.NotificationService;
 using MFA.Services.TopicService;
-using MFA.Services.UserService;
 using MFA.Utility.UiHelper.CollectionUiLogic;
 using MFA.Views;
-using Realms;
-using Realms.Sync;
 using User = MFA.Models.User;
 
 

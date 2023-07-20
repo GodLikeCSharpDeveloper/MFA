@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MFA.ViewModels;
 
 namespace MFA.Services.LikeRepository
 {
@@ -50,12 +51,13 @@ namespace MFA.Services.LikeRepository
             return like;
         }
 
-        public async Task RemoveLike(UserLikes like)
+        public async Task RemoveLike(UsersComment comment)
         {
             var realm = RealmService.GetRealm();
+            var likeToRemove = realm.All<UserLikes>().FirstOrDefault(x => x.LikedComments == comment && x.OwnerUser == MainPageViewModel.User);
             await realm.WriteAsync(() =>
             {
-                realm.Remove(like);
+                realm.Remove(likeToRemove);
             });
         }
 

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MFA.Services.DBService;
 using MFA.Services.NotificationService;
 using MFA.Services.UserService;
+using MFA.ViewModels;
 
 namespace MFA.Services.UsersCommentsService
 {
@@ -52,10 +53,17 @@ namespace MFA.Services.UsersCommentsService
 
             foreach (var item in wrap)
             {
-                foreach (var like in likes)
+                if (item.UsersComment.User != null)
                 {
-                    if (like.OwnerUser._id == MainPageViewModel.User._id && like.LikedComments._id == item.UsersComment._id)
+                    if (item.UsersComment.User._id == MainPageViewModel.User._id)
+                        item.OwnedByUser = true;
+                    foreach (var like in likes)
+                    {
+                        if (like.OwnerUser._id == MainPageViewModel.User._id && like.LikedComments._id == item.UsersComment._id)
+                        {
                             item.LikeStatus = "icons8like24black.png";
+                        }
+                    }
                 }
             }
             return wrap;

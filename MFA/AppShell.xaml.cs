@@ -15,7 +15,7 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(TopicAddOrRemove), typeof(TopicAddOrRemove));
         Routing.RegisterRoute(nameof(UserInfoPage), typeof(UserInfoPage));
         Routing.RegisterRoute(nameof(UserEditPage), typeof(UserEditPage));
-
+        Routing.RegisterRoute(nameof(CommentEditPage), typeof(CommentEditPage));
     }
 
     private async void LogOut(object sender, EventArgs e)

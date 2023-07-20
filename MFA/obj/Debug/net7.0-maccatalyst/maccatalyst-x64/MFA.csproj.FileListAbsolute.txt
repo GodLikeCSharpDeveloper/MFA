@@ -45,8 +45,6 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\ma
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Bogus.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\DnsClient.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.AspNetCore.Authorization.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.AspNetCore.Metadata.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -616,3 +614,7 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\macca
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8like.gif
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8like24black.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8retweet24.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8edit30.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8like.gif
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8like24black.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\icons8retweet24.png

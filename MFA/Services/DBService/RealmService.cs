@@ -53,7 +53,7 @@ namespace MFA.Services.DBService
                 {
                     realm.Subscriptions.Add(realm.All<Topic>(), new SubscriptionOptions());
                     realm.Subscriptions.Add(realm.All<ImageData>(), new SubscriptionOptions());
-                    realm.Subscriptions.Add(realm.All<MFAUsers>(),  new SubscriptionOptions());
+                    realm.Subscriptions.Add(realm.All<MFAUsers>(), new SubscriptionOptions());
                     realm.Subscriptions.Add(realm.All<UsersComment>(), new SubscriptionOptions());
                     realm.Subscriptions.Add(realm.All<UserLikes>(), new SubscriptionOptions());
                 }

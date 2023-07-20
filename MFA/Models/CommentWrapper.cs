@@ -17,5 +17,7 @@ namespace MFA.Models
         }
         [ObservableProperty]
         public string likeStatus = "icons8like.gif";
+        [ObservableProperty]
+        bool ownedByUser = false;
     }
 }

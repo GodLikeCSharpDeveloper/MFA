@@ -4,6 +4,7 @@ using MFA.Services.NavigationService;
 using MFA.Services.TopicService;
 using MFA.Services.UserService;
 using MFA.Utility.UiHelper;
+using MFA.ViewModels;
 using Microsoft.Maui.Controls;
 using Realms;
 
@@ -15,7 +16,6 @@ public partial class MainPage : ContentPage
     ActivityIndicator loadingIndicator;
     IUserDbService userDbService;
     ITopicDBService topicDBService;
-    MainPageViewModel viewModel;
     IDbChecker dbChecker;
     public MainPage(MainPageViewModel viewModel, INavigationRepository navigationRepository, IUserDbService userDbService, IDbChecker dbChecker)
     {
@@ -23,7 +23,6 @@ public partial class MainPage : ContentPage
         BindingContext = viewModel;
         this.navigationRepository = navigationRepository;
         this.userDbService = userDbService;
-        this.viewModel = viewModel;
         this.dbChecker = dbChecker;
     }
 
@@ -34,7 +33,6 @@ public partial class MainPage : ContentPage
         {
             await navigationRepository.NavigateTo(nameof(LoginPage));
         }
-
         if (MainPageViewModel.User == null && RealmService.app.CurrentUser != null)
             MainPageViewModel.User = userDbService.GetUserByEmail(RealmService.CurrentUser.Profile.Email);
         dbChecker.Check();

@@ -54,6 +54,7 @@
 	<ItemGroup>
 	  <None Remove="atlasConfig.json" />
 	  <None Remove="Resources\Images\burgerite2m.jpg" />
+	  <None Remove="Resources\Images\icons8edit30.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -81,6 +82,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\CommentEditPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\DetailsTopicPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

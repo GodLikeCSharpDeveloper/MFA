@@ -1,6 +1,7 @@
 using MFA.Services.DBService;
 using MFA.Services.NavigationService;
 using MFA.Services.UserService;
+using MFA.ViewModels;
 
 namespace MFA.Views;
 
@@ -16,16 +17,10 @@ public partial class UserInfoPage : ContentPage
         this.viewModel = viewModel;
         this.navigationRepository = navigationRepository;
     }
-
-   
+    
     protected override void OnAppearing()
     {
         var realm = RealmService.GetRealm();
         viewModel.CurrentUser = MainPageViewModel.User;
-        if (MainPageViewModel.User?.UsersImage != null)
-        {
-            var test = MainPageViewModel.User.UsersImage.Data;
-            
-        }
     }
 }

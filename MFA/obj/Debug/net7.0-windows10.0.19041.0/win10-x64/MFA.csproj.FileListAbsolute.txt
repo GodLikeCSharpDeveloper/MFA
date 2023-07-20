@@ -25,8 +25,6 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Bogus.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\DnsClient.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Authorization.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Metadata.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -1281,3 +1279,7 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-windows10.0.19041
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8like.scale-100.gif
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8like24black.scale-100.png
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8retweet24.scale-100.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8edit30.scale-100.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8like.scale-100.gif
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8like24black.scale-100.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8retweet24.scale-100.png

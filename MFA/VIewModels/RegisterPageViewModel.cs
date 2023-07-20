@@ -1,15 +1,8 @@
 ﻿using MFA.Services.NavigationService;
-using MFA.Services.RegisterServices;
-using MFA.Services.ValidateService;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MFA.Views;
-using MFA.Utility.ImageManager;
 using MFA.Services.NotificationService;
+using MFA.Services.RegisterServices;
+using MFA.Utility.ImageManager;
+using MFA.Views;
 
 namespace MFA.ViewModels
 {

@@ -1094,19 +1094,6 @@ C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\androi
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\Realm.PlatformHelpers.pdb
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\MFA.csproj.Fody.CopyLocal.cache
 C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\MFA.csproj.Fody.RuntimeCopyLocal.cache
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.StackTrace.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.TraceSource.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.CoreLib.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.Uri.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
-C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-android\Resources\Images\dotnet_bot.svg
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-android\MFA.runtimeconfig.json
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\bin\Debug\net7.0-android\MFA.dll
@@ -3126,3 +3113,20 @@ C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\a
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\KAYAYASHA\Desktop\New folder\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8like.gif
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8like24black.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8retweet24.png
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\mscorlib.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Data.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.StackTrace.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Diagnostics.TraceSource.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Private.Uri.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\DaunV5.0\Desktop\New folder (2)\MFA\MFA\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8edit30.png
