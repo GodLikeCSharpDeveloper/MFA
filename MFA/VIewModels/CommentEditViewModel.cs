@@ -1,4 +1,8 @@
-﻿namespace MFA.ViewModels
+﻿using MFA.Services.NavigationService;
+using MFA.Services.UsersCommentsService;
+using MFA.Views;
+
+namespace MFA.ViewModels
 {
     [QueryProperty("Comment", "Comment")]
     public partial class CommentEditViewModel : BaseViewModel
@@ -6,15 +10,24 @@
         [ObservableProperty]
         private UsersComment comment;
 
-        public CommentEditViewModel()
+        IUsersCommentService usersCommentService;
+        private INavigationRepository navigationRepository;
+        public CommentEditViewModel(IUsersCommentService usersCommentService, INavigationRepository navigationRepository)
         {
-            
+            this.usersCommentService = usersCommentService;
+            this.navigationRepository = navigationRepository;
+
         }
 
         [RelayCommand]
-        void Check()
+        async Task ConfirmEdit()
         {
-            var a = Comment;
+            Comment = await usersCommentService.UpdateCommentAsync(Comment);
+            await navigationRepository.NavigateTo("..");
+            await navigationRepository.NavigateTo(nameof(DetailsTopicPage), new Dictionary<string, object>()
+            {
+                {"Topic", comment.Topic}
+            });
         }
 
     }

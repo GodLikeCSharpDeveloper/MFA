@@ -5,11 +5,15 @@
              xmlns:view="clr-namespace:MFA.ViewModels"
              Title="CommentEditPage"
              x:DataType="view:CommentEditViewModel">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button Command="{Binding CheckCommand}"></Button>
-    </VerticalStackLayout>
+    <Shell.TitleView>
+        <Grid RowDefinitions="*" ColumnDefinitions="auto,auto,auto,*" Padding="0, 0, 0, 0">
+            <ImageButton  Source="icons8confirm50.png" WidthRequest="30" HeightRequest="30" Grid.Column="3" HorizontalOptions="End" Command="{Binding ConfirmEditCommand}"></ImageButton>
+        </Grid>
+    </Shell.TitleView>
+    <ScrollView>
+        <Grid RowDefinitions="30,*">
+            <Label Text="Edit your comment" Grid.Row="0"></Label>
+            <Editor Grid.Row="1" Text="{Binding Comment.Content}"></Editor>
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -14,5 +14,15 @@ namespace MFA.Services.UsersCommentsService
         }
 
         public List<CommentWrapper> GetAllCurrentTopicComments(Topic topic);
+
+        public async Task<UsersComment> GetCommentById(UsersComment comment)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<UsersComment> UpdateCommentAsync(UsersComment comment)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

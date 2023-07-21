@@ -7,6 +7,8 @@ using MFA.Services.DBService;
 using MFA.Services.NotificationService;
 using MFA.Services.UserService;
 using MFA.ViewModels;
+using Realms.Sync;
+using User = MFA.Models.User;
 
 namespace MFA.Services.UsersCommentsService
 {
@@ -67,6 +69,28 @@ namespace MFA.Services.UsersCommentsService
                 }
             }
             return wrap;
+        }
+
+        public async Task<UsersComment> GetCommentById(UsersComment comment)
+        {
+            var realm = RealmService.GetRealm();
+            var commentForUpdate = realm.All<UsersComment>().FirstOrDefault(x=>x._id == comment._id);
+            return commentForUpdate;
+        }
+
+        public async Task<UsersComment> UpdateCommentAsync(UsersComment comment)
+        {
+            var realm = RealmService.GetRealm();
+            var commentForUpdate = GetCommentById(comment).Result;
+            await realm.WriteAsync(() =>
+            {
+                commentForUpdate.Content = comment.Content;
+            });
+            if (realm.SyncSession.ConnectionState != ConnectionState.Disconnected)
+            {
+                await realm.Subscriptions.WaitForSynchronizationAsync();
+            }
+            return commentForUpdate;
         }
     }
 }
